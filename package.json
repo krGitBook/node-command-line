@@ -1,5 +1,19 @@
 {
-  "dependencies": {
-    "commander": "^2.19.0"
-  }
+  "name": "node_command_line",
+  "version": "1.0.0",
+  "description": "node命令行",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krGitBook/node_command_line.git"
+  },
+  "author": "suwusu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krGitBook/node_command_line/issues"
+  },
+  "homepage": "https://github.com/krGitBook/node_command_line#readme"
 }
