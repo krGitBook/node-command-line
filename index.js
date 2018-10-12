@@ -1,5 +1,4 @@
 //初始化命令，人机交互控制
-global.colors= require('colors/safe');
 var newInit=[
     {
         title:'initConfirm',
