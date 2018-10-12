@@ -3,14 +3,6 @@
   "version": "1.0.0",
   "description": "node命令行",
   "main": "index.js",
-  "bin": {
-    "node_command_line": "npmrc.js"
-  },
-  "dependencies": {
-    "colors": "^1.3.2",
-    "commander": "^2.19.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/krGitBook/node_command_line.git"
   },
-  "author": "",
+  "author": "suwusu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/krGitBook/node_command_line/issues"
