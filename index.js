@@ -17,7 +17,7 @@ var newInit=[
     }
 ];
 
-var initRepl = function (init, func) {
+var initRepl = function (func) {
     var i = 1;
     var len = newInit.length;
     process.stdout.write(newInit[0].description);
@@ -56,6 +56,6 @@ var initRepl = function (init, func) {
   module.exports=initRepl;
 
  
-initRepl(newInit, arr => {
+initRepl(arr => {
     console.log('arrr',arr);
 })
