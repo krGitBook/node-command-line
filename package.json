@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/krGitBook/node_command_line/issues"
   },
-  "homepage": "https://github.com/krGitBook/node_command_line#readme"
+  "homepage": "https://github.com/krGitBook/node_command_line#readme",
+  "devDependencies": {
+    "axios": "^0.18.0"
+  }
 }
