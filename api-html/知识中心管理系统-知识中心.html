@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;文件上传模块</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;文件上传控件</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;文件上传接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace_knowledge_wap/doc/docFile/uploadSingleFile</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">文档类型编码</td><td class="td-identifier">docTypeCode</td><td class="td-type">string</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">来源系统token</td><td class="td-identifier">sourceservicetoken</td><td class="td-type">string</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">操作人</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-1"><td class="td-name">成功条数</td><td class="td-identifier">successNum</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">sourceserviceid</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">operatedate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---文件名称</td><td class="td-identifier">filename</td><td class="td-type">string</td><td class="td-remark">@mock=老司机.jpg</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">zipflag</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">mimetype</td><td class="td-type">string</td><td class="td-remark">@mock=image/jpeg</td></tr><tr class="tr-level-2"><td class="td-name">---文件ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=351</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">codePath</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">uploadflag</td><td class="td-type">string</td><td class="td-remark">@mock=2</td></tr><tr class="tr-level-2"><td class="td-name">---文件类型ID</td><td class="td-identifier">filetypeid</td><td class="td-type">number</td><td class="td-remark">@mock=11</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">autoFileName</td><td class="td-type">string</td><td class="td-remark">@mock=153111465_181.jpg</td></tr><tr class="tr-level-2"><td class="td-name">---文档分类名</td><td class="td-identifier">doctypeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---文件路径</td><td class="td-identifier">filepath</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-2"><td class="td-name">---文档分类ID</td><td class="td-identifier">doctypeid</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---文件类型名</td><td class="td-identifier">filetypeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">operateip</td><td class="td-type">string</td><td class="td-remark">@mock=10.1.14.16</td></tr><tr class="tr-level-2"><td class="td-name">---文件大小</td><td class="td-identifier">filesize</td><td class="td-type">number</td><td class="td-remark">@mock=7375</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">ossHref</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload.oss-cn-qingdao.aliyuncs.com/D00001/201610/E/153111465_181.jpg</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">suffix</td><td class="td-type">string</td><td class="td-remark">@mock=.jpg</td></tr><tr class="tr-level-1"><td class="td-name">返回详细信息</td><td class="td-identifier">detailMsg</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-1"><td class="td-name">失败条数</td><td class="td-identifier">failNum</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-1"><td class="td-name">返回值，1成功，-1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;文件预览接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace_knowledge_wap/doc/docFile/viewFile</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">操作人</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">来源系统token</td><td class="td-identifier">sourceservicetoken</td><td class="td-type">string</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">文件id</td><td class="td-identifier">fileId</td><td class="td-type">number</td><td class="td-remark">必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;获取文件列表接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace_knowledge_wap/doc/docFile/findFileList</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回函数</td><td class="td-identifier">jsoncallback</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">文件ID</td><td class="td-identifier">fileIds</td><td class="td-type">string</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">来源服务token</td><td class="td-identifier">sourceservicetoken</td><td class="td-type">string</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">操作人</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

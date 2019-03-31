@@ -1,22 +1,15 @@
 {
-  "name": "node_command_line",
+  "name": "raptojson",
   "version": "1.0.0",
-  "description": "node命令行",
-  "main": "index.js",
+  "description": "rap接口平台数据迁移到Yapi的接口JSON转接工具",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krGitBook/node_command_line.git"
-  },
-  "author": "suwusu",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/krGitBook/node_command_line/issues"
-  },
-  "homepage": "https://github.com/krGitBook/node_command_line#readme",
-  "devDependencies": {
+  "author": "mori",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "axios": "^0.18.0"
   }
 }

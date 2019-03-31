@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;未命名</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;登陆页面</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;发送验证码</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/web/login/get-verify-code</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">某请求参数</td><td class="td-identifier">phone</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">提示信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;登录接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/web/login/login</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">验证码</td><td class="td-identifier">code</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">user</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员昵称</td><td class="td-identifier">nick</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司id</td><td class="td-identifier">companyId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">companyName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;退出登录接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/web/login/logout</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;获取会员信息</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wb/user</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">user</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司id</td><td class="td-identifier">companyId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员昵称</td><td class="td-identifier">nick</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">companyName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邮箱</td><td class="td-identifier">email</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;获取会员打印密码</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wb/print/password</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---密码</td><td class="td-identifier">password</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---有效期截止时间</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;修改会员邮箱</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wb/user/actions/edit-email</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邮箱</td><td class="td-identifier">email</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;打印</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;社区下拉</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wb/common/community/select-items</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名字</td><td class="td-identifier">communityname</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---会员所属社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;获取打印信息</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wb/print-param</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---默认文件上传地址</td><td class="td-identifier">defaultUploadUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---会员打印密码</td><td class="td-identifier">pwd</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---默认结果确认地址</td><td class="td-identifier">defaultConfirmUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---可能可用的节点服务器信息</td><td class="td-identifier">nodeServers</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------节点文件上传地址</td><td class="td-identifier">uploadUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------节点文件上传结果确认地址</td><td class="td-identifier">confirmUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---会员手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---打印机名称</td><td class="td-identifier">printerName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

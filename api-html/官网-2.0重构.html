@@ -1,0 +1,493 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;新闻</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;新闻列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-protals-news/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=23</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|10</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片</td><td class="td-identifier">photoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/Q/123844378_605.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201712/O/125242618_16.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201709/K/184634323_625.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201709/X/185204577_648.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201706/G/150158974_110.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201706/I/184942925_451.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201706/B/172802609_190.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201705/D/132209760_725.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201705/J/140312191_533.jpeg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/news/news5.jpeg&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------表题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;氪空间完成6亿元Pre-B轮融资&#39;,&#39;氪空间换Logo了：彰显品质 拒绝锋利&#39;,&#39;氪空间上海旗舰店开业 这也是中国单体最大联合办公空间&#39;,&#39;氪空间一周新开两社区 中国最智能联合办公空间引关注&#39;,&#39;中共武汉市常委等领导深入考察氪空间武汉科创大厦社区&#39;,&#39;钟澍：新经济环境下，如何构建有安全感的社群生态？&#39;,&#39;扎根张江，共创未来：氪空间上海张江社区正式开业&#39;,&#39;联合办公形势大好：氪空间开业社区入驻率超94.2%&#39;,&#39;中国品牌新媒体联盟成立&#39;,&#39;氪空间总裁钟澍：关于联合办公的一切，如今都“通了”&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------新闻id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(28,27,25,26,23,21,19,16,15,7)</td></tr><tr class="tr-level-3"><td class="td-name">------发布时间</td><td class="td-identifier">publishedAt</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;2018-01-11&#39;,&#39;2017-11-24&#39;,&#39;2017-09-26&#39;,&#39;2017-09-26&#39;,&#39;2017-06-12&#39;,&#39;2017-06-08&#39;,&#39;2017-06-02&#39;,&#39;2017-05-11&#39;,&#39;2017-05-10&#39;,&#39;2017-04-27 12:07:21&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------新闻简介</td><td class="td-identifier">intro</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;6亿元！今日，氪空间宣布完成6亿元Pre-B轮融资，这不仅是氪空间在近半年来获得的第三笔融资，也是中国联合办公领域最大单笔现金投资。&#39;,&#39;氪空间新版Logo由“氪空间”中文和“Kr Space”英文组成，字形选择方面偏圆润力求温暖感，拒绝锋利。Logo主色调为黑色，有品质感更易延展。&#39;,&#39;中国规模与运营效率领先的联合办公品牌氪空间上海旗舰店徐家汇社区9月22日正式开业，这座年代感十足的旧角楼可以容纳约2000个工位，是中国单体最大的联合办公空间，也是中国目前智能化领先的办公空间，彰显了中国联合办公企业的野心和信心。&#39;,&#39;　“用户所在之处，就是一个智能场景。”9月23日，在创业大街社区重新装修开业仪式上，氪空间总裁钟澍如是介绍，“这是目前中国最智能的联合办公空间，灯被期待亮起来是因为我知道我进屋或者我走过它就会亮，我们正在努力让智能场景成为被用户期待的，我们也正在努力让这个社区成为中国学习力最强的空间。”&#39;,&#39;6月8日，中共武汉市委常委、市委组织部部长杨汉军、中共武昌区委书记张幸平、武汉市科技局副局长陈宝国、中共武昌区委常委组织部长胡太荣、中共武昌区委常委许启彤等一行领导参观了氪空间武汉科创大厦社区，对氪空间的运营情况和内部项目做了深入考察。&#39;,&#39;众所周知，社群是联合办公三要素之一，目前，所有联合办公企业都在探索构建社群生态的方法和途径，试图建立一个长期有效的机制，对此，氪空间在经历了长达三年的实践和积累，取得了不错的成果，氪空间总裁钟澍认为，在新的经济形势下，联合办公应该站在城市发展的角度，去思考社群的构建逻辑。&#39;,&#39;2017年5月19日，位于上海浦东张江高科园的，氪空间“张江社区”，正式开业！张江社区总面积超过3000平，可提供超过40个独立办公空间和超过500个工位。&#39;,&#39;最新统计，截至2017年4月，氪空间已开业社区平均入驻率超过94.2%。&#39;,&#39;2017年5月10日，科技商业、时政与思想、全球财经资讯领域的领军媒体--36氪、澎湃新闻、华尔街见闻联合发起中国品牌新媒体联盟，正式宣告新媒体的高级形态--品牌新媒体时代来临。&#39;,&#39;4月22日，是氪空间成立3周年的日子，9座城市、30座社区、14.8万管理面积、超过90%的入驻率…此时此刻，我的喜悦不仅仅是因为这些数字，而是：如今，对于联合办公这件事，对于我们大家的事业，彻底的“通了”。&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=10</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;新闻详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-protals-news/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">新闻id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---发布时间</td><td class="td-identifier">publishedAt</td><td class="td-type">string</td><td class="td-remark">@mock=2018-01-11</td></tr><tr class="tr-level-2"><td class="td-name">---新闻id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=28</td></tr><tr class="tr-level-2"><td class="td-name">---新闻内容</td><td class="td-identifier">desc</td><td class="td-type">string</td><td class="td-remark">@mock=&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;6亿元！今日，氪空间宣布完成6亿元Pre-B轮融资，这不仅是氪空间在近半年来获得的第三笔融资，也是中国联合办公领域最大单笔现金投资。至此，氪空间的投资者阵容里，包括中民投资本、IDG资本、王思聪所在的普思资本、柯罗尼新扬子基金、九合创投、戈壁投资、刘成城以及著名企业家冯仑。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;即将开业的广州T.I.T创意园社区：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/C/123940838_952.jpeg&quot; title=&quot;&quot; alt=&quot;640-40.jpeg&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/A/124053329_712.jpeg&quot; title=&quot;&quot; alt=&quot;640-42.jpeg&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/E/124118516_136.jpeg&quot; title=&quot;&quot; alt=&quot;640-43.jpeg&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 2px; text-size-adjust: auto; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/E/124144059_620.jpeg&quot; title=&quot;&quot; alt=&quot;640-44.jpeg&quot;/&gt;&lt;img src=&quot;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/M/124157614_827.jpeg&quot; title=&quot;&quot; alt=&quot;640-45.jpeg&quot;/&gt;&lt;/span&gt;&lt;/p&gt;</td></tr><tr class="tr-level-2"><td class="td-name">---简介</td><td class="td-identifier">intro</td><td class="td-type">string</td><td class="td-remark">@mock=6亿元！今日，氪空间宣布完成6亿元Pre-B轮融资，这不仅是氪空间在近半年来获得的第三笔融资，也是中国联合办公领域最大单笔现金投资。</td></tr><tr class="tr-level-2"><td class="td-name">---新闻表题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=氪空间完成6亿元Pre-B轮融资</td></tr><tr class="tr-level-2"><td class="td-name">---图片</td><td class="td-identifier">photoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/Q/123844378_605.jpeg</td></tr><tr class="tr-level-2"><td class="td-name">---相关社区</td><td class="td-identifier">relateCommunity</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=北京市</td></tr><tr class="tr-level-3"><td class="td-name">------图片</td><td class="td-identifier">homeImageUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201710/E/131324278_884.jpg</td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=慈云寺社区</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;更多资讯</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/news/other</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|10</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片</td><td class="td-identifier">photoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/Q/123844378_605.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201712/O/125242618_16.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201709/K/184634323_625.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201709/X/185204577_648.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201706/G/150158974_110.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201706/I/184942925_451.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201706/B/172802609_190.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201705/D/132209760_725.jpeg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201705/J/140312191_533.jpeg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/news/news5.jpeg&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------日期</td><td class="td-identifier">publishedAt</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;2018-01-11&#39;,&#39;2017-11-24&#39;,&#39;2017-09-26&#39;,&#39;2017-09-26&#39;,&#39;2017-06-12&#39;,&#39;2017-06-08&#39;,&#39;2017-06-02&#39;,&#39;2017-05-11&#39;,&#39;2017-05-10&#39;,&#39;2017-04-27 12:07:21&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;氪空间完成6亿元Pre-B轮融资&#39;,&#39;氪空间换Logo了：彰显品质 拒绝锋利&#39;,&#39;氪空间上海旗舰店开业 这也是中国单体最大联合办公空间&#39;,&#39;氪空间一周新开两社区 中国最智能联合办公空间引关注&#39;,&#39;中共武汉市常委等领导深入考察氪空间武汉科创大厦社区&#39;,&#39;钟澍：新经济环境下，如何构建有安全感的社群生态？&#39;,&#39;扎根张江，共创未来：氪空间上海张江社区正式开业&#39;,&#39;联合办公形势大好：氪空间开业社区入驻率超94.2%&#39;,&#39;中国品牌新媒体联盟成立&#39;,&#39;氪空间总裁钟澍：关于联合办公的一切，如今都“通了”&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------咨询id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(28,27,25,26,23,21,19,16,15,7)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=23</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=10</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;活动</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;获取活动列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div>类型前端定义</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals-activity/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">月数</td><td class="td-identifier">pageSize</td><td class="td-type"></td><td class="td-remark">获取前几个月</td></tr><tr class="tr-level-1"><td class="td-name">页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=5</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|3</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动参数</td><td class="td-identifier">groupActivity</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1517045400000,1516777200000,1516694400000,1516339800000,1516078800000,1516014000000,1515747600000,1515659400000,1515576600000,1515412800000,1515151800000,1515045600000)</td></tr><tr class="tr-level-4"><td class="td-name">---------类型</td><td class="td-identifier">type</td><td class="td-type">number</td><td class="td-remark">1：全国 0 社区</td></tr><tr class="tr-level-4"><td class="td-name">---------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1517031000000,1516773600000,1516687200000,1516334400000,1516071600000,1516006800000,1515731400000,1515654000000,1515571200000,1515405600000,1515148200000,1515038400000)</td></tr><tr class="tr-level-4"><td class="td-name">---------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(37,40,38,34,36,30,29,33,32,31,27,28)</td></tr><tr class="tr-level-4"><td class="td-name">---------社区名</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;美团点评技术沙龙第31期：金融系统研发体系保障&#39;,&#39;公开氪 | 港美股从零开始：互联网人如何实现资产增值&#39;,&#39;给我15分钟，还你肩颈轻松&#39;,&#39;氪星福利日&#39;,&#39;“YIMA来了”非一般的小番茄&#39;,&#39;狼人归来！杀？不杀？&#39;,&#39;氪诊疗|激励团队这个问题，你的困惑是？&#39;,&#39;2018 我们见一面 会员见面日&#39;,&#39;“颈医卫”教你 护颈神功&#39;,&#39;会员电影之夜&#39;,&#39;一起来炫腹！&#39;,&#39;出境游技巧分享会&#39;)</td></tr><tr class="tr-level-4"><td class="td-name">---------图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/K/211955186_31.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/W/145329884_196.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/M/110107360_484.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/C/172934004_845.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/X/095054558_415.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/M/195450851_502.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/P/173546591_374.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/V/201048089_458.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/M/200310473_142.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/R/195925640_73.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/V/103634005_857.png&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/X/165030228_864.jpg&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------活动月</td><td class="td-identifier">publishMonth</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,12,9)</td></tr><tr class="tr-level-3"><td class="td-name">------活动年</td><td class="td-identifier">publishYear</td><td class="td-type">number</td><td class="td-remark">@mock=$order(2018,2017,2017)</td></tr><tr class="tr-level-1"><td class="td-name">某响应参数</td><td class="td-identifier">resParam</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;最新相关活动</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals-activity/other</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">相关社区活动</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|3</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;公开氪 | 港美股从零开始：互联网人如何实现资产增值&#39;,&#39;给我15分钟，还你肩颈轻松&#39;,&#39;氪星福利日&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(40,38,34)</td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1516773600000,1516687200000,1516334400000)</td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1516777200000,1516694400000,1516339800000)</td></tr><tr class="tr-level-3"><td class="td-name">------图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/W/145329884_196.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/M/110107360_484.jpg&#39;,&#39;http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201801/C/172934004_845.jpg&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=29</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=10</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.3&nbsp;活动详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals-activity/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动主键id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---相关社区</td><td class="td-identifier">relateCommunity</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=北京市</td></tr><tr class="tr-level-3"><td class="td-name">------社区图片</td><td class="td-identifier">homeImageUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/X/171521019_796.png</td></tr><tr class="tr-level-3"><td class="td-name">------社区名</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=酒仙桥社区</td></tr><tr class="tr-level-2"><td class="td-name">---活动</td><td class="td-identifier">activityInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------表题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=年度企业风险检测</td></tr><tr class="tr-level-3"><td class="td-name">------SEO字段</td><td class="td-identifier">seoText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark">@mock=1513648800000</td></tr><tr class="tr-level-3"><td class="td-name">------主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=16</td></tr><tr class="tr-level-3"><td class="td-name">------类型</td><td class="td-identifier">type</td><td class="td-type">number</td><td class="td-remark">1 全国 0 社区</td></tr><tr class="tr-level-3"><td class="td-name">------内容</td><td class="td-identifier">richText</td><td class="td-type">string</td><td class="td-remark">@mock=&lt;p style=&quot;text-align: center;&quot;&gt;年度企业法律风险检测&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;帮助企业全面梳理风险、填补法律漏洞&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;你是否存在很多疑惑？&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0010.gif&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;由氪空间联合星法致律为入驻团队&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;提供一对一免费检测的机会&nbsp;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;资深顾问团队坐诊咨询&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;欢迎高管及CEO报名交流&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;http://img.baidu.com/hi/jx2/j_0003.gif&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;报名方式：APP报名or联系运营人员&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br/&gt;&lt;/p&gt;</td></tr><tr class="tr-level-3"><td class="td-name">------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark">@mock=北京市朝阳区酒仙桥52号院1号楼B座3F</td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=1513846800000</td></tr><tr class="tr-level-3"><td class="td-name">------活动图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload.oss-cn-qingdao.aliyuncs.com/activity_unzip/201712/Y/144313650_156.png</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.3&nbsp;社区</h2>
+                                            <div class="action">
+                            <h3>1.3.1&nbsp;即将开业社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals-community/readyopen</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;大望路社区&#39;,&#39;建国路社区&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;北京市&#39;,&#39;北京市&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(166,168)</td></tr><tr class="tr-level-3"><td class="td-name">------图片</td><td class="td-identifier">homeImageUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201712/D/190155300_770.jpg&#39;)</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.2&nbsp;已开业社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div>返回字段与即将开业相同</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals-community/hasopen</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.3&nbsp;办公地点</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-office-community</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|27</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(174,168,169,75,72,64,76,1,69,12,73,4,5,9,11,43,6,10,15,54,77,8,16,45,53,65,66)</td></tr><tr class="tr-level-3"><td class="td-name">------社区地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------工位优惠价</td><td class="td-identifier">stationDiscountPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------工位价格</td><td class="td-identifier">stationPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区状态</td><td class="td-identifier">communityStatus</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区优惠</td><td class="td-identifier">communityPreferential</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(170,1,198,74,74,1,74,1,74,74,74,1,88,75,74,1,88,75,2,1,74,238,170,79,2,1,75)</td></tr><tr class="tr-level-3"><td class="td-name">------社区特色标签</td><td class="td-identifier">tags</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------特色名</td><td class="td-identifier">tagName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------面积</td><td class="td-identifier">area</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------经度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark">@mock=$order(30.496866,39.913177,23.104817,31.236179,31.173487,39.921302,31.206322,39.989173,31.229485,31.305357,31.185046,39.967225,30.29419,31.977495,31.278573,39.90567,30.285115,32.041382,39.029403,39.990307,31.191879,30.665516,30.542413,31.302412,39.123719,39.88837,32.057979)</td></tr><tr class="tr-level-3"><td class="td-name">------图片</td><td class="td-identifier">imageUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201802/W/200655634_347.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201801/L/194755825_301.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201708/O/204246207_243.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201708/C/183101025_600.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201703/W/183741644_133.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201708/U/194932084_572.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201710/U/120634107_875.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201703/L/183742684_663.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/P/154821711_757.JPG&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201708/F/194748225_607.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/W/163409309_919.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/S/163637278_211.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/M/163637824_696.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201708/W/185146386_651.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/R/163409288_166.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/T/163637295_226.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/A/163637629_581.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/D/115605749_974.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/S/163409807_827.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/M/183930036_719.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/I/163637268_433.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/R/163902046_98.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/B/163901168_580.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201708/M/151704619_676.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201702/X/163408983_583.png&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/T/173259761_185.jpg&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------纬度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark">@mock=$order(114.417436,116.471922,113.331324,121.493122,121.409227,116.501734,121.591293,116.313226,121.449305,121.460826,121.611037,116.503457,120.011741,118.771244,121.529813,116.49806,120.131686,118.780483,117.712714,116.340192,121.439729,104.089478,114.361958,120.674541,117.203028,116.318171,118.791025)</td></tr><tr class="tr-level-3"><td class="td-name">------社区开业状态</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;保利国际社区&#39;,&#39;建国路社区&#39;,&#39;T.I.T创意园社区&#39;,&#39;豫园社区&#39;,&#39;田林社区&#39;,&#39;慈云寺社区&#39;,&#39;传奇广场社区&#39;,&#39;创业大街社区&#39;,&#39;静安寺社区&#39;,&#39;绿地中央广场社区&#39;,&#39;张江社区&#39;,&#39;酒仙桥社区&#39;,&#39;梦想小镇社区&#39;,&#39;楚翘城社区&#39;,&#39;周家嘴路社区&#39;,&#39;大成国际社区&#39;,&#39;万塘汇社区&#39;,&#39;梦幻城社区&#39;,&#39;泰达社区&#39;,&#39;科贸大厦社区&#39;,&#39;徐家汇社区&#39;,&#39;川报大厦社区&#39;,&#39;科创大厦社区&#39;,&#39;李公堤社区&#39;,&#39;南京路社区&#39;,&#39;六里桥社区&#39;,&#39;珠江路社区&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------工位数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.4&nbsp;社区详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-community-detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---停车信息</td><td class="td-identifier">pakeingInfo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---交通</td><td class="td-identifier">traffic</td><td class="td-type">string</td><td class="td-remark">@mock=公交：A大北窑（国贸）站，机场巴士1线；B大北窑西站，805路、938路；C大北窑东站，11路、57路、402路、647路－312路联运、647路－322路联运、648路、666路、667路－552路联运、667路、668路、668快、669路、669快、669通勤、801路、810路、938路、976路。
+
+地铁：地铁1号线国贸站、地铁10号线国贸站。</td></tr><tr class="tr-level-2"><td class="td-name">---社区简介</td><td class="td-identifier">communityDesc</td><td class="td-type">string</td><td class="td-remark">@mock=建国路社区位于CBD核心地段，东临北京电视台新址，西接东三环国贸桥。宽敞的公共区域，多种组合的办公室及会议室，舒适的座椅，甚至是精心设计的走廊，定会为您办公增添无尽的使用及视觉的享受。氪空间建国路社区，为您找到便利和专注的完美结合。</td></tr><tr class="tr-level-2"><td class="td-name">---周边</td><td class="td-identifier">arround</td><td class="td-type">string</td><td class="td-remark">@mock=与国贸大厦，国贸购物中心，中国大饭店相邻；北侧为中央电视台新址，东侧毗邻北京电视台新址，西侧为银泰购物中心，附近遍布众多世界500强公司。</td></tr><tr class="tr-level-2"><td class="td-name">---工位优惠价格</td><td class="td-identifier">sationDiscountPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=建国路社区</td></tr><tr class="tr-level-2"><td class="td-name">---社区优惠</td><td class="td-identifier">communityPreferential</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区状态</td><td class="td-identifier">communityStatus</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---特色标签</td><td class="td-identifier">cmtFeatureLable</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=168</td></tr><tr class="tr-level-2"><td class="td-name">---固定工位价格</td><td class="td-identifier">fixedPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=北京市</td></tr><tr class="tr-level-2"><td class="td-name">---经度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark">@mock=39.913177</td></tr><tr class="tr-level-2"><td class="td-name">---纬度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark">@mock=116.471922</td></tr><tr class="tr-level-2"><td class="td-name">---移动工位价格</td><td class="td-identifier">movePrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区状态颜色</td><td class="td-identifier">cmtStatusColor</td><td class="td-type">number</td><td class="td-remark">1：社区即将开业 2：社区工位即将被租满 3：社区工位已租满</td></tr><tr class="tr-level-2"><td class="td-name">---工位数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark">@mock=615</td></tr><tr class="tr-level-2"><td class="td-name">---静态地图</td><td class="td-identifier">addressPhotoUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---详细地址</td><td class="td-identifier">detailAddress</td><td class="td-type">string</td><td class="td-remark">@mock=北京市朝阳区建国路108号海航实业大厦9层</td></tr><tr class="tr-level-2"><td class="td-name">---工位详情图</td><td class="td-identifier">stationDetailImage</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---基础设施</td><td class="td-identifier">baseFacility</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片地址</td><td class="td-identifier">lableUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签名</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---面积</td><td class="td-identifier">area</td><td class="td-type">string</td><td class="td-remark">@mock=4000</td></tr><tr class="tr-level-2"><td class="td-name">---室内详情图</td><td class="td-identifier">inDetailImage</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---独立价格（划）</td><td class="td-identifier">independentPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---特色服务</td><td class="td-identifier">specialServcie</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---基础服务</td><td class="td-identifier">baseService</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---室外详情图</td><td class="td-identifier">outDetailImage</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.5&nbsp;同城社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div>字段与即将开业社区相同</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-same-community</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.6&nbsp;办公城市</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/protals-all-city</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|10</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---城市名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;全部&#39;,&#39;北京&#39;,&#39;上海&#39;,&#39;杭州&#39;,&#39;苏州&#39;,&#39;南京&#39;,&#39;武汉&#39;,&#39;成都&#39;,&#39;天津&#39;,&#39;广州&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---城市id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,1,74,88,79,75,170,238,2,198)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.7&nbsp;得到下一天时间</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-next-time</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">string</td><td class="td-remark">@mock=2018-03-10</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.8&nbsp;ip定位</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/get-community-byip</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|27</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区</td><td class="td-identifier">communityVo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------社区名</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------社区id</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市</td><td class="td-identifier">cityVo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------城市id</td><td class="td-identifier">cityId</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.4&nbsp;社区亮点</h2>
+                                            <div class="action">
+                            <h3>1.4.1&nbsp;亮点标签列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-op-web/cmt-brightpoints-lable/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|6</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片地址</td><td class="td-identifier">lableUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;,&#39;http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(7,8,9,10,4,5)</td></tr><tr class="tr-level-3"><td class="td-name">------亮点标签名</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;基础设施&#39;,&#39;基础设施&#39;,&#39;基础设施&#39;,&#39;基础设施&#39;,&#39;基础服务&#39;,&#39;基础服务&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark">@mock=$order(3,3,3,3,1,2)</td></tr><tr class="tr-level-3"><td class="td-name">------亮点类型名</td><td class="td-identifier">lableTypeName</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------亮点类型</td><td class="td-identifier">lableType</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;INFRASTRUCTURE&#39;,&#39;INFRASTRUCTURE&#39;,&#39;INFRASTRUCTURE&#39;,&#39;INFRASTRUCTURE&#39;,&#39;BASICSERVICE&#39;,&#39;BASICSERVICE&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=20</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=7</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.2&nbsp;亮点新增与修改</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-op-web/cmt-brightpoints-lable/saveoredit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">图片地址</td><td class="td-identifier">lableUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">修改时传id 新增不传</td></tr><tr class="tr-level-1"><td class="td-name">亮点类型</td><td class="td-identifier">lableType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">亮点标签名</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.3&nbsp;亮点详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-op-web/cmt-brightpoints-lable/show</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---亮点标签名</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark">@mock=基础服务</td></tr><tr class="tr-level-2"><td class="td-name">---亮点标签图</td><td class="td-identifier">lableUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload-public.oss-cn-qingdao.aliyuncs.com/community_public_upload/201712/V/190202994_185.jpg</td></tr><tr class="tr-level-2"><td class="td-name">---排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=4</td></tr><tr class="tr-level-2"><td class="td-name">---亮点标签类型</td><td class="td-identifier">lableType</td><td class="td-type">string</td><td class="td-remark">@mock=BASICSERVICE</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.4&nbsp;亮点标签枚举下拉</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-op-web/cmt-brightpoints-lable/typestatus</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|3</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---类型</td><td class="td-identifier">value</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;INFRASTRUCTURE&#39;,&#39;SPECIALSERVICE&#39;,&#39;BASICSERVICE&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---类型名</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;基础设施&#39;,&#39;特色服务&#39;,&#39;基础服务&#39;)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.5&nbsp;亮点标签删除</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-op-web/cmt-brightpoints-lable/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.5&nbsp;旧接口</h2>
+                                            <div class="action">
+                            <h3>1.5.1&nbsp;城市获取社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals/get-page-community</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">cityId</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.2&nbsp;获取城市</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/portals/get-all-city</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.6&nbsp;社区配置（后台）</h2>
+                                            <div class="action">
+                            <h3>1.6.1&nbsp;修改社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/cmt/newedit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">基础特色</td><td class="td-identifier">baseFacilityIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">室内详情图</td><td class="td-identifier">inImgDetailIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">工位详情</td><td class="td-identifier">stationImgDetailIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">特色服务</td><td class="td-identifier">specialServcieIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">室外</td><td class="td-identifier">outImgDetailIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">缩略图地址</td><td class="td-identifier">addressPhotoUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">基础服务</td><td class="td-identifier">baseServiceIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">折扣价</td><td class="td-identifier">cmtDiscountPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区折扣信息</td><td class="td-identifier">cmtDiscountInfo</td><td class="td-type">string</td><td class="td-remark">NO_DISCOUNT(&quot;无&quot;,0), 	    OPEN_DISCOUNT(&quot;开业特惠&quot;,1), 	    TIME_DISCOUNT(&quot;限时优惠&quot;,2), 		SPECIAL_DISCOUNT(&quot;特价优惠&quot;,3);</td></tr><tr class="tr-level-1"><td class="td-name">社区状态类型</td><td class="td-identifier">communityStatus</td><td class="td-type">string</td><td class="td-remark">NO_STATUS(&quot;无&quot;,0), 	    READY_OPEN(&quot;即将开业&quot;,1), 	    STATION_FASTFULL(&quot;工位即将被租满 &quot;,2), 		STATION_FULL(&quot;工位充足&quot;,3);</td></tr><tr class="tr-level-1"><td class="td-name">特设标签</td><td class="td-identifier">cmtFeatureLable</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">停车信息</td><td class="td-identifier">pakeingInfo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.6.2&nbsp;社区详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/krspace-finance-web/cmt/newdetail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">baseService</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">changeStatus</td><td class="td-type"></td><td class="td-remark">1 是 0 否</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=4</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark">@mock=aaa</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">baseFacility</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------亮点id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=7</td></tr><tr class="tr-level-3"><td class="td-name">------名</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark">@mock=aaa</td></tr><tr class="tr-level-3"><td class="td-name">------排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-3"><td class="td-name">------选择状态</td><td class="td-identifier">changeStatus</td><td class="td-type">number</td><td class="td-remark">0 否 1 是</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=77</td></tr><tr class="tr-level-2"><td class="td-name">---特色标签</td><td class="td-identifier">cmtFeatureLable</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=$order(&#39;CBD&#39;,&#39;明星&#39;,&#39;活跃&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---优惠信息</td><td class="td-identifier">cmtDiscountInfo</td><td class="td-type">string</td><td class="td-remark">NO_DISCOUNT(&quot;无&quot;,0), 	    OPEN_DISCOUNT(&quot;开业特惠&quot;,1), 	    TIME_DISCOUNT(&quot;限时优惠&quot;,2), 		SPECIAL_DISCOUNT(&quot;特价优惠&quot;,3);</td></tr><tr class="tr-level-2"><td class="td-name">---室外</td><td class="td-identifier">outDetailImage|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">photoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/E/160213863_902.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/X/163408983_583.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/Z/171522239_253.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/R/163409288_166.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/N/171521013_522.png&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">photoId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1536,1575,1723,1577,1720)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">communityStatus</td><td class="td-type">string</td><td class="td-remark">NO_STATUS(&quot;无&quot;,0), 	    READY_OPEN(&quot;即将开业&quot;,1), 	    STATION_FASTFULL(&quot;工位即将被租满 &quot;,2), 		STATION_FULL(&quot;工位充足&quot;,3);</td></tr><tr class="tr-level-2"><td class="td-name">---特色服务</td><td class="td-identifier">specialServcie</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lableName</td><td class="td-type">string</td><td class="td-remark">@mock=aaa</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=12</td></tr><tr class="tr-level-2"><td class="td-name">---工位</td><td class="td-identifier">porType|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">type</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;MOBILE_DESK&#39;,&#39;INDEPENDENT_WORKSPACE&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">typePrice</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1800,3200)</td></tr><tr class="tr-level-2"><td class="td-name">---室内</td><td class="td-identifier">inDetailImage|4</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">photoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/B/160213931_458.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/E/160213863_902.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/X/163408983_583.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/T/155651572_743.png&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">photoId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1537,1536,1575,1523)</td></tr><tr class="tr-level-2"><td class="td-name">---工位详情</td><td class="td-identifier">stationDetailImage|3</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">photoId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1723,1737,1720)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">photoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/Z/171522239_253.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/Y/171737220_64.png&#39;,&#39;http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201702/N/171521013_522.png&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---缩略图</td><td class="td-identifier">addressPhotoUrl</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---停车信息</td><td class="td-identifier">pakeingInfo</td><td class="td-type">string</td><td class="td-remark">@mock=停车最新啊实打实大师才</td></tr><tr class="tr-level-2"><td class="td-name">---优惠·价格</td><td class="td-identifier">cmtDiscountPrice</td><td class="td-type">number</td><td class="td-remark">@mock=1200</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.6.3&nbsp;缩略图上传图片</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/cmtbright/upload-pic</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">文件</td><td class="td-identifier">upfile</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---图片地址</td><td class="td-identifier">picUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://krspace-upload-test-public.oss-cn-beijing.aliyuncs.com/community_public_upload/201803/S/204418792_838.jpg</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.6.4&nbsp;新闻保存</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div></div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">相关社区id</td><td class="td-identifier">relateCmt</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

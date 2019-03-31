@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;打印预览页面</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;打印预览-入驻（增，续）-尚文玉</h3>
+
+                            <h3>Description</h3>
+
+                            <div>入驻合同打印预览信息查看</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/checkinagreement/print-info</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">合同id</td><td class="td-identifier">contractId</td><td class="td-type">number</td><td class="td-remark">必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=16851</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---支付方式id</td><td class="td-identifier">payType</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---合同编号</td><td class="td-identifier">contractNO</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1wgb</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方地址</td><td class="td-identifier">leaseAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容6tr8</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）联系人</td><td class="td-identifier">lessorContact</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容nt1k</td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容77kp</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方</td><td class="td-identifier">leaseName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容equ6</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）联系电话</td><td class="td-identifier">lessorContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容415e</td></tr><tr class="tr-level-2"><td class="td-name">---支付方式（所有）</td><td class="td-identifier">payTypeList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------支付方式id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------支付方式名称</td><td class="td-identifier">dicName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方联系电话</td><td class="td-identifier">leaseContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8r5d</td></tr><tr class="tr-level-2"><td class="td-name">---城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3k5h</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方联系人</td><td class="td-identifier">leaseContact</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容r6ie</td></tr><tr class="tr-level-2"><td class="td-name">---服务费总计</td><td class="td-identifier">rentTotal</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容bc6h</td></tr><tr class="tr-level-2"><td class="td-name">---合同备注</td><td class="td-identifier">contractMark</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容qx7o</td></tr><tr class="tr-level-2"><td class="td-name">---服务费总计（中文）</td><td class="td-identifier">rentTotalCN</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容999o</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）名称</td><td class="td-identifier">lessorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容456p</td></tr><tr class="tr-level-2"><td class="td-name">---二维码</td><td class="td-identifier">QRCode</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容v22k</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方(出租方)地址</td><td class="td-identifier">lessorAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容63v3</td></tr><tr class="tr-level-2"><td class="td-name">---分期信息</td><td class="td-identifier">installmentPlans</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------服务期限</td><td class="td-identifier">leaseDate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容45ei</td></tr><tr class="tr-level-3"><td class="td-name">------付款金额</td><td class="td-identifier">installmentAmount</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容h42h</td></tr><tr class="tr-level-3"><td class="td-name">------付款日期</td><td class="td-identifier">installmentReminddate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容0zuf</td></tr><tr class="tr-level-3"><td class="td-name">------款项</td><td class="td-identifier">installmentName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3lx5</td></tr><tr class="tr-level-2"><td class="td-name">---付款方式（所有）</td><td class="td-identifier">payModelList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------付款方式</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------付款方式名称</td><td class="td-identifier">dicName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---合同开始时间</td><td class="td-identifier">leaseBegindate</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---入驻工位列表信息</td><td class="td-identifier">stationVOs</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------数量</td><td class="td-identifier">num</td><td class="td-type">number</td><td class="td-remark">@mock=42554</td></tr><tr class="tr-level-3"><td class="td-name">------服务期限</td><td class="td-identifier">leaseDate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7ncy</td></tr><tr class="tr-level-3"><td class="td-name">------小计（行合计</td><td class="td-identifier">lineTotal</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3h31</td></tr><tr class="tr-level-3"><td class="td-name">------单价</td><td class="td-identifier">unitPrice</td><td class="td-type">number</td><td class="td-remark">@mock=16432</td></tr><tr class="tr-level-3"><td class="td-name">------工位会议室名称，或编号范围</td><td class="td-identifier">stationName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容uwf8</td></tr><tr class="tr-level-3"><td class="td-name">------工位、会议室</td><td class="td-identifier">stationTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容p2r4</td></tr><tr class="tr-level-2"><td class="td-name">---付款方式</td><td class="td-identifier">payModel</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---合同类型（2:入住协议,3:增租协议,4.续租协议）</td><td class="td-identifier">contractType</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容zydz</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;打印预览-意向-尚文玉-</h3>
+
+                            <h3>Description</h3>
+
+                            <div>意向合同打印预览信息查看</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/intentletter/print-info</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">合同id</td><td class="td-identifier">contractId</td><td class="td-type">number</td><td class="td-remark">必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=16851</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）联系电话</td><td class="td-identifier">lessorContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容415e</td></tr><tr class="tr-level-2"><td class="td-name">---付款方式（所有）</td><td class="td-identifier">payModelList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------付款方式名称</td><td class="td-identifier">dicName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------付款方式</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---二维码</td><td class="td-identifier">QRCode</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容v22k</td></tr><tr class="tr-level-2"><td class="td-name">---服务费总计（中文）（定金金额）</td><td class="td-identifier">rentTotalCN</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容999o</td></tr><tr class="tr-level-2"><td class="td-name">---入驻工位列表信息</td><td class="td-identifier">stationVOs</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------小计（行合计</td><td class="td-identifier">lineTotal</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3h31</td></tr><tr class="tr-level-3"><td class="td-name">------服务期限</td><td class="td-identifier">leaseDate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7ncy</td></tr><tr class="tr-level-3"><td class="td-name">------数量</td><td class="td-identifier">num</td><td class="td-type">number</td><td class="td-remark">@mock=42554</td></tr><tr class="tr-level-3"><td class="td-name">------工位会议室名称，或编号范围</td><td class="td-identifier">stationName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容uwf8</td></tr><tr class="tr-level-3"><td class="td-name">------工位、会议室</td><td class="td-identifier">stationTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容p2r4</td></tr><tr class="tr-level-3"><td class="td-name">------单价</td><td class="td-identifier">unitPrice</td><td class="td-type">number</td><td class="td-remark">@mock=16432</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方(出租方)地址</td><td class="td-identifier">lessorAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容63v3</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）联系人</td><td class="td-identifier">lessorContact</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容nt1k</td></tr><tr class="tr-level-2"><td class="td-name">---城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3k5h</td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容77kp</td></tr><tr class="tr-level-2"><td class="td-name">---转入驻合同的截止日期</td><td class="td-identifier">leaseBegindate</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---付款方式</td><td class="td-identifier">payModel</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---合同备注</td><td class="td-identifier">contractMark</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容qx7o</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）名称</td><td class="td-identifier">lessorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容456p</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方地址</td><td class="td-identifier">lesseAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容6tr8</td></tr><tr class="tr-level-2"><td class="td-name">---服务费总计（定金金额）</td><td class="td-identifier">rentTotal</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容bc6h</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方联系电话</td><td class="td-identifier">leaseContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8r5d</td></tr><tr class="tr-level-2"><td class="td-name">---合同编号</td><td class="td-identifier">contractNO</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1wgb</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方联系人</td><td class="td-identifier">leaseContact</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容r6ie</td></tr><tr class="tr-level-2"><td class="td-name">---合同类型（2:入住协议,3:增租协议,4.续租协议）</td><td class="td-identifier">contractType</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方</td><td class="td-identifier">leaseName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容equ6</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容zydz</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;打印预览-减租-尚文玉</h3>
+
+                            <h3>Description</h3>
+
+                            <div>减租合同打印预览信息查看</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/fnaContractRentController/print-info</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">合同id</td><td class="td-identifier">contractId</td><td class="td-type">number</td><td class="td-remark">必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方(出租方)地址</td><td class="td-identifier">lessorAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容63v3</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）联系电话</td><td class="td-identifier">lessorContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容415e</td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容77kp</td></tr><tr class="tr-level-2"><td class="td-name">---入驻工位列表信息</td><td class="td-identifier">stationVOs</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------数量</td><td class="td-identifier">num</td><td class="td-type">number</td><td class="td-remark">@mock=42554</td></tr><tr class="tr-level-3"><td class="td-name">------工位、会议室</td><td class="td-identifier">stationTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容p2r4</td></tr><tr class="tr-level-3"><td class="td-name">------单价</td><td class="td-identifier">unitPrice</td><td class="td-type">number</td><td class="td-remark">@mock=16432</td></tr><tr class="tr-level-3"><td class="td-name">------小计（行合计</td><td class="td-identifier">lineTotal</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3h31</td></tr><tr class="tr-level-3"><td class="td-name">------服务期限</td><td class="td-identifier">leaseDate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7ncy</td></tr><tr class="tr-level-3"><td class="td-name">------工位会议室名称，或编号范围</td><td class="td-identifier">stationName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容uwf8</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方联系人</td><td class="td-identifier">leaseContact</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容r6ie</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方</td><td class="td-identifier">leaseName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容equ6</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）名称</td><td class="td-identifier">lessorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容456p</td></tr><tr class="tr-level-2"><td class="td-name">---服务提供方（出租方）联系人</td><td class="td-identifier">lessorContact</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容nt1k</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方地址</td><td class="td-identifier">lesseAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容6tr8</td></tr><tr class="tr-level-2"><td class="td-name">---服务接收方联系电话</td><td class="td-identifier">leaseContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8r5d</td></tr><tr class="tr-level-2"><td class="td-name">---二维码</td><td class="td-identifier">QRCode</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容v22k</td></tr><tr class="tr-level-2"><td class="td-name">---合同开始时间</td><td class="td-identifier">leaseBegindate</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---合同备注</td><td class="td-identifier">contractMark</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容qx7o</td></tr><tr class="tr-level-2"><td class="td-name">---服务费总计（中文）</td><td class="td-identifier">rentTotalCN</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容999o</td></tr><tr class="tr-level-2"><td class="td-name">---合同编号</td><td class="td-identifier">contractNO</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1wgb</td></tr><tr class="tr-level-2"><td class="td-name">---服务费总计</td><td class="td-identifier">rentTotal</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容bc6h</td></tr><tr class="tr-level-2"><td class="td-name">---合同类型（2:入住协议,3:增租协议,4.续租协议）</td><td class="td-identifier">contractType</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3k5h</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=16851</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容zydz</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;合同附件</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;合同附件保存</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-op-web/finacontractdetail/fileList-save</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;合同附件列表-徐然</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>krspace-op-web/finacontractdetail/fileList-show</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">合同id</td><td class="td-identifier">detailId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---附件id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=936</td></tr><tr class="tr-level-2"><td class="td-name">---附件名字</td><td class="td-identifier">fileName</td><td class="td-type">string</td><td class="td-remark">@mock=Koala.jpg</td></tr><tr class="tr-level-2"><td class="td-name">---附件地址</td><td class="td-identifier">fileUrl</td><td class="td-type">string</td><td class="td-remark">@mock=http://op.krspace.cn//krspace_oa_web/doc/docFile/downFile?sourceservicetoken=kfWC1SFHfzhQ6ui_-1GbbBPtDSOio5AbCt1pbRJBDUI2zg5bWRyYwp5QVGgjzrsH&operater=2&fileId=936</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.3&nbsp;附件保存</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-op-web/finacontractdetail/fileList-save</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">文件id</td><td class="td-identifier">fileId</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">合同id</td><td class="td-identifier">detailId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name">加入文件id</td><td class="td-identifier">data</td><td class="td-type">string</td><td class="td-remark">@mock=550</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.4&nbsp;附件删除</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-op-web/finacontractdetail/fileList-delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">文件id</td><td class="td-identifier">fileId</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">合同id</td><td class="td-identifier">detailId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">string</td><td class="td-remark">@mock=550</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

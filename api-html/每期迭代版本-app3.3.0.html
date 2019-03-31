@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;App端</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;福利</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;收藏福利（种草）OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/collect</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;福利详情(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利详情</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---商家电话</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---封面图片</td><td class="td-identifier">coverImg</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已上架   0：下架</td><td class="td-identifier">publish</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---纬度</td><td class="td-identifier">latitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利标签</td><td class="td-identifier">tag</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已种草  0：未种草</td><td class="td-identifier">collected</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利描述</td><td class="td-identifier">describe</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---面额</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---领取方式（OFFLINE:到店  ONLINE:在线  DETAIL:详情中展示）</td><td class="td-identifier">getWay</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---跳转地址（可能没有，需根据类型判断）</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---经度</td><td class="td-identifier">longitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利图片</td><td class="td-identifier">couponImgs</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---种草群众</td><td class="td-identifier">collectors</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员id</td><td class="td-identifier">uid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---人气值</td><td class="td-identifier">hotValue</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---使用提示</td><td class="td-identifier">useRule</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---商户线下地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---商户名称</td><td class="td-identifier">merchantName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利简介（html）</td><td class="td-identifier">couponDetail</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---种草总人数</td><td class="td-identifier">collectorCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---商户logo</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;福利分页(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">纬度（后台计算距离用）</td><td class="td-identifier">latitude(新增)</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:最新   2：最热  3:最近</td><td class="td-identifier">sortType（新增）</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利类型</td><td class="td-identifier">couponType（新增）</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">所选城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">经度（后台计算距离用）</td><td class="td-identifier">longitude（新增）</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">标签id</td><td class="td-identifier">tagId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3xk</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=66414</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---会员说明</td><td class="td-identifier">couponExplain</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8937</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=54283</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=58788</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=54887</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=16717</td></tr><tr class="tr-level-2"><td class="td-name">---全部标签</td><td class="td-identifier">tags</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签id</td><td class="td-identifier">tagId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签名称</td><td class="td-identifier">tagName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------人气值</td><td class="td-identifier">hotValue（新）</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------商户logo（可没有，需根据类型判断）</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容j21w</td></tr><tr class="tr-level-3"><td class="td-name">------福利描述</td><td class="td-identifier">describe</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容ki6k</td></tr><tr class="tr-level-3"><td class="td-name">------福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-3"><td class="td-name">------面额</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容n8vi</td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址（可能没有，需根据类型判断）</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7x6b</td></tr><tr class="tr-level-3"><td class="td-name">------距离,没有距离为“”</td><td class="td-identifier">distance(新增)</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面图片</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容339c</td></tr><tr class="tr-level-3"><td class="td-name">------1:来自入驻会员  0：不是</td><td class="td-identifier">fromInner（新增）</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利标签</td><td class="td-identifier">tag</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=测试内容915s</td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容5v41</td></tr><tr class="tr-level-3"><td class="td-name">------福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=78140</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;福利种草人分页(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/collector-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功   -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总页数</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1：已关注 0：未关注</td><td class="td-identifier">followed</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------革新签名</td><td class="td-identifier">slogan</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员id</td><td class="td-identifier">uid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总记录数</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;福利首页（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/home</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利类型</td><td class="td-identifier">couponType（新增）</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">纬度（后台计算距离用）</td><td class="td-identifier">latitude(新增)</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">所选城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:最新   2:最热   3:最近</td><td class="td-identifier">sortType（新增）</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">经度（后台计算距离用）</td><td class="td-identifier">longitude（新增）</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">标签id</td><td class="td-identifier">tagId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=66414</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3xk</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=16717</td></tr><tr class="tr-level-2"><td class="td-name">---今日推荐（精选福利）</td><td class="td-identifier">recommendCoupons</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利描述（可能为空）</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:http   2:原生</td><td class="td-identifier">jumpType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面图片</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------距离</td><td class="td-identifier">distance(新增)</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------人气值</td><td class="td-identifier">hotValue（新）</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面图片</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容339c</td></tr><tr class="tr-level-3"><td class="td-name">------福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-3"><td class="td-name">------福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=78140</td></tr><tr class="tr-level-3"><td class="td-name">------面额</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容n8vi</td></tr><tr class="tr-level-3"><td class="td-name">------福利描述</td><td class="td-identifier">describe</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容ki6k</td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址（可能没有，需根据类型判断）</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7x6b</td></tr><tr class="tr-level-3"><td class="td-name">------福利标签</td><td class="td-identifier">tag</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=测试内容915s</td></tr><tr class="tr-level-3"><td class="td-name">------商户logo（可没有，需根据类型判断）</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容j21w</td></tr><tr class="tr-level-3"><td class="td-name">------1:来自入驻会员  0：不是</td><td class="td-identifier">fromInner（新增）</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容5v41</td></tr><tr class="tr-level-2"><td class="td-name">---会员说明</td><td class="td-identifier">couponExplain</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8937</td></tr><tr class="tr-level-2"><td class="td-name">---全部标签</td><td class="td-identifier">tags</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签名称</td><td class="td-identifier">tagName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签id</td><td class="td-identifier">tagId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=54283</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=58788</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=54887</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;我种草的福利（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/collect/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">最后一个福利id，第一页为0</td><td class="td-identifier">lastCollectId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=66414</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3xk</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------商户logo（可没有，需根据类型判断）</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容j21w</td></tr><tr class="tr-level-3"><td class="td-name">------福利标签</td><td class="td-identifier">tag</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=测试内容915s</td></tr><tr class="tr-level-3"><td class="td-name">------人气值</td><td class="td-identifier">hotValue</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:上架  0：已下架</td><td class="td-identifier">publish</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利描述</td><td class="td-identifier">describe</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容ki6k</td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容5v41</td></tr><tr class="tr-level-3"><td class="td-name">------面额</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容n8vi</td></tr><tr class="tr-level-3"><td class="td-name">------收藏id</td><td class="td-identifier">collectId(收藏的福利特有)</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:来自入驻会员  0：不是</td><td class="td-identifier">fromInner</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面图片</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容339c</td></tr><tr class="tr-level-3"><td class="td-name">------福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-3"><td class="td-name">------福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=78140</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=16717</td></tr><tr class="tr-level-2"><td class="td-name">---1:分页中包含未发布的  0：不包含</td><td class="td-identifier">hasUnpublished</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;取消收藏福利（取消种草）OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/cancel-collect</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;清空下架福利OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/coupon/collect/delete-unpublish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;阿里云上传相关修改</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;阿里云自验证接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/mobile/file/authorization</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">阿里云数据需要验签字符串</td><td class="td-identifier">canonicalString</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:成功  -1：失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---加密过得字符串</td><td class="td-identifier">authorization</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+            <div class="module">
+            <h1>2&nbsp;op端</h1>
+                            <div class="page">
+                    <h2>2.1&nbsp;福利</h2>
+                                            <div class="action">
+                            <h3>2.1.1&nbsp;新建(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/create</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利封面 url</td><td class="td-identifier">couponCover</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1：内部会员提供  0：不是</td><td class="td-identifier">fromInner</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利图册url  json数组         eg..[{&#39;url&#39;;http:xxxx}]</td><td class="td-identifier">couponImgs</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系电话</td><td class="td-identifier">merchantPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利标签数组</td><td class="td-identifier">tagIds</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商户名称</td><td class="td-identifier">merchantName（新）</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商家地址</td><td class="td-identifier">merchantAddress</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">部分城市 id数组</td><td class="td-identifier">cityIds</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利范围 1：不限 0：部分城市</td><td class="td-identifier">couponScope</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取有效 结束时间</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利描述</td><td class="td-identifier">descr</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取链接url</td><td class="td-identifier">getUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利面值</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利简介</td><td class="td-identifier">couponDetail</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">纬度</td><td class="td-identifier">latitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">经度</td><td class="td-identifier">longitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取有效期 开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商户logo url</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取方式（OFFLINE:到店  ONLINE:在线  DETAIL:详情中展示）</td><td class="td-identifier">getWay</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-1"><td class="td-name">使用提示（享受规则）</td><td class="td-identifier">useRule</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.2&nbsp;福利分页(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利类型编码 	USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">结束时间</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">创建人</td><td class="td-identifier">createName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">开始时间 eg:2018-01-01 00:00:00</td><td class="td-identifier">beginTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总页数</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=54283</td></tr><tr class="tr-level-2"><td class="td-name">---页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=58788</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=51264</td></tr><tr class="tr-level-3"><td class="td-name">------福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=70652</td></tr><tr class="tr-level-3"><td class="td-name">------福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-3"><td class="td-name">------创建人名称</td><td class="td-identifier">createName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3h15</td></tr><tr class="tr-level-3"><td class="td-name">------福利范围</td><td class="td-identifier">scopeCitys</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容u3se</td></tr><tr class="tr-level-3"><td class="td-name">------有效期起止 字符串</td><td class="td-identifier">indate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容912l</td></tr><tr class="tr-level-3"><td class="td-name">------1：上线状态 0：下线状态</td><td class="td-identifier">effective</td><td class="td-type">number</td><td class="td-remark">@mock=30702</td></tr><tr class="tr-level-3"><td class="td-name">------福利面值</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark">@mock=67433</td></tr><tr class="tr-level-2"><td class="td-name">---总记录数</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=16717</td></tr><tr class="tr-level-2"><td class="td-name">---分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=54887</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=66414</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3xk</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.3&nbsp;福利详情(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=34780</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1：内部会员提供  0:否</td><td class="td-identifier">fromInner</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">tags</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建人名称</td><td class="td-identifier">createName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容qgdd</td></tr><tr class="tr-level-2"><td class="td-name">---商户名称</td><td class="td-identifier">merchantName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=73822</td></tr><tr class="tr-level-2"><td class="td-name">---福利封面</td><td class="td-identifier">couponCover</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容691w</td></tr><tr class="tr-level-2"><td class="td-name">---领取方式（OFFLINE:到店 ONLINE:在线 DETAIL:详情中展示）</td><td class="td-identifier">getWay</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---使用提示（享受规则）</td><td class="td-identifier">useRule</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利描述</td><td class="td-identifier">descr</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容64b6</td></tr><tr class="tr-level-2"><td class="td-name">---收藏次数</td><td class="td-identifier">collectCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利简介</td><td class="td-identifier">couponDetail</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---领取点击次数</td><td class="td-identifier">getCount</td><td class="td-type">number</td><td class="td-remark">@mock=85275</td></tr><tr class="tr-level-2"><td class="td-name">---商户logo</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容j1i3</td></tr><tr class="tr-level-2"><td class="td-name">---福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-2"><td class="td-name">---福利图册url json数组</td><td class="td-identifier">couponImgs</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1：不限 0：部分城市</td><td class="td-identifier">couponScope</td><td class="td-type">number</td><td class="td-remark">@mock=67144</td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=36244</td></tr><tr class="tr-level-2"><td class="td-name">---领取有效期 开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark">@mock=54242</td></tr><tr class="tr-level-2"><td class="td-name">---福利面值</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容083g</td></tr><tr class="tr-level-2"><td class="td-name">---福利地址</td><td class="td-identifier">merchantAddress</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容mo7y</td></tr><tr class="tr-level-2"><td class="td-name">---有效期 起止时间</td><td class="td-identifier">indate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容53sm</td></tr><tr class="tr-level-2"><td class="td-name">---部分城市(可能没有)</td><td class="td-identifier">citys</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=47726</td></tr><tr class="tr-level-3"><td class="td-name">------城市名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容b4uy</td></tr><tr class="tr-level-2"><td class="td-name">---经度</td><td class="td-identifier">longitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---纬度</td><td class="td-identifier">latitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---联系电话</td><td class="td-identifier">merchantPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---综合人气值</td><td class="td-identifier">hotValue</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---领取有效期 结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=35165</td></tr><tr class="tr-level-2"><td class="td-name">---发帖数</td><td class="td-identifier">discussCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---选中的标签id（可能没有）</td><td class="td-identifier">tagIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容y65y</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.4&nbsp;编辑(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/edit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利描述</td><td class="td-identifier">descr</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利图册url  json数组         eg..[{&#39;url&#39;;http:xxxx}]</td><td class="td-identifier">couponImgs</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取链接url</td><td class="td-identifier">getUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商户名称</td><td class="td-identifier">merchantName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取有效 结束时间</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取方式（OFFLINE:到店  ONLINE:在线  DETAIL:详情中展示）</td><td class="td-identifier">getWay</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商户logo url</td><td class="td-identifier">merchantLogo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">部分城市 id数组</td><td class="td-identifier">cityIds</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">领取有效期 开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利面值</td><td class="td-identifier">faceValue</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商家地址</td><td class="td-identifier">merchantAddress</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利标签数组</td><td class="td-identifier">tagIds</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td></tr><tr class="tr-level-1"><td class="td-name">福利简介</td><td class="td-identifier">couponDetail</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">使用提示（享受规则）</td><td class="td-identifier">useRule</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">纬度</td><td class="td-identifier">latitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">经度</td><td class="td-identifier">longitude</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利封面 url</td><td class="td-identifier">couponCover</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1：内部会员提供  0：不是</td><td class="td-identifier">fromInner</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系电话</td><td class="td-identifier">merchantPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利范围 1：不限 0：部分城市</td><td class="td-identifier">couponScope</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.5&nbsp;查询所有标签（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/tag-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利类型编码 	USERLIFE:会员生活 ENTERPRISESERVICE:企业服务</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">tags</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标签名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:成功  -1：失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.2&nbsp;精选福利</h2>
+                                            <div class="action">
+                            <h3>2.2.1&nbsp;下架OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/recommend/unpublish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.2&nbsp;发布OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/recommend/publish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功  -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.3&nbsp;新建福利OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/recommend/create</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">排序号</td><td class="td-identifier">sortNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">COUPON:福利 , NORMALSITE:外链 , PARTNER:渠道合作</td><td class="td-identifier">jumpType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">要跳转到额福利id</td><td class="td-identifier">jumpTargetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">要跳转的链接</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利描述</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">封面图</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功   -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.4&nbsp;福利分页OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/recommend/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">创建时期止</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">COUPON:福利 , NORMALSITE:外链 , PARTNER:渠道合作</td><td class="td-identifier">jumpType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1：已上线  0：已下线</td><td class="td-identifier">publish</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">创建时间起 eg.2018-01-01 12:00:00</td><td class="td-identifier">beginTime</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=66414</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=54887</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=16717</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=58788</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=54283</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1：上架状态  0：下架状态</td><td class="td-identifier">publish</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------排序号</td><td class="td-identifier">sortNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=51264</td></tr><tr class="tr-level-3"><td class="td-name">------创建人名称</td><td class="td-identifier">createrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=38466</td></tr><tr class="tr-level-3"><td class="td-name">------COUPON:福利 , NORMALSITE:外链 , PARTNER:渠道合作</td><td class="td-identifier">jumpType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">createTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面图片</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------描述</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3xk</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.5&nbsp;详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/recommend/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功   -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---要跳转的福利标题</td><td class="td-identifier">jumpTargetTitle</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---封面图</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---要跳转到额福利id</td><td class="td-identifier">jumpTargetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---排序号</td><td class="td-identifier">sortNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---要跳转的链接</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---福利描述</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---COUPON:福利 , NORMALSITE:外链 , PARTNER:渠道合作</td><td class="td-identifier">jumpType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.6&nbsp;编辑福利OK</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/recommend/edit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利描述</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">福利id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">排序号</td><td class="td-identifier">sortNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">要跳转到额福利id</td><td class="td-identifier">jumpTargetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">封面图</td><td class="td-identifier">coverImg</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">要跳转的链接</td><td class="td-identifier">jumpUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">COUPON:福利 , NORMALSITE:外链 , PARTNER:渠道合作</td><td class="td-identifier">jumpType</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功   -1:失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.7&nbsp;根据福利标题搜索福利</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/coupon/search-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">搜索福利标题</td><td class="td-identifier">searchTitle</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后天反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:成功   -1：失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">couponList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利标题</td><td class="td-identifier">couponTitle</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------福利id（提交是对应jumpTargetId）</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.3&nbsp;活动</h2>
+                                            <div class="action">
+                            <h3>2.3.1&nbsp;导出报名列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/export-actor</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

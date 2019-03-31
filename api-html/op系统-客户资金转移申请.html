@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;后端接口</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;驳回申请</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-pay-web/transfer/refund-apply</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">退回原因</td><td class="td-identifier">refundMemo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">申请id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">某响应参数</td><td class="td-identifier">resParam</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;同意申请</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-pay-web/transfer/agree-apply</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">申请id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;申请分页查询</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/transfer/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">申请编号</td><td class="td-identifier">applyNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">操作款项</td><td class="td-identifier">transferFeeType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">转移类型</td><td class="td-identifier">transferType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">申请状态</td><td class="td-identifier">transferStatus</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">操作开始时间</td><td class="td-identifier">uStartTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">操作结束时间</td><td class="td-identifier">uEndTime</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=20</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------转移类型名称</td><td class="td-identifier">transferTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=转社区</td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------状态</td><td class="td-identifier">transferStatus</td><td class="td-type">string</td><td class="td-remark">@mock=TRANSFER_DONE</td></tr><tr class="tr-level-3"><td class="td-name">------申请编号</td><td class="td-identifier">applyNo</td><td class="td-type">string</td><td class="td-remark">@mock=2121312</td></tr><tr class="tr-level-3"><td class="td-name">------操作人id</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=15001</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-3"><td class="td-name">------操作时间</td><td class="td-identifier">utime</td><td class="td-type">number</td><td class="td-remark">@mock=1530079151000</td></tr><tr class="tr-level-3"><td class="td-name">------操作人</td><td class="td-identifier">operaterUserName</td><td class="td-type">string</td><td class="td-remark">@mock=石旭</td></tr><tr class="tr-level-3"><td class="td-name">------申请人</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=15001</td></tr><tr class="tr-level-3"><td class="td-name">------状态名称</td><td class="td-identifier">transferStatusName</td><td class="td-type">string</td><td class="td-remark">@mock=已处理</td></tr><tr class="tr-level-3"><td class="td-name">------申请备注</td><td class="td-identifier">applyMemo</td><td class="td-type">string</td><td class="td-remark">@mock=2131</td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------转移类型</td><td class="td-identifier">transferType</td><td class="td-type">string</td><td class="td-remark">@mock=TRANSFER_COMMUNITY</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=1530074023000</td></tr><tr class="tr-level-3"><td class="td-name">------客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark">@mock=12218</td></tr><tr class="tr-level-3"><td class="td-name">------客户名称</td><td class="td-identifier">customerName</td><td class="td-type">string</td><td class="td-remark">@mock=阿道夫</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">detailList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------金额</td><td class="td-identifier">transferAmount</td><td class="td-type">number</td><td class="td-remark">@mock=2</td></tr><tr class="tr-level-4"><td class="td-name">---------申请表主键id</td><td class="td-identifier">applyId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">communityIdOut</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-4"><td class="td-name">---------操作款项名称</td><td class="td-identifier">transferFeeTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=余额</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">communityIdIn</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-4"><td class="td-name">---------操作款项</td><td class="td-identifier">transferFeeType</td><td class="td-type">string</td><td class="td-remark">@mock=BALANCE</td></tr><tr class="tr-level-3"><td class="td-name">------退回原因</td><td class="td-identifier">refundMemo</td><td class="td-type">string</td><td class="td-remark">@mock=21312</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;申请提交</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/transfer/submit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">applyMemo</td><td class="td-type">string</td><td class="td-remark">@mock=2131</td></tr><tr class="tr-level-1"><td class="td-name">申请id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">detailList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---转出社区id</td><td class="td-identifier">communityIdOut</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---操作款项</td><td class="td-identifier">transferFeeType</td><td class="td-type">string</td><td class="td-remark">@mock=BALANCE</td></tr><tr class="tr-level-2"><td class="td-name">---转入社区id</td><td class="td-identifier">communityIdIn</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---金额</td><td class="td-identifier">transferAmount</td><td class="td-type">number</td><td class="td-remark">@mock=2</td></tr><tr class="tr-level-1"><td class="td-name">transfer_type</td><td class="td-identifier">transferType</td><td class="td-type">string</td><td class="td-remark">@mock=TRANSFER_COMMUNITY</td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark">@mock=12218</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;申请详情接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/transfer/view</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">申请id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---申请备注</td><td class="td-identifier">applyMemo</td><td class="td-type">string</td><td class="td-remark">@mock=2131</td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---申请状态</td><td class="td-identifier">transferStatus</td><td class="td-type">string</td><td class="td-remark">@mock=TRANSFER_DONE</td></tr><tr class="tr-level-2"><td class="td-name">---客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark">@mock=12218</td></tr><tr class="tr-level-2"><td class="td-name">---退回原因</td><td class="td-identifier">refundMemo</td><td class="td-type">string</td><td class="td-remark">@mock=21312</td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=1530074023000</td></tr><tr class="tr-level-2"><td class="td-name">---主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-2"><td class="td-name">---操作人id</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=15001</td></tr><tr class="tr-level-2"><td class="td-name">---客户名称</td><td class="td-identifier">customerName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---转移类型</td><td class="td-identifier">transferType</td><td class="td-type">string</td><td class="td-remark">@mock=TRANSFER_COMMUNITY</td></tr><tr class="tr-level-2"><td class="td-name">---申请编号</td><td class="td-identifier">applyNo</td><td class="td-type">string</td><td class="td-remark">@mock=2121312</td></tr><tr class="tr-level-2"><td class="td-name">---城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---申请人</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=15001</td></tr><tr class="tr-level-2"><td class="td-name">---操作时间</td><td class="td-identifier">utime</td><td class="td-type">number</td><td class="td-remark">@mock=1530079151000</td></tr><tr class="tr-level-2"><td class="td-name">---操作人</td><td class="td-identifier">operaterUserName</td><td class="td-type">string</td><td class="td-remark">@mock=阿道夫</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">detailList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------转入社区名称</td><td class="td-identifier">communityIdInName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-3"><td class="td-name">------转出社区</td><td class="td-identifier">communityIdOut</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------申请表主键id</td><td class="td-identifier">applyId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------转出社区名称</td><td class="td-identifier">communityIdOutName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-3"><td class="td-name">------金额</td><td class="td-identifier">transferAmount</td><td class="td-type">number</td><td class="td-remark">@mock=2</td></tr><tr class="tr-level-3"><td class="td-name">------转入社区</td><td class="td-identifier">communityIdIn</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------操作款项</td><td class="td-identifier">feeType</td><td class="td-type">string</td><td class="td-remark">@mock=BALANCE</td></tr><tr class="tr-level-3"><td class="td-name">------操作款项名称</td><td class="td-identifier">transferFeeTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=余额</td></tr><tr class="tr-level-1"><td class="td-name">操作记录</td><td class="td-identifier">logList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">utime</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">remark</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">remark</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">applyId</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">operater</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">operaterUserName</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;操作款项以及转移最大金额</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-pay-web/transfer/max-amount-fee</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">申请的id，新建的时候传递null，编辑的时候传递值</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最大操作金额</td><td class="td-identifier">maxAmount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---操作款项</td><td class="td-identifier">feeType</td><td class="td-type">string</td><td class="td-remark">BALANCE(&quot;余额&quot;, 1),     DEPOSIT(&quot;可用服务保证金&quot;, 3),     GUARDCARDDEPOSIT(&quot;门禁卡押金&quot;,14),     FROZEN_DEPOSIT(&quot;冻结服务保证金&quot;, 4),     KEYDOORDEPOSIT(&quot;推柜门钥匙押金&quot;,54),     LEASEHOLDDEPOSIT(&quot;场地租赁押金&quot;, 57),     REGISTEREDEPOSIT(&quot;注册地址押金&quot;, 58);</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;获取可转社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/transfer/getTransferCmts</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">businessEnd</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;19:00&#39;,&#39;undefined&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(88,1)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">code</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;HZWT&#39;,&#39;BJHH&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">status</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;OPEN&#39;,&#39;WAIT&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;浙江省杭州市万塘路262号万塘汇南楼5层&#39;,&#39;北京市朝阳区建国路108号海航实业大厦8、9层&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">deleted</td><td class="td-type">boolean</td><td class="td-remark">@mock=$order(false,false)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">utime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1524813318000,1527063711000)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">businessBegin</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;10:00&#39;,&#39;undefined&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(6,168)</td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;万塘汇社区&#39;,&#39;建国路社区&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1476928800000,1502677030000)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">openDate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1479441600000,1517457600000)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;删除</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/transfer/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">申请id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.9&nbsp;申请中的余额</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-pay-web/transfer/applying-total-amount</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;全局枚举接口</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;操作款项</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>api/krspace-sso-web/sys/enmu</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">enmuKey</td><td class="td-type">string</td><td class="td-remark">com.krspace.pay.api.enums.wallet.TransferFeeType</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;申请状态</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/krspace-sso-web/sys/enmu</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">enmuKey</td><td class="td-type"></td><td class="td-remark">com.krspace.pay.api.enums.wallet.TransferStatus</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.3&nbsp;转移操作类型</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>api/krspace-sso-web/sys/enmu</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">enmuKey</td><td class="td-type"></td><td class="td-remark">com.krspace.pay.api.enums.wallet.TransferType</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

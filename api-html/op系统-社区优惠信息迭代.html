@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;社区优惠</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;社区现有优惠列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;社区现有优惠列表</div>
+                            <h3>URL</h3>
+
+                            <div>api/krspace-op-web/cmt-sale-tactics/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=20</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=4</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|4</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;东风北桥社区&#39;,&#39;东风北桥社区&#39;,&#39;东风北桥社区&#39;,&#39;东风北桥社区&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1524041453000,1524041472000,1524041501000,1524041528000)</td></tr><tr class="tr-level-3"><td class="td-name">------策略描述</td><td class="td-identifier">tacticsName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;折扣（7.0折）&#39;,&#39;折扣（5.0折）&#39;,&#39;免租期（后免-满6减1）&#39;,&#39;免租期（后免-满12减2）&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------&quot;折扣&quot; : &quot;免租“</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;折扣&#39;,&#39;折扣&#39;,&#39;免租&#39;,&#39;免租&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------创建人</td><td class="td-identifier">username</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;陈振江&#39;,&#39;陈振江&#39;,&#39;陈振江&#39;,&#39;陈振江&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------免租开始时间</td><td class="td-identifier">validStart</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1514736000000,1514736000000,1514736000000,1514736000000)</td></tr><tr class="tr-level-3"><td class="td-name">------优惠主键iid</td><td class="td-identifier">tacticsId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(19,1,13,12)</td></tr><tr class="tr-level-3"><td class="td-name">------免租结束时间</td><td class="td-identifier">validEnd</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1546185600000,1546185600000,1546185600000,1546185600000)</td></tr><tr class="tr-level-3"><td class="td-name">------策略描述</td><td class="td-identifier">descName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;折扣（7.0折）&#39;,&#39;折扣（5.0折）&#39;,&#39;免租期（后免-满6减1）&#39;,&#39;免租期（后免-满12减2）&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------1折扣 2免租期（前免） 3 免租期（后免）</td><td class="td-identifier">tacticsType</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1,3,3)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;社区折扣配置</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;停用</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/cmt/discount/stop</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">配置id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;分页查询</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/cmt/discount/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">状态</td><td class="td-identifier">statusList</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">状态值数组（0：未开始，1：生效中，2：已失效）</td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">isStop</td><td class="td-type">boolean</td><td class="td-remark">@mock=true</td></tr><tr class="tr-level-3"><td class="td-name">------有效期开始</td><td class="td-identifier">startDate</td><td class="td-type">number</td><td class="td-remark">@mock=1532880000000</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------优惠方案</td><td class="td-identifier">discountScheme</td><td class="td-type">string</td><td class="td-remark">@mock=最低null折</td></tr><tr class="tr-level-3"><td class="td-name">------商品信息</td><td class="td-identifier">goodsInfo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-3"><td class="td-name">------创建人</td><td class="td-identifier">createrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------商品</td><td class="td-identifier">goods</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-3"><td class="td-name">------折扣方案</td><td class="td-identifier">schemeTypeName</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------权限</td><td class="td-identifier">rightContent</td><td class="td-type">string</td><td class="td-remark">@mock=总部管理人员(2) 
+</td></tr><tr class="tr-level-3"><td class="td-name">------有效期结束</td><td class="td-identifier">endDate</td><td class="td-type">number</td><td class="td-remark">@mock=1532880000000</td></tr><tr class="tr-level-3"><td class="td-name">------优惠类型</td><td class="td-identifier">discountTypeName</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------状态</td><td class="td-identifier">statusName</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">discountType</td><td class="td-type">string</td><td class="td-remark">@mock=DISCOUNT</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">rightDetail</td><td class="td-type">string</td><td class="td-remark">@mock=[{&quot;discount&quot;:2,&quot;right&quot;:1}]</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=20</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.3&nbsp;添加配置</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/cmt/discount/add</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">rightDetail</td><td class="td-type">string</td><td class="td-remark">折扣{&quot;HQ_MANAGER&quot;:1,&quot;AREA_MANAGER&quot;:1} 满减[&quot;HQ_MANAGER&quot;,&quot;AREA_MANAGER&quot;,&quot;CUSTOMER_MANAGER&quot;,&quot;CUSTOMER_EXECUTIVE&quot;]</td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">结束时间</td><td class="td-identifier">endDate</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">优惠类型</td><td class="td-identifier">discountType</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商品</td><td class="td-identifier">goods</td><td class="td-type">string</td><td class="td-remark">[{&quot;seatId&quot;:1,&quot;seatType&quot;:&quot;OPEN&quot;}]</td></tr><tr class="tr-level-1"><td class="td-name">备注</td><td class="td-identifier">remark</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">赠送</td><td class="td-identifier">present</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">满值</td><td class="td-identifier">target</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">折扣方案</td><td class="td-identifier">schemeType</td><td class="td-type">string</td><td class="td-remark">COMMUNITY(&quot;全社区&quot;, 1), 	GOODS(&quot;按商品&quot;, 2);</td></tr><tr class="tr-level-1"><td class="td-name">开始时间</td><td class="td-identifier">startDate</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.4&nbsp;按级别获取权限类型</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/cmt/discount/rights</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=$order(&#39;CUSTOMER_EXECUTIVE&#39;,&#39;AREA_MANAGER&#39;,&#39;CUSTOMER_MANAGER&#39;,&#39;HQ_MANAGER&#39;)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.5&nbsp;查看商品</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/goods/discount-goods-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">商品信息</td><td class="td-identifier">goodsInfo</td><td class="td-type">string</td><td class="td-remark">[{&quot;goodsId&quot;:1,&quot;goodsType&quot;:&quot;SPACE&quot;},{&quot;goodsId&quot;:2,&quot;goodsType&quot;:&quot;OPEN&quot;}]</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

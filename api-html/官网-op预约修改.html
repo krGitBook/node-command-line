@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;某页面</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;预约列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">创建结束时间</td><td class="td-identifier">cEndTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">预约结束时间</td><td class="td-identifier">endAppiontTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">手机</td><td class="td-identifier">mobile</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">开始预约时间</td><td class="td-identifier">startAppiontTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">创建开始时间</td><td class="td-identifier">cStartTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">一级来源类型</td><td class="td-identifier">channelType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">二级来源id</td><td class="td-identifier">channelId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">某响应参数</td><td class="td-identifier">resParam</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|10</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;北京市&#39;,&#39;上海市&#39;,&#39;北京市&#39;,&#39;上海市&#39;,&#39;北京市&#39;,&#39;上海市&#39;,&#39;北京市&#39;,&#39;北京市&#39;,&#39;北京市&#39;,&#39;北京市&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------来源名称</td><td class="td-identifier">channelName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;今日头条-3&#39;,&#39;官网预约&#39;,&#39;今日头条-2&#39;,&#39;今日头条&#39;,&#39;官网预约&#39;,&#39;今日头条&#39;,&#39;官网预约&#39;,&#39;今日头条&#39;,&#39;官网预约&#39;,&#39;官网预约&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------优惠类型</td><td class="td-identifier">couponType</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;,&#39;RECORD&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------拜访人数</td><td class="td-identifier">visitNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------拜访类型名</td><td class="td-identifier">visitStatusStr</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;,&#39;未到访&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------备注</td><td class="td-identifier">remake</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------二级来源</td><td class="td-identifier">channelId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(65,15,64,9,15,9,15,9,15,15)</td></tr><tr class="tr-level-3"><td class="td-name">------拜访类型</td><td class="td-identifier">visitStatus</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;,&#39;UNVISIT&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------优惠类型名</td><td class="td-identifier">couponTypeStr</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;,&#39;无优惠&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(178,180,168,69,168,69,168,177,168,168)</td></tr><tr class="tr-level-3"><td class="td-name">------主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------推介人手机号</td><td class="td-identifier">refreeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------注册会员</td><td class="td-identifier">registeredMem</td><td class="td-type">string</td><td class="td-remark">是  ，否</td></tr><tr class="tr-level-3"><td class="td-name">------社区名</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;海峡国际社区&#39;,&#39;虹桥绿谷社区&#39;,&#39;建国路社区&#39;,&#39;愚园路社区&#39;,&#39;建国路社区&#39;,&#39;愚园路社区&#39;,&#39;建国路社区&#39;,&#39;朝阳公园社区&#39;,&#39;建国路社区&#39;,&#39;建国路社区&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;今日头条3&#39;,&#39;段馨媞15618016727&#39;,&#39;今日头条2&#39;,&#39;今日头条15021977552&#39;,&#39;王&#39;,&#39;今日头条13818946863&#39;,&#39;客户fromA&#39;,&#39;今日头条13240373997&#39;,&#39;客户&#39;,&#39;客户&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------注册</td><td class="td-identifier">registeredMember</td><td class="td-type">boolean</td><td class="td-remark">true ，false</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">cTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1532429830000,1532429718000,1532429717000,1532429407000,1532429406000,1532429106000,1532429105000,1532428812000,1532428511000,1532428218000)</td></tr><tr class="tr-level-3"><td class="td-name">------手机号</td><td class="td-identifier">mobile</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;17741073456&#39;,&#39;15618016727&#39;,&#39;13910105735&#39;,&#39;15021977552&#39;,&#39;18827397571&#39;,&#39;13818946863&#39;,&#39;13552071197&#39;,&#39;13240373997&#39;,&#39;13916389709&#39;,&#39;13916389709&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------预约时间</td><td class="td-identifier">appiontTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1532361600000,,,,,,,,,)</td></tr><tr class="tr-level-3"><td class="td-name">------一级来源名称</td><td class="td-identifier">channelTypeStr</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;,&#39;线上渠道&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------推荐人姓名</td><td class="td-identifier">refreePhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------官网来源参数</td><td class="td-identifier">promoCode</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------一级来源</td><td class="td-identifier">channelType</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;,&#39;ONLINE&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=2878</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=28779</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=10</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;id查询详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/view</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---注册会员</td><td class="td-identifier">registeredMem</td><td class="td-type">string</td><td class="td-remark">@mock=否</td></tr><tr class="tr-level-2"><td class="td-name">---官网来源参数</td><td class="td-identifier">promoCode</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---优惠类型</td><td class="td-identifier">couponType</td><td class="td-type">boolean</td><td class="td-remark">@mock=RECORD</td></tr><tr class="tr-level-2"><td class="td-name">---手机</td><td class="td-identifier">mobile</td><td class="td-type">string</td><td class="td-remark">@mock=18502681656</td></tr><tr class="tr-level-2"><td class="td-name">---新名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=王女士</td></tr><tr class="tr-level-2"><td class="td-name">---渠道来源id</td><td class="td-identifier">channelTypeStr</td><td class="td-type">string</td><td class="td-remark">@mock=线上渠道</td></tr><tr class="tr-level-2"><td class="td-name">---城市名</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---拜访类型</td><td class="td-identifier">visitStatus</td><td class="td-type">string</td><td class="td-remark">@mock=UNVISIT</td></tr><tr class="tr-level-2"><td class="td-name">---推介人手机号</td><td class="td-identifier">refreePhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">cTime</td><td class="td-type">number</td><td class="td-remark">@mock=1511416680000</td></tr><tr class="tr-level-2"><td class="td-name">---渠道来源（一级来源）</td><td class="td-identifier">channelType</td><td class="td-type">string</td><td class="td-remark">@mock=ONLINE</td></tr><tr class="tr-level-2"><td class="td-name">---主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---推介人姓名</td><td class="td-identifier">refreeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---二级来源id</td><td class="td-identifier">channelId</td><td class="td-type">number</td><td class="td-remark">@mock=15</td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">@mock=53</td></tr><tr class="tr-level-2"><td class="td-name">---社区名</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=南京路社区</td></tr><tr class="tr-level-2"><td class="td-name">---注册会员字段</td><td class="td-identifier">registeredMember</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-2"><td class="td-name">---二级来源名</td><td class="td-identifier">channelName</td><td class="td-type">string</td><td class="td-remark">@mock=官网预约</td></tr><tr class="tr-level-2"><td class="td-name">---优惠名</td><td class="td-identifier">couponTypeStr</td><td class="td-type">string</td><td class="td-remark">@mock=无优惠</td></tr><tr class="tr-level-2"><td class="td-name">---城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---拜访名</td><td class="td-identifier">visitStatusStr</td><td class="td-type">string</td><td class="td-remark">@mock=未到访</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;一级渠道来源枚举</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/channleType</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---来源名</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">线上渠道&#39;,&#39;线下渠道&#39;</td></tr><tr class="tr-level-2"><td class="td-name">---值</td><td class="td-identifier">value</td><td class="td-type">string</td><td class="td-remark">ONLINE&#39;,&#39;OFFLINE&#39;</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;二级渠道来源</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/csrsource</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|42</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;直销客源&#39;,&#39;非预约客人&#39;,&#39;线上推荐&#39;,&#39;400热线&#39;,&#39;在线客服&#39;,&#39;微信公众号&#39;,&#39;活动客源&#39;,&#39;今日头条&#39;,&#39;户外广告&#39;,&#39;内部推荐&#39;,&#39;中介客源&#39;,&#39;邮件推广&#39;,&#39;官网预约&#39;,&#39;APP预约&#39;,&#39;外部推荐&#39;,&#39;微信推广&#39;,&#39;百度信息流&#39;,&#39;360推广&#39;,&#39;36氪&#39;,&#39;网易有道&#39;,&#39;集团大客户&#39;,&#39;自有渠道&#39;,&#39;市场推广&#39;,&#39;推荐计划&#39;,&#39;中介客源&#39;,&#39;smb直销客源&#39;,&#39;集团大客户直销客源&#39;,&#39;腾讯广点通&#39;,&#39;网易新闻&#39;,&#39;凤凰新闻&#39;,&#39;延安东路社区测试&#39;,&#39;蚂蚁顾问&#39;,&#39;中国写字楼网&#39;,&#39;京东房产&#39;,&#39;蘑菇租房&#39;,&#39;诸葛找房&#39;,&#39;神马搜索&#39;,&#39;内容营销&#39;,&#39;搜狗搜索&#39;,&#39;线上活动&#39;,&#39;今日头条-2&#39;,&#39;今日头条-3&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">value</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,2,4,5,6,7,8,9,10,11,12,13,15,16,18,35,36,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65)</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;拜访枚举</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/visitstatus</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">value</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;UNVISIT&#39;,&#39;VISIT&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;未到访&#39;,&#39;已到访&#39;)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;新增</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/save</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">官网来源</td><td class="td-identifier">promoCode</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">推荐人手机号</td><td class="td-identifier">refreePhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">拜访人数</td><td class="td-identifier">visitNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">预约时间</td><td class="td-identifier">appiontTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">电话</td><td class="td-identifier">mobile</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">拜访类型</td><td class="td-identifier">visitStatus</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">推介人姓名</td><td class="td-identifier">refreeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">一级来源渠道</td><td class="td-identifier">channelType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">备注</td><td class="td-identifier">remake</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">二级来源id</td><td class="td-identifier">channelId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;获取城市</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/getcity</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|12</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;北京市&#39;,&#39;杭州市&#39;,&#39;成都市&#39;,&#39;南京市&#39;,&#39;上海市&#39;,&#39;深圳市&#39;,&#39;苏州市&#39;,&#39;天津市&#39;,&#39;武汉市&#39;,&#39;广州市&#39;,&#39;厦门市&#39;,&#39;合肥市&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">value</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,88,238,75,74,200,79,2,170,198,116,99)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;获取社区</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/getcmt</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|17</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;创业大街社区&#39;,&#39;彩和坊社区&#39;,&#39;浦项中心社区&#39;,&#39;东风北桥社区&#39;,&#39;时趣互动&#39;,&#39;学而思&#39;,&#39;慈云寺社区&#39;,&#39;新东方&#39;,&#39;大望路社区&#39;,&#39;建国路社区&#39;,&#39;朝阳门社区&#39;,&#39;大都会社区&#39;,&#39;朝阳公园社区&#39;,&#39;海峡国际社区&#39;,&#39;王府井社区&#39;,&#39;氪星总部&#39;,&#39;国贸社区&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">value</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,2,3,4,43,54,64,65,166,168,175,176,177,178,179,183,199)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.9&nbsp;删除</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.10&nbsp;下载导入文件</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/download-excel</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.11&nbsp;导入</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/impot</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">file</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.12&nbsp;导出</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/order/csr-clue/export</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

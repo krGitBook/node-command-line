@@ -1,0 +1,600 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;设备管理</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;设备管理</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;门禁列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-devices</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">某请求参数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">connected</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容m808</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">doorType</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容27f8</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">connected</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">categoryId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">doorTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1u79</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">connectAt</td><td class="td-type">number</td><td class="td-remark">@mock=64823</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容18yf</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容mv5q</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=70154</td></tr><tr class="tr-level-2"><td class="td-name">---客户名称</td><td class="td-identifier">customerName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;查看</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">memo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">qrExpireAt</td><td class="td-type">number</td><td class="td-remark">@mock=64234</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容37q9</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">v</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1325</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容m1mk</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">doorTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容30m8</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">driverV</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容6256</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">doorType</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1h47</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">connectAt</td><td class="td-type">number</td><td class="td-remark">@mock=61272</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=23110</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">categoryId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">connected</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">utime</td><td class="td-type">number</td><td class="td-remark">@mock=13435</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容14b4</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">ip</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容0c7p</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">categoryName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8n75</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">qrImgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容n2q2</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">customerName</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;编辑</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">门类型</td><td class="td-identifier">doorType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">编号</td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">memo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;新增</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">门类型</td><td class="td-identifier">doorType</td><td class="td-type">string</td><td class="td-remark">必填</td></tr><tr class="tr-level-1"><td class="td-name">硬件编号</td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark">必填，长度40以内</td></tr><tr class="tr-level-1"><td class="td-name">编号</td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">memo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;发现设备</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/discovery</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">limit</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">ip</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">上一次返回数据的硬件编号</td><td class="td-identifier">lastHardwareNo</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">固件版本</td><td class="td-identifier">driverV</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">ip</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">app版本</td><td class="td-identifier">v</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">deviceMark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;注册设备</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/register</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">硬件编号</td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark">必填，长度40以内</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;删除</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">门禁列表主键</td><td class="td-identifier">id</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;删除注册设备</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/discovery</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">门禁设备硬件编号</td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.9&nbsp;自动发现状态</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/auto-discover</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">true 自动发现</td><td class="td-identifier">autoDiscover</td><td class="td-type">boolean</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.10&nbsp;自动发现状态-变更</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/auto-discover</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">true 自动发现</td><td class="td-identifier">autoDiscover</td><td class="td-type">boolean</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;开门记录</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;开门记录</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-open-logs</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">userName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">openAt</td><td class="td-type">number</td><td class="td-remark">@mock=58727</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">openType</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容tmbz</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">doorId</td><td class="td-type">number</td><td class="td-remark">@mock=13040</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">userName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容6g64</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容y5dm</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">phone</td><td class="td-type">number</td><td class="td-remark">@mock=67757</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容455j</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">success</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容q1i2</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容17g4</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=13114</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">openTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容o1v2</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">uid</td><td class="td-type">number</td><td class="td-remark">@mock=58467</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">subtitle</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容r8y8</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.3&nbsp;故障报警</h2>
+                                            <div class="action">
+                            <h3>1.3.1&nbsp;列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/device-logs</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">报警类型</td><td class="td-identifier">type</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">endDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">startDate</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=15</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1442231</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=96149</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">items|15</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---硬件编号</td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;882c1ee9581700000000&#39;,&#39;882c1ee9581700000000&#39;,&#39;881c1e97189700000000&#39;,&#39;882c1ee9581700000000&#39;,&#39;882c9f78582700000000&#39;,&#39;881c1e97189700000000&#39;,&#39;882c9f46b8a700000000&#39;,&#39;881c1e97189700000000&#39;,&#39;882c1ee9581700000000&#39;,&#39;881c1e97189700000000&#39;,&#39;882c1ee9581700000000&#39;,&#39;882c1ee9581700000000&#39;,&#39;880c1e27095700000000&#39;,&#39;882c1ee9581700000000&#39;,&#39;882c1f89071700000000&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">level</td><td class="td-type">number</td><td class="td-remark">@mock=$order(60,60,60,60,60,60,60,60,60,60,60,60,60,60,60)</td></tr><tr class="tr-level-2"><td class="td-name">---报警内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&quot;com.krsp174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiExcepe\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:204)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:204)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:204)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:204)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;,&#39;&quot;com.krspace.ctrl.local.LocalApiException: java.util.concurrent.TimeoutException\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:162)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendToDriver(LocalDeviceApi.java:138)\n\tat com.krspace.ctrl.local.LocalDeviceApi.executeAsList(LocalDeviceApi.java:316)\n\tat com.krspace.ctrl.local.LocalDeviceApi.doSetAirCondOnOff(LocalDeviceApi.java:233)\n\tat com.krspace.ctrl.local.LocalDeviceApi.setAirCondOnOff(LocalDeviceApi.java:225)\n\tat com.krspace.ctrl.biz.DeviceBiz.setAirConditionOnOff(DeviceBiz.java:74)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.doOnOff(GlobalAirConditionBiz.java:187)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.checkAutoOnOff(GlobalAirConditionBiz.java:214)\n\tat com.krspace.ctrl.biz.GlobalAirConditionBiz.fireNewestDetectedTemp(GlobalAirConditionBiz.java:301)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateHumitureIf(DeviceChangeBiz.java:200)\n\tat com.krspace.ctrl.biz.DeviceChangeBiz.updateDeviceIf(DeviceChangeBiz.java:73)\n\tat com.krspace.ctrl.local.DefaultDeviceListener.onDeviceChanged(DefaultDeviceListener.java:52)\n\tat com.krspace.ctrl.local.LocalSocketAcceptor$DefaultDataListener.onData(LocalSocketAcceptor.java:65)\n\tat sdxa.com.libvdoorapiutils.Dispatcher$1.run(Dispatcher.java:40)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)\n\tat java.lang.Thread.run(Thread.java:841)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.util.concurrent.FutureTask.get(FutureTask.java:176)\n\tat com.krspace.ctrl.local.LocalDeviceApi.send(LocalDeviceApi.java:174)\n\tat com.krspace.ctrl.local.LocalDeviceApi.sendWithRetry(LocalDeviceApi.java:151)\n\t... 16 more\n&quot;&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---报警类型</td><td class="td-identifier">type</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;,&#39;API_ERROR&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---报警时间</td><td class="td-identifier">time</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1536314089000,1536314083000,1536314062000,1536314061000,1536314056000,1536314056000,1536314050000,1536314046000,1536314045000,1536314036000,1536314024000,1536314018000,1536314016000,1536314013000,1536314008000)</td></tr><tr class="tr-level-2"><td class="td-name">---类型名称</td><td class="td-identifier">typeName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;,&#39;api出错&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1536314096000,1536314090000,1536314069000,1536314069000,1536314064000,1536314063000,1536314056000,1536314053000,1536314052000,1536314043000,1536314031000,1536314026000,1536314032000,1536314020000,1536314011000)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1502512,1502511,1502509,1502510,1502508,1502507,1502506,1502505,1502504,1502503,1502501,1502500,1502502,1502499,1502497)</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.4&nbsp;升级管理</h2>
+                                            <div class="action">
+                            <h3>1.4.1&nbsp;列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/upgrade-packages</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">升级包类型</td><td class="td-identifier">pkgType</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---升级包类型名称</td><td class="td-identifier">pkgTypeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pkgType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---升级包地址</td><td class="td-identifier">url</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=70154</td></tr><tr class="tr-level-2"><td class="td-name">---版本编码</td><td class="td-identifier">vCode</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---版本号</td><td class="td-identifier">version</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.2&nbsp;新增升级包</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/upgrade-package</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pkgType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">vCode</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">version</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">url</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.3&nbsp;删除</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/upgrade-package</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.4&nbsp;升级动作</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/upgrade-package/upgrade</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">升级包id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">升级执行时间</td><td class="td-identifier">upgradeAt</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.5&nbsp;设备控制</h2>
+                                            <div class="action">
+                            <h3>1.5.1&nbsp;开门</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/open</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.2&nbsp;刷新屏幕</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/refresh-screen</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.3&nbsp;同步口令</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/sync-token</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.4&nbsp;断开重连</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/disconnect</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.5&nbsp;获取口令吗</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/get-token</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">token</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.6&nbsp;设置开门延时</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/set-lock-delay</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">seconds</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.7&nbsp;重启app</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/reboot-app</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.8&nbsp;查看设备缓存</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/device-caches</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">lastCardNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">limit</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">holder</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">startAt</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.9&nbsp;重启os</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/reboot-os</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.10&nbsp;恢复出厂设置</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/factory-reset</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.11&nbsp;清空设备缓存</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/device-caches</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.12&nbsp;获取httptoken</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/http-token</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">httpToken</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.13&nbsp;获取管理员密码</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/admin-pwds</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">adminPwd</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.14&nbsp;升级</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/actions/upgrade</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">升级包id</td><td class="td-identifier">pkgId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.15&nbsp;编辑硬件编号</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/nop/door-device/hardware-no</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">doorId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.16&nbsp;升级包下拉</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>/nop/upgrade-package/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">vCode</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pkgTypeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">version</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.17&nbsp;查看设备缓存v2</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>/nop/v2/door-device/device-caches</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">hardwareNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">lastId</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">limit</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">holder</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">缓存序列号，需要展示</td><td class="td-identifier">seqNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">startAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

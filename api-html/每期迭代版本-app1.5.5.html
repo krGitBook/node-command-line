@@ -1,0 +1,971 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;后台</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;活动</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;创建活动(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/create</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:全国    0：社区</td><td class="td-identifier">type</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最大参加人数（无限制则不传）</td><td class="td-identifier">maxPerson</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">开始时间 yyyy-mm-dd  hh:mm:ss</td><td class="td-identifier">begin_time</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">结束时间 yyyy-mm-dd  hh:mm:ss</td><td class="td-identifier">end_time</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:置顶  0：不置顶</td><td class="td-identifier">stick</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">活动封面图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">主办方</td><td class="td-identifier">sponsor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">举办地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">富文本内容</td><td class="td-identifier">richText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id(如果是全国的则不传)</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">参加活动需要的金额（0为免费）</td><td class="td-identifier">cost</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">活动标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功   -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;编辑活动(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/edit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">富文本内容</td><td class="td-identifier">richText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">主办方</td><td class="td-identifier">sponsor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最大参加人数（无限制则不传）</td><td class="td-identifier">maxPerson</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id(如果是全国的则不传)</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">参加活动需要的金额（0为免费）</td><td class="td-identifier">cost</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:置顶 0：不置顶</td><td class="td-identifier">stick</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:全国    0：社区</td><td class="td-identifier">type</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">开始时间 yyyy-mm-dd hh:mm:ss</td><td class="td-identifier">begin_time</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">活动封面图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">举办地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">结束时间 yyyy-mm-dd  hh:mm:ss</td><td class="td-identifier">end_time</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;查看 活动详情（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最大人数（如果为0 则是无人数限制）</td><td class="td-identifier">maxPerson</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动封面图片url</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---结束时间</td><td class="td-identifier">end_time</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---参加所需费用（如果为0则是免费）</td><td class="td-identifier">cost</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名称（如果是全国活动则展示 全国）</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---富文本内容</td><td class="td-identifier">richText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:置顶 0：不置顶</td><td class="td-identifier">stick</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已发布  0：未发布</td><td class="td-identifier">published</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---开始时间</td><td class="td-identifier">begin_time</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---主办方</td><td class="td-identifier">sponsor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:全国    0：社区</td><td class="td-identifier">type</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---举办地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;查看 活动分页(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/activity-page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">当前页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容m78m</td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=45370</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=24634</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1：已发布  0：未发布</td><td class="td-identifier">published</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人名称</td><td class="td-identifier">createrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动所需费用</td><td class="td-identifier">cost</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------主办方</td><td class="td-identifier">sponsor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动起止时间</td><td class="td-identifier">during</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---当前页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=48432</td></tr><tr class="tr-level-2"><td class="td-name">---总记录数</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=66527</td></tr><tr class="tr-level-2"><td class="td-name">---总页数</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;删除活动(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;发布活动(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/publish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;查看报名列表（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/actor-page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">当前页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总页数</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---总记录数（总报名人数）</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=66527</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容wbcf</td></tr><tr class="tr-level-3"><td class="td-name">------电话</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark">@mock=50536</td></tr><tr class="tr-level-3"><td class="td-name">------时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=测试内容ewit</td></tr><tr class="tr-level-3"><td class="td-name">------姓名</td><td class="td-identifier">userName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容68ox</td></tr><tr class="tr-level-2"><td class="td-name">---当前页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=48432</td></tr><tr class="tr-level-2"><td class="td-name">---分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=24634</td></tr><tr class="tr-level-1"><td class="td-name">1 成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=45370</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容m78m</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;获取是否有全国 活动的权限(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/findCmtRight</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:有 全国权限 0：无全国权限</td><td class="td-identifier">hasRight</td><td class="td-type">number</td><td class="td-remark">@mock=74150</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容ncps</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=84054</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.9&nbsp;通过社区id 查询社区地址(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/activity/management/findCmtAddress</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;app banner  轮播 后台</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;创建广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/create</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">排序号（整数）</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">描述</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;删除广告（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.3&nbsp;发布广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/publish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.4&nbsp;查看分页(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">请求页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容m78m</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=24634</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=66527</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=48432</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容umv6</td></tr><tr class="tr-level-3"><td class="td-name">------备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已发布  0：未发布</td><td class="td-identifier">published</td><td class="td-type">number</td><td class="td-remark">@mock=测试内容p885</td></tr><tr class="tr-level-3"><td class="td-name">------广告id</td><td class="td-identifier">id</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容v5wt</td></tr><tr class="tr-level-3"><td class="td-name">------创建人名称</td><td class="td-identifier">creater</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容sah5</td></tr><tr class="tr-level-3"><td class="td-name">------排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark">@mock=76554</td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7mh8</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=45370</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.5&nbsp;查看详情(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---跳转地址</td><td class="td-identifier">target_url</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已发布  0：未发布</td><td class="td-identifier">published</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建人名称</td><td class="td-identifier">creater</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功    -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.6&nbsp;编辑广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/edit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">排序号</td><td class="td-identifier">orderNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.7&nbsp;下架广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/banner/unpublish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.3&nbsp;app启动轮播 后台</h2>
+                                            <div class="action">
+                            <h3>1.3.1&nbsp;创建广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/create</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.2&nbsp;删除广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.3&nbsp;发布广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/publish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">要发布的广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.4&nbsp;查看分页(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">请求页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=45370</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=48432</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已发布  0：未发布</td><td class="td-identifier">published</td><td class="td-type">number</td><td class="td-remark">@mock=测试内容p885</td></tr><tr class="tr-level-3"><td class="td-name">------图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容umv6</td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7mh8</td></tr><tr class="tr-level-3"><td class="td-name">------广告id</td><td class="td-identifier">id</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容v5wt</td></tr><tr class="tr-level-3"><td class="td-name">------点击量</td><td class="td-identifier">hits(新增)</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建人名称</td><td class="td-identifier">creater</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容sah5</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=24634</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=66527</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容m78m</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.5&nbsp;编辑广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/edit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.6&nbsp;查看详情(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功    -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---跳转地址</td><td class="td-identifier">target_url</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建人名称</td><td class="td-identifier">creater</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已发布  0：未发布</td><td class="td-identifier">published</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.7&nbsp;下架广告(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/advertising/boot/unpublish</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">要发布的广告id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.4&nbsp;app 问题反馈</h2>
+                                            <div class="action">
+                            <h3>1.4.1&nbsp;分页</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/app/question/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">当前页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=44138</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=51656</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=65433</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已处理  0：未处理</td><td class="td-identifier">handled</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会员名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3yl</td></tr><tr class="tr-level-3"><td class="td-name">------问题id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=35358</td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4872</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容rj58</td></tr><tr class="tr-level-3"><td class="td-name">------手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1js1</td></tr><tr class="tr-level-3"><td class="td-name">------问题描述</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7677</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.2&nbsp;处理问题</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/app/question/handle</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">处理结果描述</td><td class="td-identifier">resultDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">反馈问题id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1 成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.3&nbsp;查看详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/app/question/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">问题iid</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---问题id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---描述</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---处理结果描述</td><td class="td-identifier">resultDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---处理时间</td><td class="td-identifier">handleTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1：已处理  0：未处理</td><td class="td-identifier">handled</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---提交人名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---处理人名称</td><td class="td-identifier">handler</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1 成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.5&nbsp;社区 问题</h2>
+                                            <div class="action">
+                            <h3>1.5.1&nbsp;分页获取支持列表(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/op/community/question/get-question-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=65433</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=51656</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=44138</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已处理  0：未处理</td><td class="td-identifier">handled</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------问题id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=35358</td></tr><tr class="tr-level-3"><td class="td-name">------问题描述</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7677</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容rj58</td></tr><tr class="tr-level-3"><td class="td-name">------会员名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i3yl</td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4872</td></tr><tr class="tr-level-3"><td class="td-name">------手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1js1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.2&nbsp;处理问题(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/op/community/question/handle</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">处理结果描述</td><td class="td-identifier">resultDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">反馈问题id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1 成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.5.3&nbsp;查看详情(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-finance-web/op/community/question/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">问题iid</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---问题id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---处理时间</td><td class="td-identifier">handleTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---描述</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1：已处理  0：未处理</td><td class="td-identifier">handled</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---处理结果描述</td><td class="td-identifier">resultDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---提交人名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---处理人名称</td><td class="td-identifier">handler</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1 成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+            <div class="module">
+            <h1>2&nbsp;app</h1>
+                            <div class="page">
+                    <h2>2.1&nbsp;活动</h2>
+                                            <div class="action">
+                            <h3>2.1.1&nbsp;首页（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/trends-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">activityInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论数</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:报名中  2：进行中  3：已结束</td><td class="td-identifier">activityStatus</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动费用（&quot;&quot;的话就是免费）</td><td class="td-identifier">cost</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞数</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动封面图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已赞 0，未赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">reserveInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">bookingDate</td><td class="td-type">number</td><td class="td-remark">@mock=86130</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">reserveId</td><td class="td-type">number</td><td class="td-remark">@mock=20552</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">picList</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=$order(&#39;string1&#39;,&#39;string2&#39;,&#39;string3&#39;,&#39;string4&#39;,&#39;string5&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容h4qr</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">useStatus</td><td class="td-type">number</td><td class="td-remark">@mock=67242</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">beginTime</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容6vrt</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容9m1p</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">dayOfWeek</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容79t6</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">todayTomorrow</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容375v</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">reserveStatus</td><td class="td-type">number</td><td class="td-remark">@mock=84851</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">spaceName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容nb7e</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">topicInfo</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">topicId</td><td class="td-type">number</td><td class="td-remark">@mock=60680</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容73n6</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3qev</td></tr><tr class="tr-level-3"><td class="td-name">------1:已关注 0：未关注(新增)</td><td class="td-identifier">followed</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark">@mock=32015</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容145x</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容wv22</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">job</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容sl4s</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">tip</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容52pk</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">topicDate</td><td class="td-type">number</td><td class="td-remark">@mock=22680</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark">@mock=42806</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">topicContent</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容36j2</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark">@mock=71725</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">imgUrl</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=$order(&#39;string1&#39;,&#39;string2&#39;,&#39;string3&#39;,&#39;string4&#39;,&#39;string5&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">noticeInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">noticeTitle</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容t8b2</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">replyNum</td><td class="td-type">number</td><td class="td-remark">@mock=38335</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">noticeText</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容5n5c</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cDate</td><td class="td-type">number</td><td class="td-remark">@mock=46005</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">noticeId</td><td class="td-type">number</td><td class="td-remark">@mock=35612</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=35374</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8sg0</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.2&nbsp;社群首页（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/news-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id(全部 不传或者传0)</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">城市id(0或null就加载所有城市)</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1:成功  -1失败</td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">topicInfo</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论数目</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------帖子id</td><td class="td-identifier">topicId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------动态内容</td><td class="td-identifier">topicContent</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已关注 0：未关注</td><td class="td-identifier">followed</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------动态图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人名称</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------赞数目</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布时间（毫秒值）</td><td class="td-identifier">topicDate</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人职位</td><td class="td-identifier">job</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已赞 0，未赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">banners</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址（可能为空）   如果跳转内部地址则格式为krspace://activity?id=xxx</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">activities</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面活动图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞数</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:报名中  2：进行中  3：已结束</td><td class="td-identifier">activityStatus</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动费用（“”的话就是免费）</td><td class="td-identifier">cost</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论数</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.3&nbsp;活动列表（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/activity/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">城市id(0或null就加载所有城市)</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id(0或null就加载所有社区)</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">搜索条件</td><td class="td-identifier">searchStr</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">eg.yyyy-MM-dd</td><td class="td-identifier">activityDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">分页大小（可以不传）</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最后一个活动的id(首次加载船0或者不传)</td><td class="td-identifier">lastActivityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">activities</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------封面活动图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论数</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1：置顶    0：不置顶</td><td class="td-identifier">stick</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动费用（“”的话就是免费）</td><td class="td-identifier">cost</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:报名中 2：进行中 3：已结束</td><td class="td-identifier">activityStatus</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:已赞 0，未赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞数</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人名称</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------发布人会员id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.4&nbsp;活动详情(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/activity/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功  -1失败    2已删除</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动详情</td><td class="td-identifier">richText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:报名中 2：进行中 3：已结束</td><td class="td-identifier">activityStatus</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---点赞数</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已赞 0，未赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:已报名  0：未报名</td><td class="td-identifier">joined</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---发布人名称</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---评论数</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最大人数（0则无人数限制）</td><td class="td-identifier">maxPerson</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---发布人会员id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---点赞人名称列表</td><td class="td-identifier">tiperNames</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动费用（“”的话就是免费）</td><td class="td-identifier">cost</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---已报名参加的人</td><td class="td-identifier">joinPersons</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------头像url</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---主办方名称</td><td class="td-identifier">sponsor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---已报名人数</td><td class="td-identifier">joinedNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---封面活动图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---发布人头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.5&nbsp;报名活动(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/activity/join</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1报名成功  -1失败</td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.6&nbsp;取消报名(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/activity/cancel</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1取消成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.7&nbsp;报名的活动列表(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/activity/join-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小（默认10可以不传）</td><td class="td-identifier">pageSize</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最后一个活动的id(首次加载船0或者不传)</td><td class="td-identifier">lastActivityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">activities</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark">@mock=27807</td></tr><tr class="tr-level-3"><td class="td-name">------活动标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1r81</td></tr><tr class="tr-level-3"><td class="td-name">------活动图片</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1ta5</td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">number</td><td class="td-remark">@mock=86756</td></tr><tr class="tr-level-3"><td class="td-name">------活动地点</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1:报名中 2：进行中 3：已结束</td><td class="td-identifier">activityStatus</td><td class="td-type">number</td><td class="td-remark">@mock=10252</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=14435</td></tr><tr class="tr-level-3"><td class="td-name">------参加人名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------报名时间</td><td class="td-identifier">joinTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=17352</td></tr><tr class="tr-level-3"><td class="td-name">------验证手机号</td><td class="td-identifier">mbrPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------活动费用（“”的话就是免费）</td><td class="td-identifier">cost</td><td class="td-type">string</td><td class="td-remark">@mock=85063</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容14l5</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=16470</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.8&nbsp;为活动点赞(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/activity/toggle-tip</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">活动id</td><td class="td-identifier">activityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.1.9&nbsp;关闭 首页 公告或者预定信息 不再提醒(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/msg/close</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">NOTICE：公告 MRO：会议室预定   ACTIVITY:活动</td><td class="td-identifier">msgType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公告id 或者 预定id</td><td class="td-identifier">targetId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.2&nbsp;评论</h2>
+                                            <div class="action">
+                            <h3>2.2.1&nbsp;回复评论（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/reply/answer</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">回复内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">回复所在评论id</td><td class="td-identifier">replyId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">回复id(如果点击一级评论的回复则不传)</td><td class="td-identifier">answerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">被回复人id(如果没有可不传或为0)</td><td class="td-identifier">rMbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---被回复人id（可能不存在）</td><td class="td-identifier">rMbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---回复人名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---回复人id</td><td class="td-identifier">mbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---回复内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---回复id</td><td class="td-identifier">answerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---被回复人名称（可能不存在）</td><td class="td-identifier">rMbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---回复时间（毫秒值）</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.2&nbsp;删除回复评论(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/reply/answer/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">回复id</td><td class="td-identifier">answerId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.3&nbsp;评论列表（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/reply/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">最后一条评论id(首次不传 或者传0)</td><td class="td-identifier">lastReplyId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">（枚举常量）帖子:TOPIC 公告:NOTICE    活动：ACTIVITY</td><td class="td-identifier">replyType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">每页加载条数（默认15）</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">动态 或者 公告id</td><td class="td-identifier">targetId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">replies</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论内容</td><td class="td-identifier">replyContent</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容i548</td></tr><tr class="tr-level-3"><td class="td-name">------评论人id</td><td class="td-identifier">replyerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------回复评论</td><td class="td-identifier">answers</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------回复人名称</td><td class="td-identifier">mbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------回复时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------被回复人id</td><td class="td-identifier">rMbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------被回复人名称</td><td class="td-identifier">rMbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------回复人id</td><td class="td-identifier">mbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------回复内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------回复id</td><td class="td-identifier">answerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论id</td><td class="td-identifier">replyId</td><td class="td-type">number</td><td class="td-remark">@mock=74847</td></tr><tr class="tr-level-3"><td class="td-name">------赞数量</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark">@mock=51411</td></tr><tr class="tr-level-3"><td class="td-name">------评论人名称</td><td class="td-identifier">replyerName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容31j7</td></tr><tr class="tr-level-3"><td class="td-name">------评论人头像</td><td class="td-identifier">replyerAvatar</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容jdvu</td></tr><tr class="tr-level-3"><td class="td-name">------评论时间</td><td class="td-identifier">replyDate</td><td class="td-type">number</td><td class="td-remark">@mock=71500</td></tr><tr class="tr-level-3"><td class="td-name">------是否已赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark">@mock=60054</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.4&nbsp;写评论(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/reply/create-reply</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">评论 帖子id  或者公告id 或者活动id</td><td class="td-identifier">targetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">评论内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">（枚举常量）帖子:TOPIC   公告:NOTICE  活动：ACTIVITY</td><td class="td-identifier">replyType</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=83430</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---评论时间</td><td class="td-identifier">replyDate</td><td class="td-type">number</td><td class="td-remark">@mock=84188</td></tr><tr class="tr-level-2"><td class="td-name">---评论人id</td><td class="td-identifier">replyerId</td><td class="td-type">number</td><td class="td-remark">@mock=77203</td></tr><tr class="tr-level-2"><td class="td-name">---是否已赞1:已赞   0，未赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---评论id</td><td class="td-identifier">replyId</td><td class="td-type">number</td><td class="td-remark">@mock=44134</td></tr><tr class="tr-level-2"><td class="td-name">---赞数</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark">@mock=16322</td></tr><tr class="tr-level-2"><td class="td-name">---评论内容</td><td class="td-identifier">replyContent</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1k33</td></tr><tr class="tr-level-2"><td class="td-name">---评论人名称</td><td class="td-identifier">replyerName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容f805</td></tr><tr class="tr-level-2"><td class="td-name">---评论人头像</td><td class="td-identifier">replyerAvatar</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容5319</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容wbo8</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.5&nbsp;举报评论（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/reply/complain</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">评论id</td><td class="td-identifier">replyId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">违规类型(类型id) 1：广告 2：色情 3：反动</td><td class="td-identifier">warnType</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.2.6&nbsp;举报评论  回复(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/reply/answer/complain</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">回复id</td><td class="td-identifier">answerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">违规类型(类型id) 1：广告 2：色情 3：反动</td><td class="td-identifier">warnType</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.3&nbsp;配置</h2>
+                                            <div class="action">
+                            <h3>2.3.1&nbsp;启动配置（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/common/config</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容fp4b</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---（新增）</td><td class="td-identifier">bootAds</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------跳转地址</td><td class="td-identifier">targetUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---当前app版本(新增)</td><td class="td-identifier">currVersion</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">configParams</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">maxMeetingOrderTime</td><td class="td-type">number</td><td class="td-remark">@mock=88181</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">path</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">communityHome</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容81w7</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">support</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容20f2</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">communityList</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容z629</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">myWorkmate</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8y8a</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">communityGuide</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8643</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">qrcodeOpenDoor</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容54sf</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">switch</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cluster</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容2hc6</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=36170</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.3.2&nbsp;登录(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>http://i.krspace.cn/api/krspace-gateway-wap/mobile/common/login</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">phone</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">user</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.4&nbsp;个人</h2>
+                                            <div class="action">
+                            <h3>2.4.1&nbsp;用户配置（获取  赞数 和 评论数）(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/user-config</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最新关注数</td><td class="td-identifier">followNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最新评论总数</td><td class="td-identifier">replyNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最新会议室预定数</td><td class="td-identifier">meetingNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---更新时间（毫秒值）</td><td class="td-identifier">updateTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客数</td><td class="td-identifier">visiterNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---最新赞总数</td><td class="td-identifier">tipNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---活动数</td><td class="td-identifier">activityNum</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.2&nbsp;收到的评论列表(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/reply-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最后一条评论动态日志的id(不传加载第一页)</td><td class="td-identifier">lastDynamicLogId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=86311</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容2r4q</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论人头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------收到的    评论id  或者  回复id</td><td class="td-identifier">actId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论来源    动态 ，活动，公告</td><td class="td-identifier">source</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------NOTICE:公告   ACTIVITY:活动     TOPIC:动态</td><td class="td-identifier">sourceType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=85137</td></tr><tr class="tr-level-4"><td class="td-name">---------文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容2e3w</td></tr><tr class="tr-level-4"><td class="td-name">---------创建人名称</td><td class="td-identifier">souceMbrName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容sm4t</td></tr><tr class="tr-level-4"><td class="td-name">---------创建人会员id</td><td class="td-identifier">sourceMbrId</td><td class="td-type">number</td><td class="td-remark">@mock=81553</td></tr><tr class="tr-level-4"><td class="td-name">---------公告 活动  或者动态 id</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------图片地址（可为空）</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容bfw3</td></tr><tr class="tr-level-3"><td class="td-name">------被回复人名称（自己）（只有是评论回复时有）</td><td class="td-identifier">rAuthorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=25322</td></tr><tr class="tr-level-3"><td class="td-name">------评论人id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark">@mock=61653</td></tr><tr class="tr-level-3"><td class="td-name">------评论内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------被回复人id(自己)（只有是评论回复时有）</td><td class="td-identifier">rAuthorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------(只有回复评论有这一级)  回复所属评论内容</td><td class="td-identifier">target</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=16653</td></tr><tr class="tr-level-4"><td class="td-name">---------创建人会员id</td><td class="td-identifier">targetMbrId</td><td class="td-type">number</td><td class="td-remark">@mock=17400</td></tr><tr class="tr-level-4"><td class="td-name">---------ANSWER:回复     REPLY:评论</td><td class="td-identifier">targetType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建人名称</td><td class="td-identifier">targetMbrName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容81k3</td></tr><tr class="tr-level-4"><td class="td-name">---------评论id(一定是一级评论id)</td><td class="td-identifier">pTargetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容f217</td></tr><tr class="tr-level-4"><td class="td-name">---------被评论的 评论id（或者回复id）</td><td class="td-identifier">targetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------动态日志id</td><td class="td-identifier">dynamicLogId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论人名称</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7sgv</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.3&nbsp;收到的赞列表(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/tip-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">最后一条评论动态日志的id(不传加载第一页)</td><td class="td-identifier">lastDynamicLogId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------(只有点赞来源是评论有这一级)点赞的 评论</td><td class="td-identifier">target</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------被赞的 评论id</td><td class="td-identifier">targetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------ANSWER:回复 REPLY:评论</td><td class="td-identifier">targetType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------作者会员id</td><td class="td-identifier">targetMbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------评论id(一定是一级评论id)</td><td class="td-identifier">pTargetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------作者名称</td><td class="td-identifier">targetMbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------动态日志id</td><td class="td-identifier">dynamicLogId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞人名称</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞人头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------收到的 评论id 或者 回复id</td><td class="td-identifier">actId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------来源   动态 ，活动</td><td class="td-identifier">source</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------图片地址</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------ACTIVITY:活动     TOPIC:动态</td><td class="td-identifier">sourceType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------作者名称</td><td class="td-identifier">souceMbrName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------公告 活动  或者动态 id</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------作者会员id</td><td class="td-identifier">sourceMbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞人id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.4&nbsp;发出的评论(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/own-reply-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最后一条评论动态日志的id(不传加载第一页)</td><td class="td-identifier">lastDynamicLogId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=86311</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论人id（自己）</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark">@mock=61653</td></tr><tr class="tr-level-3"><td class="td-name">------被回复人id（只有是评论回复时有）</td><td class="td-identifier">rAuthorId</td><td class="td-type">number</td><td class="td-remark">@mock=51126</td></tr><tr class="tr-level-3"><td class="td-name">------动态、公告、活动</td><td class="td-identifier">source</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------NOTICE:公告   ACTIVITY:活动     TOPIC:动态</td><td class="td-identifier">sourceType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建人会员id</td><td class="td-identifier">sourceMbrId</td><td class="td-type">number</td><td class="td-remark">@mock=81553</td></tr><tr class="tr-level-4"><td class="td-name">---------文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容2e3w</td></tr><tr class="tr-level-4"><td class="td-name">---------图片地址（可为空）</td><td class="td-identifier">imgUrl</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容bfw3</td></tr><tr class="tr-level-4"><td class="td-name">---------创建人名称</td><td class="td-identifier">souceMbrName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容sm4t</td></tr><tr class="tr-level-4"><td class="td-name">---------公告 活动  或者动态 id</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=85137</td></tr><tr class="tr-level-3"><td class="td-name">------评论时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=25322</td></tr><tr class="tr-level-3"><td class="td-name">------评论人头像（自己）</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容686l</td></tr><tr class="tr-level-3"><td class="td-name">------被回复人名称（只有是评论回复时有）</td><td class="td-identifier">rAuthorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容n28c</td></tr><tr class="tr-level-3"><td class="td-name">------动态日志id</td><td class="td-identifier">dynamicLogId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------收到的 评论id 或者 回复id</td><td class="td-identifier">actId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------被评论的评论（只有是评论回复时有）</td><td class="td-identifier">target</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------评论id(一定是一级评论id)</td><td class="td-identifier">pTargetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=16653</td></tr><tr class="tr-level-4"><td class="td-name">---------ANSWER:回复 REPLY:评论</td><td class="td-identifier">targetType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建人会员id</td><td class="td-identifier">targetMbrId</td><td class="td-type">number</td><td class="td-remark">@mock=17400</td></tr><tr class="tr-level-4"><td class="td-name">---------文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容f217</td></tr><tr class="tr-level-4"><td class="td-name">---------被评论的 评论id</td><td class="td-identifier">targetId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建人名称</td><td class="td-identifier">targetMbrName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容81k3</td></tr><tr class="tr-level-3"><td class="td-name">------评论人名称（自己）</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7sgv</td></tr><tr class="tr-level-3"><td class="td-name">------评论内容</td><td class="td-identifier">content</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容2r4q</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.5&nbsp;新建意见反馈(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/suggestion</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">图片数组</td><td class="td-identifier">imgUrl</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">文本内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1 成功  -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.6&nbsp;关于氪空间（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/common/description</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功   -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.7&nbsp;我的预约列表（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/visiter-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功   -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------预约时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------1：过期    0：未过期</td><td class="td-identifier">expired</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区地址</td><td class="td-identifier">address</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------到访时间</td><td class="td-identifier">visiteTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------到访人手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------到访人 名称</td><td class="td-identifier">visiter</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.8&nbsp;关注列表(当前人所关注的人)(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/follow-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">上划传最后关注人id,（首次不传）</td><td class="td-identifier">lastAuthorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">加载条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">查看会员id(查看自己的可以不传)</td><td class="td-identifier">mbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=43164</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容t9h6</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------被关注人id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark">@mock=42783</td></tr><tr class="tr-level-3"><td class="td-name">------关注人名称</td><td class="td-identifier">author</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------关注者头像url</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容9228</td></tr><tr class="tr-level-3"><td class="td-name">------公司</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容sw71</td></tr><tr class="tr-level-3"><td class="td-name">------职位</td><td class="td-identifier">jobTitle</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容f626</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.4.9&nbsp;粉丝列表(关注当前用户的人列表)(OK)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/follower-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">上划传最后被关注人id,（首次不传）</td><td class="td-identifier">lastAuthorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">要查看人的会员id(查看自己可以不传)</td><td class="td-identifier">mbrId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">加载条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------关注人名称</td><td class="td-identifier">author</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------关注人id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark">@mock=52570</td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4v7l</td></tr><tr class="tr-level-3"><td class="td-name">------头像url</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容vk42</td></tr><tr class="tr-level-3"><td class="td-name">------职位类型</td><td class="td-identifier">jobTitle</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容b2f3</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3325</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=30521</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.5&nbsp;动态</h2>
+                                            <div class="action">
+                            <h3>2.5.1&nbsp;动态列表（OK）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/topic/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id(0或null就加载所有社区)</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">城市id(0或null就加载所有城市)</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">展示类型 全部：ALL 关注：FOLLOWED 社区：CMT</td><td class="td-identifier">showType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">分页大小</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">最后一个帖子id（下拉刷新 传0或者不传）</td><td class="td-identifier">lastTopicId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=33242</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---1:显示加关注 0：不是关注的人（该状态下所有人帖子作者都可以关注，仅限关注列表使用）</td><td class="td-identifier">isFollowed</td><td class="td-type">number</td><td class="td-remark">该字段 从1.5.1 以后干掉</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建人id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark">@mock=20667</td></tr><tr class="tr-level-3"><td class="td-name">------动态id</td><td class="td-identifier">topicId</td><td class="td-type">number</td><td class="td-remark">@mock=51757</td></tr><tr class="tr-level-3"><td class="td-name">------动态内容</td><td class="td-identifier">topicContent</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容artt</td></tr><tr class="tr-level-3"><td class="td-name">------创建人名称</td><td class="td-identifier">authorName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容8qsc</td></tr><tr class="tr-level-3"><td class="td-name">------动态 图片</td><td class="td-identifier">imgUrl</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=$order(&#39;https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1653122332,3032669135&fm=26&gp=0.jpg&#39;,&#39;http://img.mp.itc.cn/upload/20160624/68b4c4e042fe4872838d6071b05a4f55.jpg&#39;,&#39;http://img.mp.itc.cn/upload/20160624/e9227c81482446eea9baec3317fa21f9_th.jpg&#39;,&#39;https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=927322227,3913220731&fm=26&gp=0.jpg&#39;,&#39;https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495602498055&di=0f9fc68d96ad4130214eab090146d2c7&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D415c5d80a28b87d65017a31b3238040e%2Ffd039245d688d43f75d47e437e1ed21b0ef43b06.jpg&#39;,&#39;https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=438425398,2704458272&fm=26&gp=0.jpg&#39;,&#39;https://b-ssl.duitang.com/uploads/item/201407/27/20140727202737_sZLAX.jpeg&#39;,&#39;https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/5fdf8db1cb1349540c1f444a544e9258d1094a9e.jpg&#39;,&#39;https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1495593031&di=f3b9c683bf9a2b4e92221b6f48bc9f52&src=http://www.3dmgame.com/uploads/allimg/170508/153_170508135910_1.jpg&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容o5r6</td></tr><tr class="tr-level-3"><td class="td-name">------赞数</td><td class="td-identifier">tipCount</td><td class="td-type">number</td><td class="td-remark">@mock=48513</td></tr><tr class="tr-level-3"><td class="td-name">------创建人头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark">@mock=https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495614616187&di=1cc9c39d9106b3a352a8e5afdafb8097&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fpic%2F201606%2F29%2F19%2F35%2F5773b2826bfc6955.jpg%2521600x600.jpg</td></tr><tr class="tr-level-3"><td class="td-name">------1:已关注 0：未关注</td><td class="td-identifier">followed</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1ku6</td></tr><tr class="tr-level-3"><td class="td-name">------评论数</td><td class="td-identifier">replyCount</td><td class="td-type">number</td><td class="td-remark">@mock=70684</td></tr><tr class="tr-level-3"><td class="td-name">------1:已赞 0，未赞</td><td class="td-identifier">tip</td><td class="td-type">number</td><td class="td-remark">@mock=62257</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">topicDate</td><td class="td-type">number</td><td class="td-remark">@mock=1495601753838</td></tr><tr class="tr-level-3"><td class="td-name">------职位名称</td><td class="td-identifier">job</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容u78f</td></tr><tr class="tr-level-2"><td class="td-name">---1:是推荐内容  0：不是推荐内容</td><td class="td-identifier">recommended</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容x4x4</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>2.5.2&nbsp;关注   取消关注</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-gateway-wap/mobile/account/follow</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">会员id</td><td class="td-identifier">authorId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1:关注   0：取关</td><td class="td-identifier">followed</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---粉丝数</td><td class="td-identifier">followCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功 -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">后台反馈信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>2.6&nbsp;极光自定义消息推送</h2>
+                                            <div class="action">
+                            <h3>2.6.1&nbsp;消息推送</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div></div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">extras</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---MEETINGROOM:会议室通知   UPDATETR：用户评论数和点赞数消息:ADS:广告推送</td><td class="td-identifier">type</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---预定通知</td><td class="td-identifier">param</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------通知标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------通知内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------预定id</td><td class="td-identifier">reserveId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---更新赞和评论通知</td><td class="td-identifier">updateTR</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------点赞数</td><td class="td-identifier">tipNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------更新时间（毫秒值）</td><td class="td-identifier">updateTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------评论数</td><td class="td-identifier">replyNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---广告</td><td class="td-identifier">ads</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------请求地址</td><td class="td-identifier">url</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------内容</td><td class="td-identifier">content</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

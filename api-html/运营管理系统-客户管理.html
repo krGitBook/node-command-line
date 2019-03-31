@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;客户管理重构</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;客户管理</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;新增&编辑数据准备</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/data-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---拜访方式</td><td class="td-identifier">visitTypeList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">@{mock}=[ { &quot;label&quot;: &quot;qwerrtt&quot;,&quot;value&quot;:1 }, { &quot;label&quot;: &quot;asdffgg&quot;,&quot;value&quot;:2 }, { &quot;label&quot;: &quot;trtyutu&quot;,&quot;value&quot;:3 }, { &quot;label&quot;: &quot;ghjghjjjgj&quot;,&quot;value&quot;:4 }, { &quot;label&quot;: &quot;tyutrtrtrt&quot;,&quot;value&quot;:5 } ]</td></tr><tr class="tr-level-2"><td class="td-name">---客户分类</td><td class="td-identifier">levelList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">@{mock}=[ { &quot;label&quot;: &quot;qwerrtt&quot;,&quot;value&quot;:1 }, { &quot;label&quot;: &quot;asdffgg&quot;,&quot;value&quot;:2 }, { &quot;label&quot;: &quot;trtyutu&quot;,&quot;value&quot;:3 }, { &quot;label&quot;: &quot;ghjghjjjgj&quot;,&quot;value&quot;:4 }, { &quot;label&quot;: &quot;tyutrtrtrt&quot;,&quot;value&quot;:5 } ]</td></tr><tr class="tr-level-2"><td class="td-name">---放弃原因</td><td class="td-identifier">giveupList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">@{mock}=[ { &quot;label&quot;: &quot;qwerrtt&quot;,&quot;value&quot;:1 }, { &quot;label&quot;: &quot;asdffgg&quot;,&quot;value&quot;:2 }, { &quot;label&quot;: &quot;trtyutu&quot;,&quot;value&quot;:3 }, { &quot;label&quot;: &quot;ghjghjjjgj&quot;,&quot;value&quot;:4 }, { &quot;label&quot;: &quot;tyutrtrtrt&quot;,&quot;value&quot;:5 } ]</td></tr><tr class="tr-level-2"><td class="td-name">---投资轮次</td><td class="td-identifier">roundList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">@{mock}=[ { &quot;label&quot;: &quot;qwerrtt&quot;,&quot;value&quot;:1 }, { &quot;label&quot;: &quot;asdffgg&quot;,&quot;value&quot;:2 }, { &quot;label&quot;: &quot;trtyutu&quot;,&quot;value&quot;:3 }, { &quot;label&quot;: &quot;ghjghjjjgj&quot;,&quot;value&quot;:4 }, { &quot;label&quot;: &quot;tyutrtrtrt&quot;,&quot;value&quot;:5 } ]</td></tr><tr class="tr-level-2"><td class="td-name">---意向工位类型</td><td class="td-identifier">stationTypeList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">@{mock}=[ { &quot;label&quot;: &quot;qwerrtt&quot;,&quot;value&quot;:1 }, { &quot;label&quot;: &quot;asdffgg&quot;,&quot;value&quot;:2 }, { &quot;label&quot;: &quot;trtyutu&quot;,&quot;value&quot;:3 }, { &quot;label&quot;: &quot;ghjghjjjgj&quot;,&quot;value&quot;:4 }, { &quot;label&quot;: &quot;tyutrtrtrt&quot;,&quot;value&quot;:5 } ]</td></tr><tr class="tr-level-2"><td class="td-name">---意向入驻社区</td><td class="td-identifier">communityBaselist|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------主键</td><td class="td-identifier">value|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------代码名称</td><td class="td-identifier">label|1-10</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;★&quot;</td></tr><tr class="tr-level-2"><td class="td-name">---客户来源</td><td class="td-identifier">customerSourceList|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------主键</td><td class="td-identifier">value|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------代码名称</td><td class="td-identifier">label|1-10</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;★&quot;</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;新增或编辑客户</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/edit</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">详细地址</td><td class="td-identifier">detailAddress</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公司规模</td><td class="td-identifier">teamNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公司简介</td><td class="td-identifier">companyIntroduce</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系人微信</td><td class="td-identifier">wechat</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">联系人邮箱</td><td class="td-identifier">mail</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">融资金额</td><td class="td-identifier">amount</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">联系人电话</td><td class="td-identifier">tel</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">意向工位价格</td><td class="td-identifier">staionPrice</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">预计入驻时间</td><td class="td-identifier">inTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">意向工位类型ID</td><td class="td-identifier">staionTypeId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">投资轮次ID</td><td class="td-identifier">roundId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">意向工位个数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">到期时间</td><td class="td-identifier">deadline</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">操作类型</td><td class="td-identifier">operType</td><td class="td-type">string</td><td class="td-remark">标注操作类型：SHARE.招商线索，PERSON.个人客户</td></tr><tr class="tr-level-1"><td class="td-name">联系人姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">是否已有办公室</td><td class="td-identifier">hasOffice</td><td class="td-type">string</td><td class="td-remark">YES（有）、NO（无）</td></tr><tr class="tr-level-1"><td class="td-name">客户来源id</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">客户主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">介绍人电话</td><td class="td-identifier">recommendTel</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">所属区县ID</td><td class="td-identifier">distinctId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">意向入驻社区ID</td><td class="td-identifier">intentionCommunityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">项目名称</td><td class="td-identifier">projectName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">介绍人姓名</td><td class="td-identifier">recommendName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公司网址</td><td class="td-identifier">website</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">项目类型ID</td><td class="td-identifier">projectCategoryId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark">null</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;2根据客户获取订单列表-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/orders</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|4</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------已回款额</td><td class="td-identifier">contractBackamount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------回款数</td><td class="td-identifier">flowConunt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------独立空间数个数</td><td class="td-identifier">spaceNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------入驻日期</td><td class="td-identifier">ucontractEntrydate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------合同数</td><td class="td-identifier">contractSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单名称</td><td class="td-identifier">mainbillname</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单总额</td><td class="td-identifier">contractTotalamount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------删除按钮是否显示</td><td class="td-identifier">deleteButton</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------总的工位个数</td><td class="td-identifier">stationnum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------所在社区</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------未回款额</td><td class="td-identifier">unBackamount</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------离开日期</td><td class="td-identifier">ucontractLeavedate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单类型</td><td class="td-identifier">mainBillTypeDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------工位个数</td><td class="td-identifier">onlyStationNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---是否显示新建订单按钮</td><td class="td-identifier">hasOrderRight</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;获取项目类型树</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/krspace_operate_web/codecategory/actions/get-project-types</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---项目类型</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------代码名称</td><td class="td-identifier">codeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------子分类数组</td><td class="td-identifier">children</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">类似items</td></tr><tr class="tr-level-4"><td class="td-name">---------父分类ID</td><td class="td-identifier">pid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------代码名称</td><td class="td-identifier">codeName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------子分类数组</td><td class="td-identifier">children</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------父分类ID</td><td class="td-identifier">pid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;新增拜访记录</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/visit-log/actions/add</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户分类id</td><td class="td-identifier">levelId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">拜访客户ID</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">放弃原因ID</td><td class="td-identifier">reasonId</td><td class="td-type">number</td><td class="td-remark">若放弃跟进，则此必填</td></tr><tr class="tr-level-1"><td class="td-name">拜访时间</td><td class="td-identifier">visitTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">放弃原因其他</td><td class="td-identifier">reasonOther</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">沟通情况</td><td class="td-identifier">visitDetail</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系人</td><td class="td-identifier">linkName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">拜访记录备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">是否继续跟进</td><td class="td-identifier">isContinue</td><td class="td-type">string</td><td class="td-remark">NO（否）YES（是）</td></tr><tr class="tr-level-1"><td class="td-name">联系方式</td><td class="td-identifier">linkTel</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">拜访类型ID</td><td class="td-identifier">visitType</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark">null</td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;取消客户跟进</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/give-back</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">要取消跟进的客户</td><td class="td-identifier">ids</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark">null</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;客户转移</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/transfer</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">要转移的客户ID</td><td class="td-identifier">ids</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">操作类型</td><td class="td-identifier">operType</td><td class="td-type">string</td><td class="td-remark">PERSON(2,&quot;个人客户&quot;),SIGN(3,&quot;签约客户&quot;)</td></tr><tr class="tr-level-1"><td class="td-name">接收人</td><td class="td-identifier">receiveId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark">null</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;领取客户</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/receive</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">要领取的客户ID</td><td class="td-identifier">ids</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark">null</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.9&nbsp;获取客户详情接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/get-detail-info</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">操作类型</td><td class="td-identifier">operType</td><td class="td-type">string</td><td class="td-remark">标注操作类型：SHARE.招商线索，PERSON.个人客户，SIGN.签约客户</td></tr><tr class="tr-level-1"><td class="td-name">客户ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---到期时间</td><td class="td-identifier">deadline</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---投资轮次</td><td class="td-identifier">roundName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---介绍人姓名</td><td class="td-identifier">recommendName</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---客户来源</td><td class="td-identifier">sourceName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---公司简介</td><td class="td-identifier">companyIntroduce</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---公司网址</td><td class="td-identifier">website</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---是否显示编辑按钮</td><td class="td-identifier">showEdit</td><td class="td-type">string</td><td class="td-remark">true 或 false</td></tr><tr class="tr-level-2"><td class="td-name">---项目类型</td><td class="td-identifier">projectCategoryName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---拜访记录</td><td class="td-identifier">records|10</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------联系方式</td><td class="td-identifier">linkTel|11</td><td class="td-type">string</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------放弃原因其他</td><td class="td-identifier">reasonOther</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-3"><td class="td-name">------是否继续跟进</td><td class="td-identifier">isContinue|1</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;是&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------联系人</td><td class="td-identifier">linkName|3</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;0e&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------客户分类</td><td class="td-identifier">levelName|1-5</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;0e&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------拜访时间</td><td class="td-identifier">visitTime</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-3"><td class="td-name">------拜访类型</td><td class="td-identifier">visitTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------放弃原因</td><td class="td-identifier">reasonName|1-20</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;0e&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------沟通情况</td><td class="td-identifier">visitDetail</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---意向工位个数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---公司规模</td><td class="td-identifier">teamNum</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---意向入驻社区</td><td class="td-identifier">intentionCommunityName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---是否已有办公室</td><td class="td-identifier">hasOffice</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---介绍人电话</td><td class="td-identifier">recommendTel</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人邮箱</td><td class="td-identifier">mail</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---意向入驻城市</td><td class="td-identifier">intentionCityName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---项目名称</td><td class="td-identifier">projectName</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---融资金额</td><td class="td-identifier">amount</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人电话</td><td class="td-identifier">tel</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---详细地址</td><td class="td-identifier">detailAddress</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人微信</td><td class="td-identifier">wechat</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---意向工位价格</td><td class="td-identifier">staionPrice</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---预计入驻时间</td><td class="td-identifier">inTime</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---意向工位类型</td><td class="td-identifier">staionTypeName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---所属区县</td><td class="td-identifier">distinctName</td><td class="td-type">string</td><td class="td-remark">@mock=0</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.10&nbsp;获取客户编辑信息</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/get-edit-info</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---融资金额</td><td class="td-identifier">amount</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---公司简介</td><td class="td-identifier">companyIntroduce</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---介绍人姓名</td><td class="td-identifier">recommendName</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---项目分类名称</td><td class="td-identifier">projectCategoryName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---意向入驻社区</td><td class="td-identifier">intentionCommunityId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---意向工位价格</td><td class="td-identifier">staionPrice</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---是否已有办公室</td><td class="td-identifier">hasOffice</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---意向工位个数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---备注</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---客户来源</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---详细地址</td><td class="td-identifier">detailAddress</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人微信</td><td class="td-identifier">wechat</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---项目名称</td><td class="td-identifier">projectName</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---预计入驻时间</td><td class="td-identifier">inTime</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---意向入驻城市</td><td class="td-identifier">intentionCityId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---公司网址</td><td class="td-identifier">website</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---省份名称</td><td class="td-identifier">provinceName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---意向工位类型</td><td class="td-identifier">staiontypeId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---项目类型</td><td class="td-identifier">projectCategoryId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---区县名称</td><td class="td-identifier">countyName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---公司规模</td><td class="td-identifier">teamNum</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---投资轮次</td><td class="td-identifier">roundId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---介绍人电话</td><td class="td-identifier">recommendTel</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人电话</td><td class="td-identifier">tel</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---联系人邮箱</td><td class="td-identifier">mail</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---城市名称</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---到期时间</td><td class="td-identifier">deadline</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---所属区县</td><td class="td-identifier">distinctId</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.11&nbsp;招商线索列表-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>招商线索列表请求数据，查询数据接口</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/share-customers</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户来源</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">创建时间（结束）</td><td class="td-identifier">createEndDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">意向社区</td><td class="td-identifier">intentionCommunityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户分类</td><td class="td-identifier">levelId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">创建时间（开始）</td><td class="td-identifier">createStartDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">意向城市</td><td class="td-identifier">intentionCityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">当前页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|16</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------来源</td><td class="td-identifier">sourceName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------意向城市</td><td class="td-identifier">intentionCityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------领取人</td><td class="td-identifier">receiveName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户id</td><td class="td-identifier">id|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">createDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户分类</td><td class="td-identifier">levelName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------意向社区</td><td class="td-identifier">intentionCommunityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------意向工位数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总条数</td><td class="td-identifier">totalCount</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---当前页数</td><td class="td-identifier">page</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---每页条数</td><td class="td-identifier">pageSize</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.12&nbsp;订单删除-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/fina-contract-mainbill/actions/delete</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.13&nbsp;2签约客户列表-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>签约列表请求数据，查询数据接口</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/sign-customers</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">当前页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">所属城市</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">所属社区</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">订单类型</td><td class="td-identifier">mainBillType</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">签约时间（结束）</td><td class="td-identifier">signEndDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">签约时间（开始）</td><td class="td-identifier">signStartDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户创建时间</td><td class="td-identifier">createDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------未回款额</td><td class="td-identifier">unBackamount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单总额</td><td class="td-identifier">contractTotalamount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------签约城市</td><td class="td-identifier">signCityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单创建时间</td><td class="td-identifier">billCreateDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------已回款额</td><td class="td-identifier">contractBackamount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总条数</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---当前页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.14&nbsp;个人客户导出-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>招商线索列表请求数据，查询数据接口</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/personal-customers-export</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">意向社区</td><td class="td-identifier">intentionCommunityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">意向城市</td><td class="td-identifier">intentionCityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">客户分类</td><td class="td-identifier">levelId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">客户id数组</td><td class="td-identifier">customerIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">创建时间（开始）</td><td class="td-identifier">createStartDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">客户来源</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">创建时间（结束）</td><td class="td-identifier">createEndDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.15&nbsp;个人客户列表-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>个人客户列表导出</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/personal-customers</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">意向社区</td><td class="td-identifier">intentionCommunityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">创建时间（结束）</td><td class="td-identifier">createEndDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">客户来源</td><td class="td-identifier">sourceId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">当前页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户分类</td><td class="td-identifier">levelId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">创建时间（开始）</td><td class="td-identifier">createStartDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">意向城市</td><td class="td-identifier">intentionCityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------意向工位数</td><td class="td-identifier">stationNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------领取人</td><td class="td-identifier">receiveName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间</td><td class="td-identifier">createDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------来源</td><td class="td-identifier">sourceName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------意向城市</td><td class="td-identifier">intentionCityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户id</td><td class="td-identifier">id|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------意向社区</td><td class="td-identifier">intentionCommunityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户分类</td><td class="td-identifier">levelName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总条数</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---当前页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.16&nbsp;2签约客户列表导出-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>签约列表请求数据，查询数据接口</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/sign-customers-export</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">签约时间（结束）</td><td class="td-identifier">signEndDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">所属城市</td><td class="td-identifier">cityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">签约时间（开始）</td><td class="td-identifier">signStartDate</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">customerCompany</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">所属社区</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">订单类型</td><td class="td-identifier">mainBillType</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">客户id数组</td><td class="td-identifier">customerIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">非必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.17&nbsp;个人客户/招商线索查询条件-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/personal-customers/search-conditions</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">intentionCities|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名称</td><td class="td-identifier">label|1-10</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;★&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">value|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---客户来源list</td><td class="td-identifier">sourceIds|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户来源名称</td><td class="td-identifier">label|1-10</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;★&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------客户来源id</td><td class="td-identifier">value|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">levelIds|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户分类id</td><td class="td-identifier">value|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------客户分类名称</td><td class="td-identifier">label|1-10</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;★&quot;</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">intentionCommunities|5</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">label|1-10</td><td class="td-type">string</td><td class="td-remark">@mock=&quot;★&quot;</td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">value|+1</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.18&nbsp;2签约客户列表查询条件-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>签约列表请求 查询条件，查询条件数据接口</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/sign-customers/search-conditions</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---订单类型</td><td class="td-identifier">billTypes</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单类型id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------订单类型名称</td><td class="td-identifier">dicName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---所属社区</td><td class="td-identifier">communities</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">value</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---所属城市</td><td class="td-identifier">cities</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市名称</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">value</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.19&nbsp;校验客户公司名称</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/check/company</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">公司名称</td><td class="td-identifier">companyName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户主键</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.20&nbsp;获取招商人员列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div>负责人：莫圣葳</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/actions/get-receive-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">查询条件</td><td class="td-identifier">searchKey</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name">返回数据</td><td class="td-identifier">data|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---显示标签</td><td class="td-identifier">label</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;陈竹/chenzhenjiang@krspace.cn&#39;,&#39;陈知广/chenzhenjiang@krspace.cn&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---人员ID</td><td class="td-identifier">value</td><td class="td-type">number</td><td class="td-remark">@mock=$order(41,99)</td></tr><tr class="tr-level-1"><td class="td-name">返回信息</td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.21&nbsp;个人客户列表-获取客户数目-尚-</h3>
+
+                            <h3>Description</h3>
+
+                            <div>个人客户列表  个人已领取 客户数，个人可领取最大客户数</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/personal-customers/nums</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---个人可领取客户数</td><td class="td-identifier">personalMaxNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---个人已领取客户数</td><td class="td-identifier">personalNum</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.22&nbsp;2签约客户列表-新建订单-尚</h3>
+
+                            <h3>Description</h3>
+
+                            <div>签约列表新建订单获取所有客户</div>
+                            <h3>URL</h3>
+
+                            <div>/krspace-finance-web/customer/sign-customers-names</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">客户公司名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark">非必填</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------客户名称</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---总条数</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---当前页数</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

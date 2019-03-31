@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;前台</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;前台</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;会议室优惠卷和团体卡列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/kmorder/meeting/coupon-teamcard-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">会议室id</td><td class="td-identifier">meetingRoomId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">会议室开始时间</td><td class="td-identifier">beginTime</td><td class="td-type">string</td><td class="td-remark">yyyy-MM-dd hh:mm:ss</td></tr><tr class="tr-level-1"><td class="td-name">会议室结束时间</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark">yyyy-MM-dd hh:mm:ss</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">myCards</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------团体卡列表</td><td class="td-identifier">cards</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------卡号</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容1fon</td></tr><tr class="tr-level-4"><td class="td-name">---------有效时间</td><td class="td-identifier">effectAt</td><td class="td-type">number</td><td class="td-remark">@mock=25435</td></tr><tr class="tr-level-4"><td class="td-name">---------余额</td><td class="td-identifier">remainAmountDecimal</td><td class="td-type">number</td><td class="td-remark">@mock=60353</td></tr><tr class="tr-level-4"><td class="td-name">---------过期时间</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark">@mock=34288</td></tr><tr class="tr-level-3"><td class="td-name">------团体卡可用数量</td><td class="td-identifier">cardUsableCount</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">myCoupons</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">couponCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">first</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">coupons</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">quata</td><td class="td-type">number</td><td class="td-remark">@mock=71448</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark">@mock=30765</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">usable</td><td class="td-type">boolean</td><td class="td-remark">@mock=true</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">usageType</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容7wpf</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">conditionDesc</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容5h16</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">instructions</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容3jb8</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">amount</td><td class="td-type">number</td><td class="td-remark">@mock=80653</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">couponName</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4ve9</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">effectiveAt</td><td class="td-type">number</td><td class="td-remark">@mock=56257</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark">@mock=34131</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">ruleType</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4hni</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=34182</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容ii43</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;散座优惠卷和团体卡列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/kmorder/seat/coupon-teamcard-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">团体卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">散座id数组</td><td class="td-identifier">seatGoodIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">逗号分隔</td></tr><tr class="tr-level-1"><td class="td-name">购买数量</td><td class="td-identifier">quantity</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">优惠卷id</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">myCoupons</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">coupons</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------金额</td><td class="td-identifier">amount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">usageType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">couponName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">couponId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">quata</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">conditionDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">instructions</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">usable</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">effectiveAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">ruleType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">first</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------礼品卷可用数量</td><td class="td-identifier">couponCount</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">myCards</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------团体卡可用数量</td><td class="td-identifier">cardUsableCount</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------团体卡列表</td><td class="td-identifier">cards</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------卡号</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------余额</td><td class="td-identifier">remainAmountDecimal</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------有效时间</td><td class="td-identifier">effectAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------过期时间</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;微信授权手机号</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/krmting/wx/auth/bind-phone</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">加密数据</td><td class="td-identifier">encryptedData</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">iv</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;团体卡商品列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/kmteamcard/goods-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cardIntro</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;团体卡防守打法家居干扰就能发我爱哦静安寺of加涅啊我就能发惹你&#39;,&#39;产品技术部专用卡&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">faceValueDecimal</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1200,10000)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(5,3)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">quantityType</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;INF&#39;,&#39;LIMIT&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">salePriceDecimal</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,12000)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;180904001&#39;,&#39;180830001&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cardType</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;NORMAL&#39;,&#39;NORMAL&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">activeDuration</td><td class="td-type">number</td><td class="td-remark">@mock=$order(30,365)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">quantity</td><td class="td-type">number</td><td class="td-remark">@mock=$order(100,5)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">limitCount</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,20)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">published</td><td class="td-type">boolean</td><td class="td-remark">@mock=$order(true,true)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cardName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;丁卯测试&#39;,&#39;产品技术部&#39;)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;团队卡下单接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/kmteamcard/create-order</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">选择的商品id</td><td class="td-identifier">cardGoodsId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">口令</td><td class="td-identifier">phase</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=58713</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">orderNo</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">errMsg</td><td class="td-type">string</td><td class="td-remark">@mock=</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">success</td><td class="td-type">boolean</td><td class="td-remark">@mock=true</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">itemIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">retCode</td><td class="td-type">string</td><td class="td-remark">@mock=xx</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">wxPaySignInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">nonceStr</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容9i20</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">signType</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容vi2x</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">paySign</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容0q85</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">packages</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容iq6c</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">timestamp</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容o86v</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">orderId</td><td class="td-type">number</td><td class="td-remark">@mock=82045</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;我的团队卡</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;分享卡详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/sharedetail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---卡id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---结束日期</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark">@mock=1540310400000</td></tr><tr class="tr-level-2"><td class="td-name">---卡名</td><td class="td-identifier">cardName</td><td class="td-type">string</td><td class="td-remark">@mock=产品技术部</td></tr><tr class="tr-level-2"><td class="td-name">---面值</td><td class="td-identifier">faceValue</td><td class="td-type">number</td><td class="td-remark">@mock=8000</td></tr><tr class="tr-level-2"><td class="td-name">---生效日期</td><td class="td-identifier">effectAt</td><td class="td-type">number</td><td class="td-remark">@mock=1535817600000</td></tr><tr class="tr-level-2"><td class="td-name">---卡号</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark">@mock=123456</td></tr><tr class="tr-level-2"><td class="td-name">---拥有人姓名</td><td class="td-identifier">ownerName</td><td class="td-type">string</td><td class="td-remark">@mock=知己</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;分享团队卡数据</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/sharecard</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---卡名</td><td class="td-identifier">cardName</td><td class="td-type">string</td><td class="td-remark">@mock=产品技术部</td></tr><tr class="tr-level-2"><td class="td-name">---分享key</td><td class="td-identifier">shareKey</td><td class="td-type">string</td><td class="td-remark">@mock=teamCardShare120180904V0309s</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.3&nbsp;分享是否过期</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/overdue</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">shareKey</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.4&nbsp;删除持卡人</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/deleteholder</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">持卡人id</td><td class="td-identifier">holderIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">1，2，3</td></tr><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">carId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.5&nbsp;团队卡列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data|3</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---生效时间</td><td class="td-identifier">effectAt</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1535817600000,1535558400000,1533052800000)</td></tr><tr class="tr-level-2"><td class="td-name">---余额</td><td class="td-identifier">remainAmount</td><td class="td-type">number</td><td class="td-remark">@mock=$order(8000,0,1000)</td></tr><tr class="tr-level-2"><td class="td-name">---卡号</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;123456&#39;,&#39;123456789&#39;,&#39;147852&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---卡状态</td><td class="td-identifier">cardStatus</td><td class="td-type">string</td><td class="td-remark">&#39;HAS_USER&#39;,&#39;HAS_FINISH&#39;,&#39;HSA_EXPRIED&#39;（正使用，已用完，已过期）</td></tr><tr class="tr-level-2"><td class="td-name">---卡id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,4,5)</td></tr><tr class="tr-level-2"><td class="td-name">---卡名称</td><td class="td-identifier">cardName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;产品技术部&#39;,&#39;春天花花的团队卡&#39;,&#39;aaa团队&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---过期时间</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1540310400000,1538064000000,1535904000000)</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.6&nbsp;团队卡详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---卡id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---余额</td><td class="td-identifier">remainAmount</td><td class="td-type">number</td><td class="td-remark">@mock=8000</td></tr><tr class="tr-level-2"><td class="td-name">---卡号</td><td class="td-identifier">cardNo</td><td class="td-type">string</td><td class="td-remark">@mock=123456</td></tr><tr class="tr-level-2"><td class="td-name">---消费记录</td><td class="td-identifier">usetotal</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---过期时间</td><td class="td-identifier">expireAt</td><td class="td-type">number</td><td class="td-remark">@mock=1540310400000</td></tr><tr class="tr-level-2"><td class="td-name">---面值</td><td class="td-identifier">faceValue</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---卡名</td><td class="td-identifier">cardName</td><td class="td-type">string</td><td class="td-remark">@mock=产品技术部</td></tr><tr class="tr-level-2"><td class="td-name">---是否为管理员</td><td class="td-identifier">leader</td><td class="td-type">boolean</td><td class="td-remark">@mock=true</td></tr><tr class="tr-level-2"><td class="td-name">---用卡人数</td><td class="td-identifier">holderCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---变动提醒</td><td class="td-identifier">remind</td><td class="td-type">boolean</td><td class="td-remark">false true</td></tr><tr class="tr-level-2"><td class="td-name">---用卡人头像</td><td class="td-identifier">holderAvater</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---订单时间</td><td class="td-identifier">orderTIme</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---使用须知</td><td class="td-identifier">cardIntro</td><td class="td-type">string</td><td class="td-remark">@mock=产品技术部专用卡</td></tr><tr class="tr-level-2"><td class="td-name">---持卡人总数</td><td class="td-identifier">limitCount</td><td class="td-type">number</td><td class="td-remark">@mock=20</td></tr><tr class="tr-level-2"><td class="td-name">---最后下费时间</td><td class="td-identifier">lastUseTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---订单号</td><td class="td-identifier">orderNo</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---生效时间</td><td class="td-identifier">effectAt</td><td class="td-type">number</td><td class="td-remark">@mock=1535817600000</td></tr><tr class="tr-level-2"><td class="td-name">---实付金额</td><td class="td-identifier">cost</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.7&nbsp;消费记录</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/usedlist</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=5</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------使用状态字符</td><td class="td-identifier">useStatusStr</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------使用状态</td><td class="td-identifier">useStatus</td><td class="td-type">string</td><td class="td-remark">PAY</td></tr><tr class="tr-level-3"><td class="td-name">------金额</td><td class="td-identifier">amount</td><td class="td-type">number</td><td class="td-remark">@mock=1000</td></tr><tr class="tr-level-3"><td class="td-name">------订单号</td><td class="td-identifier">orderNo</td><td class="td-type">string</td><td class="td-remark">@mock=111111</td></tr><tr class="tr-level-3"><td class="td-name">------消费id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------昵称</td><td class="td-identifier">nickName</td><td class="td-type">string</td><td class="td-remark">@mock=战锋</td></tr><tr class="tr-level-3"><td class="td-name">------时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=1536032721000</td></tr><tr class="tr-level-3"><td class="td-name">------描述</td><td class="td-identifier">descr</td><td class="td-type">string</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------头像</td><td class="td-identifier">avatarUrl</td><td class="td-type">string</td><td class="td-remark">@mock=https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILJDiblfthGgYUukYga2ue3yjWcqRh4NHQldOWRysknb1Nic31NTP66GNy3f9JTSWRicUDl2x4mVEWA/132</td></tr><tr class="tr-level-3"><td class="td-name">------订单类型</td><td class="td-identifier">orderType</td><td class="td-type">string</td><td class="td-remark">@mock=KRM</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.8&nbsp;添加用卡人</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/addholder</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">string</td><td class="td-remark">团队卡已放入账户～</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.9&nbsp;用卡人管理列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/holderlist</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalPages</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---是否为管理员</td><td class="td-identifier">leader</td><td class="td-type">boolean</td><td class="td-remark">@mock=true</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">@mock=5</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark">@mock=4</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items|4</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1,1,1)</td></tr><tr class="tr-level-3"><td class="td-name">------是否为管理员</td><td class="td-identifier">leader</td><td class="td-type">boolean</td><td class="td-remark">@mock=$order(true,false,false,false)</td></tr><tr class="tr-level-3"><td class="td-name">------昵称</td><td class="td-identifier">nickName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;11&#39;,&#39;1&#39;,&#39;1&#39;,&#39;1&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------电话</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;15603825083&#39;,&#39;15603825083&#39;,&#39;15603825083&#39;,&#39;15603825083&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------头像</td><td class="td-identifier">avatarUrl</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;1&#39;,&#39;1&#39;,&#39;1&#39;,&#39;1&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1535954925000,,,)</td></tr><tr class="tr-level-3"><td class="td-name">------持卡人id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,2,3,4)</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.10&nbsp;修改余额变动提醒</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/changeremind</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">boolean</td><td class="td-remark">true</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.11&nbsp;修改团队卡名称</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/kmteamcard/teamcard/updatecardname</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">卡id</td><td class="td-identifier">cardId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">卡名称</td><td class="td-identifier">cardName</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">boolean</td><td class="td-remark">@mock=false</td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+            <div class="module">
+            <h1>2&nbsp;后台</h1>
+                    </div>
+    </div>
+</body>
+</html>

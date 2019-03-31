@@ -1,0 +1,583 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;APP</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;新建邀请函</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/invitation</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">非必填</td></tr><tr class="tr-level-1"><td class="td-name">被访人姓名</td><td class="td-identifier">invitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">事由</td><td class="td-identifier">invitationReason</td><td class="td-type">string</td><td class="td-remark">INTERVIEW(1, &quot;面试&quot;),     BUSINESS_TALK(2, &quot;商务会客&quot;),     VISIT_COMMUNITY(3, &quot;参观社区&quot;),     PRIVATE_VISIT(4, &quot;私人访问&quot;),     OTHERS(5, &quot;其他&quot;)</td></tr><tr class="tr-level-1"><td class="td-name">访客信息列表</td><td class="td-identifier">visitorList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客电话</td><td class="td-identifier">visitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客姓名</td><td class="td-identifier">visitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">被访人手机号</td><td class="td-identifier">invitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">团队ID</td><td class="td-identifier">teamId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">访客入场方式</td><td class="td-identifier">entranceType</td><td class="td-type">string</td><td class="td-remark">SIGN(1, &quot;访客签到我去接&quot;),     QR_CODE(2, &quot;访客自助扫码开门&quot;)</td></tr><tr class="tr-level-1"><td class="td-name">邀约方式枚举</td><td class="td-identifier">invitationType</td><td class="td-type">string</td><td class="td-remark">MESSAGE(1, &quot;短信&quot;),     WECHAT(2, &quot;微信&quot;)</td></tr><tr class="tr-level-1"><td class="td-name">楼层</td><td class="td-identifier">floor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">开始时间</td><td class="td-identifier">startTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">会员所属公司ID</td><td class="td-identifier">customerId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">被访人ID</td><td class="td-identifier">uid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">结束时间</td><td class="td-identifier">endTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=32056</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---小程序分享数据</td><td class="td-identifier">shareData</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------缩略图URL</td><td class="td-identifier">miniPicUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享图URL</td><td class="td-identifier">picUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------微信小程序ID</td><td class="td-identifier">wxMiniAppId</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享描述</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享页面URL</td><td class="td-identifier">pageUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------低版本页面路径</td><td class="td-identifier">lowerPageUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---邀请函ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;获取单个邀约记录详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客邀约状态描述</td><td class="td-identifier">visitorStatusDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---邀约方式文本</td><td class="td-identifier">invitationTypeDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---拒绝邀请访客列表</td><td class="td-identifier">visitorRefuseList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客手机号</td><td class="td-identifier">visitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约状态（文本描述）</td><td class="td-identifier">visitorStatusDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客姓名</td><td class="td-identifier">visitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约状态</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark">ALREADY_RECIEVE(1, &quot;已接受&quot;),ALREADY_SIGN(3, &quot;已签到&quot;),DENIED(6, &quot;已拒绝&quot;),LEAVED(8, &quot;已离场&quot;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">wechatAvatar</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---创建时间</td><td class="td-identifier">ctime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---邀约方式枚举</td><td class="td-identifier">invitationType</td><td class="td-type">string</td><td class="td-remark">MESSAGE(1, &quot;短信&quot;), WECHAT(2, &quot;微信&quot;)</td></tr><tr class="tr-level-2"><td class="td-name">---小程序分享数据</td><td class="td-identifier">shareData</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------微信小程序ID</td><td class="td-identifier">wxMiniAppId</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------缩略图URL</td><td class="td-identifier">miniPicUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------低版本页面路径</td><td class="td-identifier">lowerPageUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享标题</td><td class="td-identifier">title</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享描述</td><td class="td-identifier">description</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享页面URL</td><td class="td-identifier">pageUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------分享图URL</td><td class="td-identifier">picUrl</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式</td><td class="td-identifier">entranceType</td><td class="td-type">string</td><td class="td-remark">SIGN(1, &quot;访客签到我去接&quot;), QR_CODE(2, &quot;访客自助扫码开门&quot;)</td></tr><tr class="tr-level-2"><td class="td-name">---楼层</td><td class="td-identifier">floor</td><td class="td-type">string</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-2"><td class="td-name">---邀请函状态</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark">ALREADY_SIGN(3, &quot;已签到&quot;),WAITING_ENTER(4, &quot;待入场&quot;),     ALREADY_ENTER(5, &quot;已入场&quot;)，LEAVED(8, &quot;已离场&quot;)</td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">startTime</td><td class="td-type">number</td><td class="td-remark">@mock=测试内容35cz</td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式描述</td><td class="td-identifier">entranceTypeDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客信息列表</td><td class="td-identifier">visitorList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">微信邀请，则为已接受列表</td></tr><tr class="tr-level-3"><td class="td-name">------微信头像</td><td class="td-identifier">wechatAvatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约状态</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark">ALREADY_RECIEVE(1, &quot;已接受&quot;),ALREADY_SIGN(3, &quot;已签到&quot;),DENIED(6, &quot;已拒绝&quot;),LEAVED(8, &quot;已离场&quot;)</td></tr><tr class="tr-level-3"><td class="td-name">------访客姓名</td><td class="td-identifier">visitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客手机号</td><td class="td-identifier">visitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约状态（文本描述）</td><td class="td-identifier">visitorStatusDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访问事由（文本描述）</td><td class="td-identifier">invitationReasonDesc</td><td class="td-type">string</td><td class="td-remark">@mock=面试</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=22581</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;取消邀约</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/cancel</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">取消原因枚举</td><td class="td-identifier">cancelReason</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=32056</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;我立即去接</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/receive-in</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=32056</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;送客</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/send-out</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=32056</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;团队管理员访客列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/team-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">团队id</td><td class="td-identifier">teamId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">默认10条</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=71461</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------创建时间日期</td><td class="td-identifier">ctimeStr</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">invitations</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------接受访客数</td><td class="td-identifier">visitorNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------拒绝访客数</td><td class="td-identifier">refuseNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------访客列表</td><td class="td-identifier">visitorList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-5"><td class="td-name">------------访客手机号</td><td class="td-identifier">visitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-5"><td class="td-name">------------微信头像</td><td class="td-identifier">wechatAvatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-5"><td class="td-name">------------访客姓名</td><td class="td-identifier">visitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------所在楼层</td><td class="td-identifier">floor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------邀约方式描述</td><td class="td-identifier">invitationTypeDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------访问状态枚举</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------访问状态描述</td><td class="td-identifier">visitorStatusDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------邀请函ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------事由枚举</td><td class="td-identifier">invitationReason</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------创建时间日期</td><td class="td-identifier">ctimeStr</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------事由描述</td><td class="td-identifier">invitationReasonDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------邀约方式枚举</td><td class="td-identifier">invitationType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------被访人姓名</td><td class="td-identifier">invitorName</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">时间戳</td></tr><tr class="tr-level-4"><td class="td-name">---------开始时间</td><td class="td-identifier">startTime</td><td class="td-type">number</td><td class="td-remark">时间戳</td></tr><tr class="tr-level-4"><td class="td-name">---------被访人手机号</td><td class="td-identifier">invitorPhone</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4hge</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;根据社区ID获取所在楼层接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/list/cmt-floors</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区ID</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---结束营业时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---楼层列表</td><td class="td-identifier">floors</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---开始营业时间</td><td class="td-identifier">startTime</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区关闭日期</td><td class="td-identifier">closeDate</td><td class="td-type">number</td><td class="td-remark">YYYY-MM-DD</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;我的访客列表</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/mobile/visitor/my-list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">每页条数</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">默认10条</td></tr><tr class="tr-level-1"><td class="td-name">页码</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">会员ID</td><td class="td-identifier">uid</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=测试内容4hge</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=71461</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客列表</td><td class="td-identifier">visitorList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">最多三条</td></tr><tr class="tr-level-4"><td class="td-name">---------微信头像</td><td class="td-identifier">wechatAvatar</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------访客姓名</td><td class="td-identifier">visitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------访客手机号</td><td class="td-identifier">visitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------拒绝访客数</td><td class="td-identifier">refuseNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------事由枚举</td><td class="td-identifier">invitationReason</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">YYYY-MM-DD HH:mm:ss(时间戳)</td></tr><tr class="tr-level-3"><td class="td-name">------邀请函ID</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问状态枚举</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">startTime</td><td class="td-type">number</td><td class="td-remark">YYYY-MM-DD HH:mm:ss(时间戳)</td></tr><tr class="tr-level-3"><td class="td-name">------事由描述</td><td class="td-identifier">invitationReasonDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------接受访客数</td><td class="td-identifier">visitorNum</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------所在楼层</td><td class="td-identifier">floor</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀约方式枚举</td><td class="td-identifier">invitationType</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问状态描述</td><td class="td-identifier">visitorStatusDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀约方式描述</td><td class="td-identifier">invitationTypeDesc</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.2&nbsp;OP</h2>
+                                            <div class="action">
+                            <h3>1.2.1&nbsp;访客邀约记录列表查询(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/op/visitor/invitation/page</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">默认15</td></tr><tr class="tr-level-1"><td class="td-name">邀约访问开始日期</td><td class="td-identifier">visitStart</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">默认1</td></tr><tr class="tr-level-1"><td class="td-name">入场时间开始</td><td class="td-identifier">entranceStart</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">访客姓名</td><td class="td-identifier">visitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">邀约访问结束日期</td><td class="td-identifier">visitEnd</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">入场时间截止</td><td class="td-identifier">entranceEnd</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">被访人所属公司</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">进场方式【枚举】</td><td class="td-identifier">entranceType</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">访问状态【枚举】</td><td class="td-identifier">visitorStatus</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">访问状态枚举</td><td class="td-identifier">invitationStatus</td><td class="td-type">string</td><td class="td-remark">即将到访、已到访、未到访</td></tr><tr class="tr-level-1"><td class="td-name">被访人姓名</td><td class="td-identifier">invitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------进场时间</td><td class="td-identifier">enterTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀约访问时间</td><td class="td-identifier">invitationTime</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀请记录id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问社区</td><td class="td-identifier">visitCmt</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------进场方式文本</td><td class="td-identifier">entranceTypeText</td><td class="td-type">string</td><td class="td-remark">枚举：访客入场方式【1-访客签到我去接、2-访客自助扫码开门】</td></tr><tr class="tr-level-3"><td class="td-name">------被访人姓名</td><td class="td-identifier">invitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客姓名</td><td class="td-identifier">visitorNames</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------被访人所属公司</td><td class="td-identifier">company</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问状态文本</td><td class="td-identifier">visitorStatusText</td><td class="td-type">string</td><td class="td-remark">枚举：访客邀约状态    WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.2.2&nbsp;访客邀约记录详情(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/op/visitor/invitation/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">访客邀约记录id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">非空必传</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---邀约方式文本</td><td class="td-identifier">invitationTypeText</td><td class="td-type">string</td><td class="td-remark">枚举：邀约方式【1-短信 2-微信】</td></tr><tr class="tr-level-2"><td class="td-name">---取消时间</td><td class="td-identifier">cancelTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式文本</td><td class="td-identifier">entranceTypeText</td><td class="td-type">string</td><td class="td-remark">枚举：访客入场方式【1-访客签到我去接、2-访客自助扫码开门】</td></tr><tr class="tr-level-2"><td class="td-name">---访问日期</td><td class="td-identifier">invitationDate</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访问状态枚举</td><td class="td-identifier">visitorStatus</td><td class="td-type">object</td><td class="td-remark">枚举：访客邀约状态    WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-2"><td class="td-name">---被访人姓名</td><td class="td-identifier">invitorName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---邀约时间</td><td class="td-identifier">invitationTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---入场时间</td><td class="td-identifier">enterTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客信息列表</td><td class="td-identifier">visitorList</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客电话</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客状态文本</td><td class="td-identifier">visitorStatusText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客姓名</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客访问状态枚举</td><td class="td-identifier">visitorStatus</td><td class="td-type">object</td><td class="td-remark">枚举：访客邀约状态    WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-2"><td class="td-name">---访问状态文本</td><td class="td-identifier">visitorStatusText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---结束时间</td><td class="td-identifier">endTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---开始时间</td><td class="td-identifier">startTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---被访人手机号</td><td class="td-identifier">invitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---离场时间</td><td class="td-identifier">leaveTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---邀约方式枚举</td><td class="td-identifier">invitationType</td><td class="td-type">object</td><td class="td-remark">枚举：邀约方式【1-短信 2-微信】</td></tr><tr class="tr-level-2"><td class="td-name">---过期时间</td><td class="td-identifier">expireTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访问事由文本</td><td class="td-identifier">invitationReasonText</td><td class="td-type">string</td><td class="td-remark">枚举：访问事由【1-面试、2-商务会客、3-参观社区、4-私人访问、5-其他】</td></tr><tr class="tr-level-2"><td class="td-name">---被访公司</td><td class="td-identifier">companyName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---是否提前离场</td><td class="td-identifier">advanceLeave</td><td class="td-type">boolean</td><td class="td-remark">true-提前离场   false-未提前离场</td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.3&nbsp;小程序</h2>
+                                            <div class="action">
+                            <h3>1.3.1&nbsp;接受邀请(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/accept-invitation</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">1成功</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">code码不为1时，根据code码提示相应信息</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.2&nbsp;记录详情页（sdl）</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>api/gateway/wx/mini/visitor/invitation-detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">访客记录id</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">code码不为1时，根据code码提示相应信息</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访问事由（文本描述）</td><td class="td-identifier">invitationReasonDesc</td><td class="td-type">string</td><td class="td-remark">@mock=面试</td></tr><tr class="tr-level-2"><td class="td-name">---邀请函状态</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark">枚举：访客邀约状态    WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式（文本描述）</td><td class="td-identifier">entranceTypeDesc</td><td class="td-type">string</td><td class="td-remark">@mock=访客签到我去接</td></tr><tr class="tr-level-2"><td class="td-name">---访客记录id</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">---被访人姓名</td><td class="td-identifier">userName</td><td class="td-type">string</td><td class="td-remark">@mock=姜松挺</td></tr><tr class="tr-level-2"><td class="td-name">---年份文本</td><td class="td-identifier">yearDesc</td><td class="td-type">string</td><td class="td-remark">本年返回空串，否则返回当前年份</td></tr><tr class="tr-level-2"><td class="td-name">---社区ID</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---详情页展示的时间</td><td class="td-identifier">timeDesc</td><td class="td-type">string</td><td class="td-remark">例：01-03 (周一)15:22 - 19:21</td></tr><tr class="tr-level-2"><td class="td-name">---社区纬度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区楼层</td><td class="td-identifier">floor</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-2"><td class="td-name">---被访人电话</td><td class="td-identifier">userPhone</td><td class="td-type">string</td><td class="td-remark">@mock=11111111111</td></tr><tr class="tr-level-2"><td class="td-name">---开始时间</td><td class="td-identifier">startTime</td><td class="td-type">number</td><td class="td-remark">@mock=12104000</td></tr><tr class="tr-level-2"><td class="td-name">---社区经度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-2"><td class="td-name">---结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=44507000</td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式</td><td class="td-identifier">entranceType</td><td class="td-type">string</td><td class="td-remark">SIGN(1, &quot;访客签到我去接&quot;),     QR_CODE(2, &quot;访客自助扫码开门&quot;)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.3&nbsp;访客签到(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/signed</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">用户记录ID</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">1成功    -1失败</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">code码不为1时，根据code码提示相应信息</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.4&nbsp;访客登录(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div>访客系统小程序登录</div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/login</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">登录凭证</td><td class="td-identifier">code</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---微信识别ID</td><td class="td-identifier">unionid</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---小程序识别ID</td><td class="td-identifier">openid</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.5&nbsp;获取手机验证码(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div>获取手机验证码</div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/send-verify-code</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">电话号码</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.6&nbsp;验证码绑定手机号(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div>访客绑定填写的手机号</div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/code/bind-phone</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">绑定手机号</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">验证码</td><td class="td-identifier">code</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.7&nbsp;保存用户数据(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/save</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">偏移量</td><td class="td-identifier">iv</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">小程序识别ID</td><td class="td-identifier">openid</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">用户信息密文</td><td class="td-identifier">encryptedData</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---小程序识别ID</td><td class="td-identifier">openid</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---微信识别ID</td><td class="td-identifier">unionid</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.8&nbsp;访客签到-计算访客与社区的距离(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/pre-check-in</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">用户定位-经度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">用户定位-纬度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name">1可以签到    -1不能签到，距离超过范围</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.9&nbsp;访客访问记录列表(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/invitation/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark">默认1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark">默认10</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">pageSize</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">page</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区经度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀请人姓名</td><td class="td-identifier">inviterName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">startTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀请人电话</td><td class="td-identifier">inviterPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------受邀日期</td><td class="td-identifier">invitationDate</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约枚举</td><td class="td-identifier">visitorStatus</td><td class="td-type">object</td><td class="td-remark">WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-3"><td class="td-name">------星期文本</td><td class="td-identifier">days</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约状态</td><td class="td-identifier">visitorStatusText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客记录ID</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问社区</td><td class="td-identifier">visitCommunity</td><td class="td-type">string</td><td class="td-remark">例：创业大街社区 4层</td></tr><tr class="tr-level-3"><td class="td-name">------社区纬度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">totalCount</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.10&nbsp;社区选择组件(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/cmt/list</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.11&nbsp;获取最近社区id(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div>小程序根据定位选择最近的社区，如果没有定位，默认选择第一个社区</div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/nearest/cmt</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">经度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">纬度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.12&nbsp;小程序查询社区指南(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/cmt/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区图片数组</td><td class="td-identifier">communityImgs</td><td class="td-type">array&lt;string&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">communityAddress</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cmtName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">wifiInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">password</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">account</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">cmtId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.13&nbsp;首页访客邀约记录(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/invitation/home</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">items</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问事由</td><td class="td-identifier">invitationReasonText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀请人电话</td><td class="td-identifier">inviterPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访问事由枚举</td><td class="td-identifier">invitationReason</td><td class="td-type">object</td><td class="td-remark">INTERVIEW(1, &quot;面试&quot;),BUSINESS_TALK(2, &quot;商务会客&quot;),VISIT_COMMUNITY(3, &quot;参观社区&quot;),PRIVATE_VISIT(4, &quot;私人访问&quot;),OTHERS(5, &quot;其他&quot;)</td></tr><tr class="tr-level-3"><td class="td-name">------详情页展示的时间</td><td class="td-identifier">timeDesc</td><td class="td-type">string</td><td class="td-remark">例：01-03 (周一)15:22 - 19:21</td></tr><tr class="tr-level-3"><td class="td-name">------年份文本</td><td class="td-identifier">yearDesc</td><td class="td-type">string</td><td class="td-remark">本年返回空串，否则返回当前年份</td></tr><tr class="tr-level-3"><td class="td-name">------入场方式</td><td class="td-identifier">entranceTypeText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约状态</td><td class="td-identifier">visitorStatusText</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------星期文本</td><td class="td-identifier">days</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区经度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区纬度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客邀约枚举</td><td class="td-identifier">visitorStatus</td><td class="td-type">object</td><td class="td-remark">WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-3"><td class="td-name">------受邀日期</td><td class="td-identifier">invitationDate</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客记录记录ID</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------访客电话</td><td class="td-identifier">visitorPhone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------入场方式枚举</td><td class="td-identifier">entranceType</td><td class="td-type">object</td><td class="td-remark">SIGN(1, &quot;访客签到我去接&quot;),QR_CODE(2, &quot;访客自助扫码开门&quot;)</td></tr><tr class="tr-level-3"><td class="td-name">------访问社区</td><td class="td-identifier">visitCommunity</td><td class="td-type">string</td><td class="td-remark">例：创业大街社区 4层</td></tr><tr class="tr-level-3"><td class="td-name">------开始时间</td><td class="td-identifier">startTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------结束时间</td><td class="td-identifier">endTime</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区ID</td><td class="td-identifier">cmtId</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------邀请人姓名</td><td class="td-identifier">inviterName</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---电话</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客昵称</td><td class="td-identifier">visitorNick</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---头像</td><td class="td-identifier">avatar</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.14&nbsp;是否绑定手机号(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/check/phone-bind</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">bindPhone</td><td class="td-type">boolean</td><td class="td-remark">true-已绑定 false-未绑定</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.15&nbsp;根据访客码查询访客记录ID(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/invitation-record</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请码</td><td class="td-identifier">visitorCode</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客记录ID</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">code码不为1时，根据code码提示相应信息</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.16&nbsp;短信访客授权门禁接口(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>XXX</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.17&nbsp;拒绝邀请(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/refuse-invitation</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name">1成功</td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">code码不为1时，根据code码提示相应信息</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.18&nbsp;加载邀请函详情(sdl)</h3>
+
+                            <h3>Description</h3>
+
+                            <div>小程序首页邀请函详情</div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/invitation/detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">邀请函id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">code码不为1时，根据code码提示相应信息</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区名称</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=创业大街社区</td></tr><tr class="tr-level-2"><td class="td-name">---详情页展示的时间</td><td class="td-identifier">timeDesc</td><td class="td-type">string</td><td class="td-remark">例：01-03 (周一)15:22 - 19:21</td></tr><tr class="tr-level-2"><td class="td-name">---开始时间</td><td class="td-identifier">startTime</td><td class="td-type">number</td><td class="td-remark">@mock=12104000</td></tr><tr class="tr-level-2"><td class="td-name">---被访人姓名</td><td class="td-identifier">userName</td><td class="td-type">string</td><td class="td-remark">@mock=姜松挺</td></tr><tr class="tr-level-2"><td class="td-name">---访问事由（文本描述）</td><td class="td-identifier">invitationReasonDesc</td><td class="td-type">string</td><td class="td-remark">@mock=面试</td></tr><tr class="tr-level-2"><td class="td-name">---结束时间</td><td class="td-identifier">endTime</td><td class="td-type">number</td><td class="td-remark">@mock=44507000</td></tr><tr class="tr-level-2"><td class="td-name">---被访人电话</td><td class="td-identifier">userPhone</td><td class="td-type">string</td><td class="td-remark">@mock=11111111111</td></tr><tr class="tr-level-2"><td class="td-name">---年份文本</td><td class="td-identifier">yearDesc</td><td class="td-type">string</td><td class="td-remark">本年返回空串，否则返回当前年份</td></tr><tr class="tr-level-2"><td class="td-name">---邀请函状态</td><td class="td-identifier">visitorStatus</td><td class="td-type">string</td><td class="td-remark">枚举：visitorStatus=WAITING_ACCEPT，显示接受/拒绝button；visitorStatus=WAITING_SIGN (待签到)签到button；visitorStatus=WAITING_ENTRANCE (待入场)扫码button；visitorStatus=DENIED，显示拒绝button; visitorStatus=ALREADY_SIGN 显示已签到</td></tr><tr class="tr-level-2"><td class="td-name">---访问记录ID</td><td class="td-identifier">recordId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区纬度</td><td class="td-identifier">latitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区ID</td><td class="td-identifier">communityId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式</td><td class="td-identifier">entranceType</td><td class="td-type">string</td><td class="td-remark">SIGN(1, &quot;访客签到我去接&quot;),     QR_CODE(2, &quot;访客自助扫码开门&quot;)</td></tr><tr class="tr-level-2"><td class="td-name">---社区楼层</td><td class="td-identifier">floor</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-2"><td class="td-name">---社区经度</td><td class="td-identifier">longitude</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---访客入场方式（文本描述）</td><td class="td-identifier">entranceTypeDesc</td><td class="td-type">string</td><td class="td-remark">@mock=访客签到我去接</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.19&nbsp;访客扫码开门接口(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/open-door</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">设备ID</td><td class="td-identifier">deviceId</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.3.20&nbsp;微信授权绑定手机号(msw)</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/gateway/wx/mini/visitor/auth/bind-phone</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">用户信息密文</td><td class="td-identifier">encryptedData</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">小程序识别ID</td><td class="td-identifier">openid</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">偏移量</td><td class="td-identifier">iv</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                            <div class="page">
+                    <h2>1.4&nbsp;其他接口</h2>
+                                            <div class="action">
+                            <h3>1.4.1&nbsp;枚举接口</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>/api/krspace-sso-web/sys/enmu?enmuKey=</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">访问事由</td><td class="td-identifier">com.krspace.op.api.enums.visitor.InvitationReason</td><td class="td-type">object</td><td class="td-remark">NTERVIEW(1, &quot;面试&quot;),     BUSINESS_TALK(2, &quot;商务会客&quot;),     VISIT_COMMUNITY(3, &quot;参观社区&quot;),     PRIVATE_VISIT(4, &quot;私人访问&quot;),     OTHERS(5, &quot;其他&quot;);</td></tr><tr class="tr-level-1"><td class="td-name">入场方式</td><td class="td-identifier">com.krspace.op.api.enums.visitor.EntranceType</td><td class="td-type">object</td><td class="td-remark">SIGN(1, &quot;访客签到我去接&quot;),   QR_CODE(2, &quot;访客自助扫码开门&quot;);</td></tr><tr class="tr-level-1"><td class="td-name">邀请函状态</td><td class="td-identifier">com.krspace.op.api.enums.visitor.VisitorStatus</td><td class="td-type">string</td><td class="td-remark">WAITING_ACCEPT(1, &quot;待接受&quot;),     WAITING_SIGN(2, &quot;待签到&quot;),     ALREADY_SIGN(3, &quot;已签到&quot;),     WAITING_ENTRANCE(4, &quot;待入场&quot;),     ALREADY_ENTRANCE(5, &quot;已入场&quot;),     DENIED(6, &quot;已拒绝&quot;),     CANCEL(7, &quot;已取消&quot;),     LEAVED(8, &quot;已离场&quot;),     OUTDATE(9, &quot;已过期&quot;);</td></tr><tr class="tr-level-1"><td class="td-name">邀约方式</td><td class="td-identifier">com.krspace.op.api.enums.visitor.InvitationType</td><td class="td-type">object</td><td class="td-remark">MESSAGE(1, &quot;短信&quot;),     WECHAT(2, &quot;微信&quot;);</td></tr><tr class="tr-level-1"><td class="td-name">取消事由</td><td class="td-identifier">com.krspace.op.api.enums.visitor.CancelReason</td><td class="td-type">object</td><td class="td-remark">TRIP_CHANGE(1, &quot;行程改变&quot;), 	REPEAT_INVITATION(2, &quot;重复邀约&quot;), 	INFO_ERROR(3, &quot;信息填写错误&quot;), 	OTHER(4, &quot;其他&quot;);</td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.4.2&nbsp;code码对应的提示</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div></div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">code返回值</td><td class="td-identifier">code</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-2"><td class="td-name">----104</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">过结束时间</td></tr><tr class="tr-level-2"><td class="td-name">----2</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">距离超过范围</td></tr><tr class="tr-level-2"><td class="td-name">----1</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">直接提示message信息</td></tr><tr class="tr-level-2"><td class="td-name">----102</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">已失效-----已到邀请时间，但有人入场、未到邀请时间，但已过24小时、已到邀请开始时间，但无人入场</td></tr><tr class="tr-level-2"><td class="td-name">----101</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">被取消</td></tr><tr class="tr-level-2"><td class="td-name">----103</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">人数达到上限</td></tr><tr class="tr-level-2"><td class="td-name">----105</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">过24小时未确认</td></tr><tr class="tr-level-2"><td class="td-name">----111</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">门禁口令码开门</td></tr><tr class="tr-level-2"><td class="td-name">----106</td><td class="td-identifier"></td><td class="td-type"></td><td class="td-remark">已拒绝</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>

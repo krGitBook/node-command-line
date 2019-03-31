@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+        }
+
+        .param-table .th-name {
+            width: 140px;
+        }
+
+        .param-table .th-identifier {
+            width: 140px;
+        }
+
+        .param-table .th-type {
+            width: 100px;
+        }
+
+        .param-table .th-remark {
+            width: 200px;
+        }
+
+        .param-table .td-name {
+        }
+
+        .param-table .td-identifier {
+        }
+
+        .param-table .td-type {
+            color: #990000;
+        }
+
+        .param-table .td-remark {
+            color: #666;
+        }
+
+        .param-table .tr-level-1 {
+            background: #E6E6E6;
+        }
+
+        .param-table .tr-level-2 {
+            background: silver;
+        }
+
+        .param-table .tr-level-3 {
+            background: gray;
+        }
+
+        .param-table .tr-level-4 {
+            background: silver;
+        }
+
+        .param-table .tr-level-5 {
+            background: gray;
+        }
+
+        .param-table .tr-level-6 {
+            background: silver;
+        }
+
+        .param-table .tr-level-7 {
+            background: gray;
+        }
+
+        .param-table .tr-level-8 {
+            background: silver;
+        }
+
+        .param-table .tr-level-9 {
+            background: gray;
+        }
+
+        .param-table .tr-level-10 {
+            background: silver;
+        }
+
+        .param-table .tr-level-11 {
+            background: gray;
+        }
+
+        .param-table .tr-level-12 {
+            background: silver;
+        }
+
+        .param-table .tr-level-13 {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;某模块（点击编辑后双击修改）</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;订单</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;修改订单</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/action/edit-order</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单描述</td><td class="td-identifier">mainbilldesc</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityid</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单编号</td><td class="td-identifier">mainbillcode</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单类型</td><td class="td-identifier">mainbilltype</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerid</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单id</td><td class="td-identifier">id</td><td class="td-type"></td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单名字</td><td class="td-identifier">mainbillname</td><td class="td-type"></td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;新建订单</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/action/enter-order</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单类型</td><td class="td-identifier">mainbilltype</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单描述</td><td class="td-identifier">mainbilldesc</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">社区id</td><td class="td-identifier">communityid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">客户id</td><td class="td-identifier">customerid</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单编号</td><td class="td-identifier">mainbillcode</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单名字</td><td class="td-identifier">mainbillname</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---订单id</td><td class="td-identifier">mainBillId</td><td class="td-type">number</td><td class="td-remark">@mock=435</td></tr><tr class="tr-level-2"><td class="td-name">---客户id</td><td class="td-identifier">customerid</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;某请求</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div></div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">某请求参数</td><td class="td-identifier">reqParam</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">某响应参数</td><td class="td-identifier">resParam</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;订单初始化数据</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/action/community-city-selected</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---社区城市联动获取</td><td class="td-identifier">communityCity|22</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityId</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;7&#39;,&#39;8&#39;,&#39;9&#39;,&#39;10&#39;,&#39;11&#39;,&#39;12&#39;,&#39;13&#39;,&#39;14&#39;,&#39;15&#39;,&#39;16&#39;,&#39;43&#39;,&#39;44&#39;,&#39;45&#39;,&#39;47&#39;,&#39;53&#39;,&#39;54&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------城市id</td><td class="td-identifier">cityId</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;1&#39;,&#39;1&#39;,&#39;1&#39;,&#39;1&#39;,&#39;88&#39;,&#39;88&#39;,&#39;88&#39;,&#39;238&#39;,&#39;75&#39;,&#39;75&#39;,&#39;74&#39;,&#39;74&#39;,&#39;200&#39;,&#39;79&#39;,&#39;2&#39;,&#39;170&#39;,&#39;1&#39;,&#39;74&#39;,&#39;79&#39;,&#39;200&#39;,&#39;2&#39;,&#39;1&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------城市名字</td><td class="td-identifier">cityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;北京市&#39;,&#39;北京市&#39;,&#39;北京市&#39;,&#39;北京市&#39;,&#39;杭州市&#39;,&#39;杭州市&#39;,&#39;杭州市&#39;,&#39;成都市&#39;,&#39;南京市&#39;,&#39;南京市&#39;,&#39;上海市&#39;,&#39;上海市&#39;,&#39;深圳市&#39;,&#39;苏州市&#39;,&#39;天津市&#39;,&#39;武汉市&#39;,&#39;北京市&#39;,&#39;上海市&#39;,&#39;苏州市&#39;,&#39;深圳市&#39;,&#39;天津市&#39;,&#39;北京市&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------社区名字</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;北京创业大街社区&#39;,&#39;北京天创科技社区&#39;,&#39;北京浦项中心社区&#39;,&#39;北京东方科技园社区&#39;,&#39;杭州梦想小镇社区&#39;,&#39;杭州万塘汇社区&#39;,&#39;杭州文三路社区&#39;,&#39;成都川报大厦社区&#39;,&#39;南京楚翘城社区&#39;,&#39;南京梦幻城社区&#39;,&#39;上海凤城巷社区&#39;,&#39;上海绿地社区&#39;,&#39;深圳高新技术园社区&#39;,&#39;苏州金鸡湖创业长廊社区&#39;,&#39;天津滨海泰达社区&#39;,&#39;武汉科创社区&#39;,&#39;北京大成国际社区&#39;,&#39;上海联创社区&#39;,&#39;苏州李公堤社区&#39;,&#39;深圳讯美社区&#39;,&#39;天津号外社区&#39;,&#39;北京科贸大厦社区&#39;)</td></tr><tr class="tr-level-2"><td class="td-name">---订单类型</td><td class="td-identifier">sysDicPayments|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">createIp</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;127.0.0.1&#39;,&#39;127.0.0.1&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operateIp</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;2016-12-05 10:54:28&#39;,&#39;2016-12-05 10:55:45&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">createTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1480910076000,1480910079000)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">round</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,0)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">enableFlag</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;ENABLE&#39;,&#39;ENABLE&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=$order(2,2)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operateTime</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1480910076000,1480910079000)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=$order(2,2)</td></tr><tr class="tr-level-3"><td class="td-name">------订单类型名字</td><td class="td-identifier">dicName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;工位订单&#39;,&#39;孵化订单&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------订单类型id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(16,17)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">pid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(3,3)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">remark</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;工位订单&#39;,&#39;孵化订单&#39;)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;订单基本获取</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/action/get-simple-order</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单id</td><td class="td-identifier">mainBillId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---订单id</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=434</td></tr><tr class="tr-level-2"><td class="td-name">---订单描述</td><td class="td-identifier">mainbilldesc</td><td class="td-type">string</td><td class="td-remark">@mock=121212</td></tr><tr class="tr-level-2"><td class="td-name">---订单名字</td><td class="td-identifier">mainbillname</td><td class="td-type">string</td><td class="td-remark">@mock=测试qwer</td></tr><tr class="tr-level-2"><td class="td-name">---客户名字</td><td class="td-identifier">customerName</td><td class="td-type">string</td><td class="td-remark">@mock=华采科技（北京）有限公司</td></tr><tr class="tr-level-2"><td class="td-name">---客户id</td><td class="td-identifier">customerid</td><td class="td-type">number</td><td class="td-remark">@mock=2</td></tr><tr class="tr-level-2"><td class="td-name">---订单类型</td><td class="td-identifier">mainbilltype</td><td class="td-type">number</td><td class="td-remark">@mock=17</td></tr><tr class="tr-level-2"><td class="td-name">---社区id</td><td class="td-identifier">communityid</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;修改订单名字</h3>
+
+                            <h3>Description</h3>
+
+                            <div></div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/edit-order-name</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单id</td><td class="td-identifier">mainBillId</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">订单名字</td><td class="td-identifier">mainbillName</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">mainBillId</td><td class="td-type">number</td><td class="td-remark">@mock=435</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;订单详情</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/action/get-order-detail</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单id</td><td class="td-identifier">mainBillId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">orderBaseInfo</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">liveincomeBackamount</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------订单名字</td><td class="td-identifier">mainbillname</td><td class="td-type">string</td><td class="td-remark">@mock=天津益阳煜赢网络科技有限公司工位订单01</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">otherincome</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------起始日期</td><td class="td-identifier">contractEntrydate</td><td class="td-type">number</td><td class="td-remark">@mock=1456761600000</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operatedate</td><td class="td-type">number</td><td class="td-remark">@mock=1477479600000</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">nonbusinessincome</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">actualEntrydate</td><td class="td-type">number</td><td class="td-remark">@mock=1456761600000</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">liveincome</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------结束日期</td><td class="td-identifier">contractLeavedate</td><td class="td-type">number</td><td class="td-remark">@mock=1488211200000</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">nonbusinessincomeBackamount</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------实收定金</td><td class="td-identifier">realdownpayment</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------回款总额</td><td class="td-identifier">contractBackamount</td><td class="td-type">number</td><td class="td-remark">@mock=-963400</td></tr><tr class="tr-level-3"><td class="td-name">------社区id</td><td class="td-identifier">communityid</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-3"><td class="td-name">------社区名字</td><td class="td-identifier">communityName</td><td class="td-type">string</td><td class="td-remark">@mock=北京浦项中心社区</td></tr><tr class="tr-level-3"><td class="td-name">------实收押金</td><td class="td-identifier">realdeposit</td><td class="td-type">number</td><td class="td-remark">@mock=-104500</td></tr><tr class="tr-level-3"><td class="td-name">------工位回款</td><td class="td-identifier">paidrent</td><td class="td-type">number</td><td class="td-remark">@mock=-855000</td></tr><tr class="tr-level-3"><td class="td-name">------当前工位数</td><td class="td-identifier">stationnum</td><td class="td-type">number</td><td class="td-remark">@mock=15</td></tr><tr class="tr-level-3"><td class="td-name">------未回款额</td><td class="td-identifier">unBackamount</td><td class="td-type">number</td><td class="td-remark">@mock=224100</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">mainbilltype</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------撤场时间</td><td class="td-identifier">actualLeavedate</td><td class="td-type">number</td><td class="td-remark">@mock=1488211200000</td></tr><tr class="tr-level-3"><td class="td-name">------客户id</td><td class="td-identifier">customerid</td><td class="td-type">number</td><td class="td-remark">@mock=46</td></tr><tr class="tr-level-3"><td class="td-name">------订单编号</td><td class="td-identifier">mainbillcode</td><td class="td-type">string</td><td class="td-remark">@mock=BJPX2016103101</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">createdate</td><td class="td-type">number</td><td class="td-remark">@mock=1477479600000</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-3"><td class="td-name">------其他回款</td><td class="td-identifier">refundamount</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------订单总额</td><td class="td-identifier">contractTotalamount</td><td class="td-type">number</td><td class="td-remark">@mock=1187500</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=3</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">accruedrent</td><td class="td-type">number</td><td class="td-remark">@mock=874521.19</td></tr><tr class="tr-level-3"><td class="td-name">------客户名字</td><td class="td-identifier">customerName</td><td class="td-type">string</td><td class="td-remark">@mock=天津益阳煜赢网络科技有限公司</td></tr><tr class="tr-level-2"><td class="td-name">---</td><td class="td-identifier">contractStatusCount</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">addRentTotoal</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">enterFlag</td><td class="td-type">boolean</td><td class="td-remark">@mock=true</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">enterComplete</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">enterTotoal</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">renewComplete</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">quitRentTotoal</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lessRentComplete</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">renewTotoal</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">addRentComplete</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lessRentTotoal</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">intentionComplete</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">intentionTotoal</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">quitRentComplete</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-2"><td class="td-name">---分期计划</td><td class="td-identifier">installmentPlan</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------合同结束时间</td><td class="td-identifier">detailEnd</td><td class="td-type">string</td><td class="td-remark">合同结束时间</td></tr><tr class="tr-level-3"><td class="td-name">------分期</td><td class="td-identifier">installment</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(19,20,21,22,23)</td></tr><tr class="tr-level-4"><td class="td-name">---------计划付款金额</td><td class="td-identifier">installmentAmount</td><td class="td-type">number</td><td class="td-remark">@mock=$order(104500,313500,313500,313500,313500)</td></tr><tr class="tr-level-4"><td class="td-name">---------分期开始时间</td><td class="td-identifier">installmentBegindate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1477571484000,1456761600000,1464710400000,1472659200000,1480521600000)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">detailid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1,1,1,1)</td></tr><tr class="tr-level-4"><td class="td-name">---------实际付款金额</td><td class="td-identifier">installmentBackamount</td><td class="td-type">number</td><td class="td-remark">@mock=$order(209000,313500,313500,123500,0)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=$order(108,0,0,0,-1)</td></tr><tr class="tr-level-4"><td class="td-name">---------款项</td><td class="td-identifier">installmentName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;押金&#39;,&#39;第1租金&#39;,&#39;第2租金&#39;,&#39;第3租金&#39;,&#39;第4租金&#39;)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">propgroup</td><td class="td-type">number</td><td class="td-remark">@mock=$order(2,3,3,3,3)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">createip</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;127.0.0.1&#39;,&#39;127.0.0.1&#39;,&#39;127.0.0.1&#39;,&#39;127.0.0.1&#39;,&#39;127.0.0.1&#39;)</td></tr><tr class="tr-level-4"><td class="td-name">---------付款状态</td><td class="td-identifier">payStatus</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1,1,0,-1)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">installmentReminddate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1477571484000,1457280000000,1463414400000,1471363200000,1479225600000)</td></tr><tr class="tr-level-4"><td class="td-name">---------分期结束时间</td><td class="td-identifier">installmentEnddate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1477571484000,1464710400000,1472659200000,1480521600000,1488211200000)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">operateip</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;100.109.222.50&#39;,&#39;127.0.01&#39;,&#39;127.0.01&#39;,&#39;127.0.01&#39;,&#39;127.0.0.7&#39;)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">createdate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1477993756000,1477993756000,1477993757000,1477993757000,1477993757000)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">operatedate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1479984539000,1479903164000,1479903164000,1479903164000,1479895625000)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=$order(-1,-1,-1,-1,-1)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">periods</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,1,2,3,4)</td></tr><tr class="tr-level-4"><td class="td-name">---------</td><td class="td-identifier">mainbillid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1,1,1,1)</td></tr><tr class="tr-level-3"><td class="td-name">------合同开始时间</td><td class="td-identifier">detailStart</td><td class="td-type">string</td><td class="td-remark">合同开始时间</td></tr><tr class="tr-level-3"><td class="td-name">------类型</td><td class="td-identifier">detailName</td><td class="td-type">string</td><td class="td-remark">@mock=入驻协议(2016-03-01至2017-02-28)</td></tr><tr class="tr-level-2"><td class="td-name">---合同列表</td><td class="td-identifier">contractList|2</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">rentMonth</td><td class="td-type">number</td><td class="td-remark">@mock=$order(28500,104500)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lessorAddress</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">contractfile</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">customerid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(46,46)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">editFlag</td><td class="td-type">boolean</td><td class="td-remark">@mock=$order(false,false)</td></tr><tr class="tr-level-3"><td class="td-name">------租金金额</td><td class="td-identifier">totalrent</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;171000.00&#39;,&#39;1254000.00&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------起始时间</td><td class="td-identifier">leaseBegindate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1472659200000,1456761600000)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">contractBackamount</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,0)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">mainbillid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1)</td></tr><tr class="tr-level-3"><td class="td-name">------工位/会议室均价</td><td class="td-identifier">staionOrMeetingPrice</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;—/—&#39;,&#39;0.00/—&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">contractcode</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operatedate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1477479600000,1477479600000)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">communityid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(3,3)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">createdate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1477479600000,1477479600000)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lessorContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">leaseContact</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">leaseAddress</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">contractstate</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;EXECUTE&#39;,&#39;EXECUTE&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">leaseId</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1,1)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">contractmark</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------工位数</td><td class="td-identifier">stationnum</td><td class="td-type">number</td><td class="td-remark">@mock=$order(15,55)</td></tr><tr class="tr-level-3"><td class="td-name">------会议室数</td><td class="td-identifier">boardroomnum</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,0)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">leaseContacttel</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------终止时间</td><td class="td-identifier">leaseEnddate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1488211200000,1488211200000)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">wherefloor</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">id</td><td class="td-type">number</td><td class="td-remark">@mock=$order(16,1)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">operater</td><td class="td-type">number</td><td class="td-remark">@mock=$order(3,3)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">creater</td><td class="td-type">number</td><td class="td-remark">@mock=$order(3,3)</td></tr><tr class="tr-level-3"><td class="td-name">------销售员</td><td class="td-identifier">saler</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;刘远航&#39;,&#39;刘远航&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">signdate</td><td class="td-type">number</td><td class="td-remark">@mock=$order(1472659200000,1456761600000)</td></tr><tr class="tr-level-3"><td class="td-name">------合同类型</td><td class="td-identifier">contracttype</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;LESSRENT&#39;,&#39;ENTER&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------录入人</td><td class="td-identifier">inputUser</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;&#39;,&#39;&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">lessorContactid</td><td class="td-type">number</td><td class="td-remark">@mock=$order(0,0)</td></tr><tr class="tr-level-3"><td class="td-name">------</td><td class="td-identifier">contractTotalamount</td><td class="td-type">number</td><td class="td-remark">@mock=$order(171000,1358500)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;查询订单下各个合同工位</h3>
+
+                            <h3>Description</h3>
+
+                            <div>@type=array_map;</div>
+                            <h3>URL</h3>
+
+                            <div>krspace-finance-web/action/get-order-station</div>
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">订单id</td><td class="td-identifier">mainBillId</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">code</td><td class="td-type">number</td><td class="td-remark">@mock=1</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">data</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---合同名称</td><td class="td-identifier">detailName</td><td class="td-type">string</td><td class="td-remark">@mock=入驻协议书(2016-10-17至2017-10-16)</td></tr><tr class="tr-level-2"><td class="td-name">---会议室类型</td><td class="td-identifier">meetingInfo</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会议室下面工位</td><td class="td-identifier">meetingInStation</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------会议室名字</td><td class="td-identifier">meetingName</td><td class="td-type">string</td><td class="td-remark">@mock=$order(&#39;H07&#39;,&#39;H06&#39;)</td></tr><tr class="tr-level-3"><td class="td-name">------会议室容纳人数</td><td class="td-identifier">meetingInStationNum</td><td class="td-type">number</td><td class="td-remark">@mock=$order(8,6)</td></tr><tr class="tr-level-2"><td class="td-name">---工位id集合</td><td class="td-identifier">stationIds</td><td class="td-type">array&lt;number&gt;</td><td class="td-remark">@mock=$order(3460,3459,3458,3457,3456,3455,3454,3453)</td></tr><tr class="tr-level-1"><td class="td-name"></td><td class="td-identifier">message</td><td class="td-type">string</td><td class="td-remark">@mock=ok</td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>
