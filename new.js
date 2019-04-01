@@ -15,9 +15,6 @@ const RapDataDir = path.resolve(__dirname, './rap-data');
 
 const dataJson = fs.readdirSync(RapDataDir);
 
-var modelObj = {
-  name: ''
-}
 foreachRapData();
 
 function foreachRapData() {
@@ -33,7 +30,7 @@ function foreachRapData() {
       }
       var groupArr = fs.readdirSync(RapDataDir + "/" + dirPath)
       groupArr.forEach((groupPath) => {
-        let oldPath = groupPath.split('.')[0];
+        let oldPath = groupPath.split('.json')[0];
         groupPath = RapDataDir + "/" + dirPath + '/' + groupPath
         var jsonData = fs.readFileSync(groupPath, 'utf-8');
         // console.log(oldPath,"kkk")
@@ -85,7 +82,7 @@ function getEveryRapData(data) {
           }),
           // 'res_body': '',
           method: getMethod(actionItem.requestType),
-          title: `${name}-${actionItem.name}`,
+          title: name?`${name}-${actionItem.name}`:actionItem.name,
           path:getpath(actionItem.requestUrl) ,
         }
         if(method == 'get'||method == 'delete'){
@@ -137,13 +134,13 @@ function getBody(data) {
       let name = getname(item.identifier);
       let type = getType(item.dataType);
       properties[name] = {
-        type: type,
+        type: type.mainType,
         description: item.remark||item.name,
         
       }
-      if(item.dataType == 'array<object>'){
+      if(type.mainType == 'array'){
         properties[name].items = {
-          type:'object',
+          type:type.childrenType,
           properties:getBody(item.parameterList)
         }
       }else{
@@ -153,7 +150,7 @@ function getBody(data) {
         delete properties[name].properties
       }
     } else {
-      properties[item.identifier] = { type:type , description: item.remark }
+      properties[item.identifier] = { type:type.mainType , description: item.remark }
     }
 
   })
@@ -161,8 +158,7 @@ function getBody(data) {
 
 }
 function getpath(path){
-  if(path[0]!='/'&& path.indexOf(':')==-1){
-    console.log(path,"kkkkkkk")
+  if(path[0]!='/'){
     return '/'+path;
   }
   return path;
@@ -178,10 +174,16 @@ function getname(name){
 }
 // 获取字段数据类型
 function getType(type){
-  if(type.indexOf('array')!=-1){
-    return 'array';
+  if(type.indexOf('array<')!=-1){
+     return {
+      mainType:type.split('<')[0],
+      childrenType:type.split('<')[1].replace('>','')
+     }
   }
-  return type;
+  return {
+    mainType:type,
+    childrenType:''
+  };
 }
 
 function getReqQuery(data) {
