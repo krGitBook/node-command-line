@@ -1,5 +1,3 @@
-# node_command_lin
-
-e
+# node_command_line
 
 node命令行
