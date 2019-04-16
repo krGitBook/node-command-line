@@ -1,15 +1,27 @@
 {
-  "name": "raptojson",
+  "name": "editor",
   "version": "1.0.0",
-  "description": "rap接口平台数据迁移到Yapi的接口JSON转接工具",
-  "main": "app.js",
+  "description": "[![devDependencies Status](https://david-dm.org/ckeditor/ckeditor-dev/dev-status.svg)](https://david-dm.org/ckeditor/ckeditor-dev?type=dev)",
+  "main": "index.js",
   "scripts": {
-    "build": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node andypack",
+    "build": "node andypack/build"
   },
-  "author": "mori",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ops.aixuexi.com:editor/editor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
+    "chokidar": "^2.1.5",
+    "less": "^3.9.0",
+    "fs-extra": "^7.0.1"
+  },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "axios": "^0.18.0"
+    "single-line-log": "^1.1.2"
   }
 }
