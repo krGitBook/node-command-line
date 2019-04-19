@@ -13,6 +13,7 @@ const getfile = (dir)=>{
          return ;
        }
        newDir.map(function(item){
+         
           getfile(path.resolve(dir, item));
        })
       
@@ -20,6 +21,7 @@ const getfile = (dir)=>{
         // console.log(dir,"kkkk")
         // file.push[dir];
         num++;
+      
         return dir;
     }
 

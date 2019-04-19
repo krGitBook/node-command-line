@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node andypack",
-    "build": "node andypack/build"
+    "dev": "node cmd/dev",
+    "build": "node cmd/build"
   },
   "repository": {
     "type": "git",
@@ -15,11 +15,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.16.4",
-    "http-proxy-middleware": "^0.19.1",
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-stage-0": "^7.0.0",
+    "babel-plugin-transform-property-literals": "^6.9.4",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-minify": "^0.5.0",
+    "babel-preset-stage-0": "^6.24.1",
     "chokidar": "^2.1.5",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "http-proxy-middleware": "^0.19.1",
     "less": "^3.9.0",
-    "fs-extra": "^7.0.1"
+    "uglify-js": "^3.5.4"
   },
   "dependencies": {
     "single-line-log": "^1.1.2"
